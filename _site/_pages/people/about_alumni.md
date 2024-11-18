@@ -1,11 +1,10 @@
 The first position after graduation is indicated.
 
 ##### 2024
-- Priyanka Muhunthan, PhD, [title] at [place]
-    - [thesis]()
-- Nguyen Ly, PhD, [title] at NASA Ames Research Center
-    - [thesis]()
-- Wai Tong Chung, PhD, [title] at Together AI
+- Pushan Sharma, Post-Doc, Principal Product Engineer at Cadence Design Systems
+- Priyanka Muhunthan, PhD
+- Nguyen Ly, PhD
+- Wai Tong Chung, PhD
     - [*Overcoming small datasets in machine learning studies of multi-physics flows in propulsion*](https://stacks.stanford.edu/file/druid:xw487vj6602/WTChungPhDDissertation5June2024-augmented.pdf)
 
 ##### 2023
@@ -87,5 +86,5 @@ The first position after graduation is indicated.
     - [*Design refinement and modeling methods for highly-integrated hypersonic vehicles*](https://deepblue.lib.umich.edu/handle/2027.42/93832)
 
 ##### 2009
-- **Emre Sozer**, co-advised PhD, Principal Engineer at Siemens
+- Emre Sozer, co-advised PhD, Principal Engineer at Siemens
     - [*Modeling of gaseous reacting flow and thermal environment of liquid rocket injectors*](https://deepblue.lib.umich.edu/handle/2027.42/77684)

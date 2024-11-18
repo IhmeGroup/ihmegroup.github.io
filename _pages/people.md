@@ -22,28 +22,28 @@ profiles:
     content: people/phdstudents/about_bonanni.md
   - align: left #ARIJIT
     image: people/tree.png
-    content: people/phdstudents/about_lastname.md
+    content: people/phdstudents/about_majumdar.md
   - align: left #KHALED
     image: people/tree.png
-    content: people/phdstudents/about_lastname.md
+    content: people/phdstudents/about_younes.md
   - align: left #BASSEM
     image: people/tree.png
-    content: people/phdstudents/about_lastname.md
+    content: people/phdstudents/about_akoush.md
   - align: left #DAVID
-    image: people/tree.png
-    content: people/phdstudents/about_lastname.md
+    image: people/wu.jpg
+    content: people/phdstudents/about_wu.md
   - align: left #JAMES
     image: people/hansen.jpeg
     content: people/phdstudents/about_hansen.md
   - align: left #BENYAMIN
-    image: people/dog.jpeg
-    content: people/phdstudents/about_lastname.md
+    image: people/krisna.jpeg
+    content: people/phdstudents/about_krisna.md
   - align: left #BEVERLEY
     image: people/yeo.jpg
     content: people/phdstudents/about_yeo.md
   - align: left #SHO
     image: people/tree.png
-    content: people/phdstudents/about_lastname.md
+    content: people/phdstudents/about_wada.md
   - align: left #SHIVANSH
     image: people/chaturvedi.jpeg
     content: people/phdstudents/about_chaturvedi.md
@@ -58,10 +58,10 @@ profiles:
     content: people/postdocs/about_vignat.md
   - align: left #HAOYUAN
     image: people/tree.png
-    content: people/phdstudents/about_lastname.md
+    content: people/postdocs/about_li.md
   - align: left #KARL
     image: people/tree.png
-    content: people/phdstudents/about_lastname.md
+    content: people/postdocs/about_toepperwien.md
   - align: left #JINGCUN
     image: people/fan.jpeg
     content: people/postdocs/about_fan.md
@@ -77,12 +77,6 @@ profiles:
   - align: left #BLAKE
     image: people/andersen.jpeg
     content: people/phdstudents/about_andersen.md
-  - align: left #BRYAN
-    image: people/tree.png
-    content: people/phdstudents/about_lastname.md
-  - align: left #IVANA
-    image: people/tree.png
-    content: people/phdstudents/about_lastname.md
   - align: left #ELINOR
     image: people/tree.png
     content: people/phdstudents/about_lastname.md
