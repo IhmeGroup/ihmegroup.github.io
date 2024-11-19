@@ -180,10 +180,18 @@ ul.task-list input[type="checkbox"] {
 
 .card {
   background-color: var(--global-card-bg-color);
+  min-height: 150px;
 
   .card-img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    padding-top: 1.25rem;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    filter: brightness(1); /* Optional: Darkens the image for better text contrast */
   }
 
   .card-title {
@@ -191,7 +199,10 @@ ul.task-list input[type="checkbox"] {
   }
 
   .card-body {
-    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(to right, rgb(0,0,0,0.8), rgb(0,0,0,0)); /* Optional: Adds a translucent background for readability */
+    color: #fff;
   }
 }
 
