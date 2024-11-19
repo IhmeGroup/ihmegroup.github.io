@@ -23,8 +23,6 @@
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 ">
 
-  <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
-
 
 
 
@@ -83,7 +81,7 @@
   </head>
 
   <!-- Body -->
-  <body class="fixed-top-nav ">
+  <body class="fixed-top-nav sticky-bottom-footer">
     <!-- Header -->
     <header>
   <!-- Nav Bar -->
@@ -102,83 +100,19 @@
         <ul class="navbar-nav ml-auto flex-nowrap">
           
 
-          <!-- About -->
+	  <!-- About -->
+	  <!--
           <li class="nav-item active">
             <a class="nav-link" href="/">about
               
                 <span class="sr-only">(current)</span>
               
             </a>
-          </li>
+	  </li>
+	  -->
 
           <!-- Other pages -->
           
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
           
             
           
@@ -223,8 +157,6 @@
             
           
             
-          
-            
               
                 
                 <li class="nav-item ">
@@ -234,6 +166,8 @@
                   </a>
                 </li>
               
+            
+          
             
           
             
@@ -255,7 +189,7 @@
                 
                 <li class="nav-item ">
                   
-                  <a class="nav-link" href="/resources/">Resources
+                  <a class="nav-link" href="/media/">Media
                     
                   </a>
                 </li>
@@ -267,7 +201,7 @@
                 
                 <li class="nav-item ">
                   
-                  <a class="nav-link" href="/media/">Media
+                  <a class="nav-link" href="/resources/">Resources
                     
                   </a>
                 </li>
@@ -276,6 +210,10 @@
           
             
           
+	  
+	  <!-- BlastNET -->
+	  <li class="nav-item"><a class="nav-link" href="https://blastnet.github.io" rel="external nofollow noopener" target="_blank">BlastNET</a></li>
+
           
           
             <!-- Toogle theme mode -->
@@ -328,131 +266,24 @@
 
     <!-- News -->
     
-      <h2>
-        <a href="/news/" style="color: inherit">news</a>
-      </h2>
-      <div class="news">
-  
-    
-    <div class="table-responsive">
-      <table class="table table-sm table-borderless">
-        
-        
-        
-          <tr>
-            <th scope="row" style="width: 20%">Jan 15, 2016</th>
-            <td>
-              
-                A simple inline announcement with Markdown emoji! <img class="emoji" title=":sparkles:" alt=":sparkles:" src="https://github.githubassets.com/images/icons/emoji/unicode/2728.png" height="20" width="20"> <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20">
-
-              
-            </td>
-          </tr>
-        
-          <tr>
-            <th scope="row" style="width: 20%">Nov 07, 2015</th>
-            <td>
-              
-                <a class="news-title" href="/news/announcement_2/">A long announcement with details</a>
-              
-            </td>
-          </tr>
-        
-          <tr>
-            <th scope="row" style="width: 20%">Oct 22, 2015</th>
-            <td>
-              
-                A simple inline announcement.
-
-              
-            </td>
-          </tr>
-        
-      </table>
-    </div>
-  
-</div>
-
-    
 
     <!-- Latest posts -->
     
-      <h2>
-        <a href="/blog/" style="color: inherit">latest posts</a>
-      </h2>
-      <div class="news">
-  
-    
-    <div class="table-responsive" style="max-height: 60vw">
-      <table class="table table-sm table-borderless">
-        
-        
-        
-          <tr>
-            <th scope="row" style="width: 20%">May 14, 2024</th>
-            <td>
-              
-                <a class="news-title" href="https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/" target="_blank" rel="external nofollow noopener">Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra</a>
-                <svg width="2rem" height="2rem" viewbox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              
-            </td>
-          </tr>
-        
-          <tr>
-            <th scope="row" style="width: 20%">Apr 30, 2024</th>
-            <td>
-              
-                <a class="news-title" href="/blog/2024/tabs/">a post with tabs</a>
-              
-            </td>
-          </tr>
-        
-          <tr>
-            <th scope="row" style="width: 20%">Apr 29, 2024</th>
-            <td>
-              
-                <a class="news-title" href="/blog/2024/typograms/">a post with typograms</a>
-              
-            </td>
-          </tr>
-        
-      </table>
-    </div>
-  
-</div>
-
-    
 
     <!-- Selected papers -->
-    
-      <h2>
-        <a href="/publications/" style="color: inherit">selected publications</a>
-      </h2>
-      <div class="publications">
-  <ol class="bibliography"></ol>
-</div>
-
     
 
     <!-- Social -->
     
       <div class="social">
         <div class="contact-icons">
-  <a href="mailto:%79%6F%75@%65%78%61%6D%70%6C%65.%63%6F%6D" title="email"><i class="fa-solid fa-envelope"></i></a>
+  <a href="mailto:%6D%69%68%6D%65@%73%74%61%6E%66%6F%72%64.%65%64%75" title="email"><i class="fa-solid fa-envelope"></i></a>
 
 
 
 
 
-  <a href="https://scholar.google.com/citations?user=qc6CJjYAAAAJ" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>
-
-
-  <a href="https://inspirehep.net/authors/1010907" title="Inspire HEP" rel="external nofollow noopener" target="_blank"><i class="ai ai-inspire"></i></a>
-
-
-
+  <a href="https://scholar.google.com/citations?user=g1q2D9sAAAJ" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>
 
 
 
@@ -464,11 +295,11 @@
 
 
 
+  <a href="https://github.com/ihmegroup" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-github"></i></a>
 
 
 
-
-
+  <a href="https://twitter.com/fxlabstanford" title="X" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
 
 
 
@@ -487,13 +318,18 @@
 
 
 
-  <a href="/feed.xml" title="RSS Feed"><i class="fa-solid fa-square-rss"></i></a>
+
+
+
+
+
+
+
 
 
 </div>
 
-        <div class="contact-note">You can even add a little note about which of these is the best way to reach you.
-</div>
+        <div class="contact-note"></div>
       </div>
     
 
@@ -506,8 +342,10 @@
 
     <!-- Footer -->
     
-  <footer class="fixed-bottom" role="contentinfo">
-    <div class="container mt-0">
+  <footer class="sticky-bottom mt-5" role="contentinfo">
+    
+
+    <div class="container">
       © Copyright 2024
       Stanford
       
