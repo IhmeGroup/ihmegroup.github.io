@@ -1,9 +1,15 @@
 <header>
+  <div class="su-brand-bar su-brand-bar--bright">
+    <div class="su-brand-bar__container container"><a class="su-brand-bar__logo" href="https://stanford.edu">
+    <img src="{{ site.baseurl }}/assets/img/stanford_wordmark.png"/>
+    <span class="su-brand-bar__link--a11y">(link is external)</span>
+    </a></div>
+  </div>
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
-      {% if page.permalink != '/' %}
         <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
+          <!--
           {% if site.title == 'blank' %}
             {% if site.first_name %}
               <span class="font-weight-bold">
@@ -19,11 +25,9 @@
           {% else %}
             {{- site.title -}}
           {% endif %}
+          -->
+          <svg class="fxlab" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="17 44 228 56">{% include logo.liquid %}</svg>
         </a>
-      {% elsif site.enable_navbar_social %}
-        <!-- Social Icons -->
-        <div class="navbar-brand social">{% include social.liquid %}</div>
-      {% endif %}
       <!-- Navbar Toggle -->
       <button
         class="navbar-toggler collapsed ml-auto"

@@ -2,7 +2,7 @@
 layout: page
 permalink: /media/
 title: Media
-nav: true
+nav: false
 nav_order: 7
 ---
 ### **Media**

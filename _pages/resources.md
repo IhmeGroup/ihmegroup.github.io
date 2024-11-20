@@ -1,12 +1,12 @@
 ---
 layout: page
-permalink: /resources/
-title: Resources
+permalink: /contact/
+title: Contact
 nav: true
 nav_order: 7
 ---
-### **Contact**
 
+<!-- ## **Contact** -->
 FX Laboratory  
 Department of Mechanical Engineering  
 440 Escondido Road  
@@ -33,10 +33,10 @@ Interested candidates should email Prof. Ihme directly with the following items:
 
 Undergraduate students interested in pursuing a part-time research appointment over the academic quarters or full-time for a summer internship should email Prof. Ihme expressing their interest and availability. 
 
-### **BLASTNet**
-BLASTNet is an aggregation of turbulent reacting flow datasets, intended for the development of machine learning models. [Access BLASTNet here.](https://blastnet.github.io/)
+<!-- ### **BLASTNet**
+BLASTNet is an aggregation of turbulent reacting flow datasets, intended for the development of machine learning models. [Access BLASTNet here.](https://blastnet.github.io/) -->
 
-### **Funding**
+<!-- ### **Funding**
 Our research is funded in part from these sources:
 - NASA
 - NSF
@@ -50,7 +50,7 @@ Our research is funded in part from these sources:
 - Boeing
 - Stanford Precourt Energy
 - Office of Naval Research
-- Daikin
+- Daikin -->
 
-### **Lab GitHub**
-[Click here](https://github.com/IhmeGroup) to access the group GitHub (login required).
+<!-- ### **Lab GitHub**
+[Click here](https://github.com/IhmeGroup) to access the group GitHub (login required). -->

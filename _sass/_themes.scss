@@ -177,3 +177,8 @@ html[data-theme-setting="light"] {
     display: block;
   }
 }
+
+html[data-theme="dark"] svg.fxlab *:not(rect) {
+  fill: #{$white-color};
+  color: #{$white-color};
+}
