@@ -6,7 +6,7 @@
     </a></div>
   </div>
   <!-- Nav Bar -->
-  <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
+  <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %} {% if page.permalink == '/'%}homepage{% endif %}" role="navigation">
     <div class="container">
         <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
           <!--
@@ -141,11 +141,13 @@
     </div>
   </nav>
   {% if site.enable_progressbar %}
+  {% if page.permalink != '/' %}
     <!-- Scrolling Progress Bar -->
     <progress id="progress" value="0">
       <div class="progress-container">
         <span class="progress-bar"></span>
       </div>
     </progress>
+  {% endif %}
   {% endif %}
 </header>

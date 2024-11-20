@@ -91,7 +91,7 @@
     </a></div>
   </div>
   <!-- Nav Bar -->
-  <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation">
+  <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top homepage" role="navigation">
     <div class="container">
         <a class="navbar-brand title font-weight-lighter" href="/">
           <!--
@@ -365,8 +365,6 @@
             
           
             
-          
-            
               
                 
                 <li class="nav-item ">
@@ -376,6 +374,8 @@
                   </a>
                 </li>
               
+            
+          
             
           
             
@@ -400,12 +400,7 @@
     </div>
   </nav>
   
-    <!-- Scrolling Progress Bar -->
-    <progress id="progress" value="0">
-      <div class="progress-container">
-        <span class="progress-bar"></span>
-      </div>
-    </progress>
+  
   
 </header>
 
@@ -413,42 +408,39 @@
     <!-- Content -->
     <div class="container mt-5" role="main">
       
-        <div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-        FX Lab at Stanford University
-      
-    </h1>
+        <div class="splash">
+  <div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
     <!--
-    <p class="desc"><a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.</p>
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
     -->
-  </header>
-
-  <article>
     
-
-    <div class="clearfix">
-<p>Write your biography here. Tell the world about yourself. Link to your favorite <a href="http://reddit.com" rel="external nofollow noopener" target="_blank">subreddit</a>. You can put a picture in, too. The code is already in, just name your picture <code class="language-plaintext highlighter-rouge">prof_pic.jpg</code> and put it in the <code class="language-plaintext highlighter-rouge">img/</code> folder.</p>
-
-<p>Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing <code class="language-plaintext highlighter-rouge">profile</code> property of the YAML header of your <code class="language-plaintext highlighter-rouge">_pages/about.md</code>. Edit <code class="language-plaintext highlighter-rouge">_bibliography/papers.bib</code> and Jekyll will render your <a href="/al-folio/publications/">publications page</a> automatically.</p>
-
-<p>Link to your social media connections, too. This theme is set up to use <a href="https://fontawesome.com/" rel="external nofollow noopener" target="_blank">Font Awesome icons</a> and <a href="https://jpswalsh.github.io/academicons/" rel="external nofollow noopener" target="_blank">Academicons</a>, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.</p>
-</div>
-
-    <!-- News -->
+      <source class="responsive-img-srcset" srcset="/assets/img/placeholder.gif" sizes="95vw">
     
+    <img src="/assets/img/placeholder.gif" class="hero" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </source></picture>
 
-    <!-- Latest posts -->
-    
+  
+</figure>
 
-    <!-- Selected papers -->
-    
-
-    <!-- Social -->
-    
-      <div class="social">
-        <div class="contact-icons">
+      </div>
+  </div>
+  <div class="floatie homepage">
+    <div class="container">
+      <div class="inner">
+      <h1 class="desc">Laboratory of Fluids in Complex Environments</h1>
+      <!-- Social -->
+      
+        <div class="social">
+          <div class="contact-icons">
   <a href="mailto:%6D%69%68%6D%65@%73%74%61%6E%66%6F%72%64.%65%64%75" title="email"><i class="fa-solid fa-envelope"></i></a>
 
 
@@ -500,9 +492,50 @@
 
 
 </div>
-
-        <div class="contact-note"></div>
+        </div>
+      
       </div>
+    </div>
+  </div>
+</div>
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+        FX Lab at Stanford University
+      
+    </h1>
+  </header>
+
+  <article class="large">
+    
+
+    <div class="clearfix">
+<!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+
+Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+
+Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
+
+<p>We are a part of the Mechanical Engineering department at Stanford University and Photon Science at the Stanford Linear Accelerator Center (SLAC). Our research aims to develop an improved holistic understanding of fluids in complex environments, with application to energy conversion, propulsion, wildfire modeling, and carbon capture and sequestration. To do so, we combine experimental, theoretical, and computational approaches. Current research activities at the lab include but are not limited to:</p>
+
+<ul>
+  <li>ultrafast X-ray experiments to reveal fluid microstructure,</li>
+  <li>large-scale molecular dynamics simulations to characterize macroscopic behavior, and</li>
+  <li>large-eddy simulations of combustion systems, ranging from rocket engines to wildfires.</li>
+</ul>
+
+<p>Learn more about our <a href="/research">research</a>. <a href="/contact">Join us</a>. Stay up to date with our latest work by following us on <a href="https://twitter.com/fxlabstanford" rel="external nofollow noopener" target="_blank">X</a>.</p>
+</div>
+
+    <!-- News -->
+    
+
+    <!-- Latest posts -->
+    
+
+    <!-- Selected papers -->
     
 
     
@@ -514,7 +547,7 @@
 
     <!-- Footer -->
     
-  <footer class="sticky-bottom mt-5 su-global-footer su-global-footer--bright" role="contentinfo">
+  <footer class="sticky-bottom mt-5 su-global-footer" role="contentinfo">
     <!--
     
 
@@ -530,7 +563,7 @@
     -->
     <div class="su-global-footer__container container" title="Common Stanford resources">
       <div class="su-global-footer__brand">
-        <a class="su-logo su-global-footer--bright" href="https://www.stanford.edu" rel="external nofollow noopener" target="_blank">
+        <a class="su-logo" href="https://www.stanford.edu" rel="external nofollow noopener" target="_blank">
           <img src="/assets/img/stanford_wordmark_stacked.png">
         </a>
       </div>

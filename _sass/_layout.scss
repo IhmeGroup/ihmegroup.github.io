@@ -38,6 +38,59 @@ body.sticky-bottom-footer {
   }
 }
 
+.banner {
+  max-height:35vh;
+  object-fit:cover;
+}
+
+// Splash
+
+body {
+  overflow-x:hidden!important;
+}
+
+.splash {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin: -3rem -50vw 3rem -50vw;
+}
+
+.hero {
+  object-fit:cover;
+  display:block;
+  max-width:100%;
+  max-height:calc(100vh - 136px); // need to adjust to put title spacing
+}
+
+.floatie {
+  top:0;
+  right:0;
+  position:absolute;
+  z-index:2;
+  width:100%;
+}
+
+.floatie .container {
+  margin:0 auto;
+  position:relative;
+}
+
+// This block of code controls the position of the content inside the splash
+.floatie .container .inner {
+  position:absolute;
+  left:0; // adjust according to image
+  right:0; // adjust according to image
+  top:50px; // adjust according to image
+  text-align:center; // adjust according to image
+}
+
+article.large {
+  font-size:1.3rem;
+  line-height:2.5rem;
+}
+
 // TODO: redefine content layout.
 
 /******************************************************************************

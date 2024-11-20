@@ -289,6 +289,10 @@ html[data-theme="light"] .card .card-body {
   text-transform: capitalize;
 }
 
+.navbar.homepage {
+  border-bottom:transparent;
+}
+
 .navbar svg {
   height:80px;
 }
@@ -434,9 +438,11 @@ html[data-theme="light"] .card .card-body {
   text-align: center;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 2rem;
 
     a {
+      margin: 0 0.25rem;
+
       i::before {
         color: var(--global-text-color);
         transition-property: all 0.2s ease-in-out;
@@ -956,6 +962,7 @@ progress {
   left: 0;
   top: 56px;
   z-index: 10;
+  margin-top:30px;
 
   /* Dimensions */
   width: 100%;
@@ -1468,14 +1475,15 @@ body > header {
     -moz-osx-font-smoothing: auto;
     color: #8c1515; }
 
-.su-link {
+.su-link,
+.post article p a {
   color: #006cb8;
   text-decoration: underline;
   font-weight: 600; }
   .su-link:hover, .su-link:focus, .su-link:active,
-  a:hover,
-  a:focus,
-  a:active {
+  .post article p a:hover,
+  .post article p a:focus,
+  .post article p a:active {
     color: #2e2d29; }
 
 .su-link--more {

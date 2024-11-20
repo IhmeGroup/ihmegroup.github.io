@@ -22,7 +22,8 @@
   
 </title>
 <meta name="author" content="Stanford FX Lab">
-<meta name="description" content="members of the lab">
+<meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+">
 
 
 
@@ -92,7 +93,7 @@
     </a></div>
   </div>
   <!-- Nav Bar -->
-  <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation">
+  <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top " role="navigation">
     <div class="container">
         <a class="navbar-brand title font-weight-lighter" href="/">
           <!--
@@ -368,8 +369,6 @@
             
           
             
-          
-            
               
                 
                 <li class="nav-item ">
@@ -379,6 +378,8 @@
                   </a>
                 </li>
               
+            
+          
             
           
             
@@ -403,12 +404,14 @@
     </div>
   </nav>
   
+  
     <!-- Scrolling Progress Bar -->
     <progress id="progress" value="0">
       <div class="progress-container">
         <span class="progress-bar"></span>
       </div>
     </progress>
+  
   
 </header>
 
@@ -421,11 +424,35 @@
 <div class="post">
   <header class="post-header">
     <h1 class="post-title">People</h1>
-    <p class="post-description">members of the lab</p>
+    <p class="post-description"></p>
   </header>
 
   <article>
     <div class="post">
+  <div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/IMG_7065.jpg" sizes="95vw">
+    
+    <img src="/assets/img/IMG_7065.jpg" class="img-fluid rounded z-depth-1 banner" width="100%" height="auto" title="group photo" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </source></picture>
+
+  
+</figure>
+
+      </div>
+  </div>
   <article>
     
       
@@ -1644,7 +1671,7 @@ B.S. University, 20XX</p>
 
     <!-- Footer -->
     
-  <footer class="sticky-bottom mt-5 su-global-footer su-global-footer--bright" role="contentinfo">
+  <footer class="sticky-bottom mt-5 su-global-footer" role="contentinfo">
     <!--
     
 
@@ -1660,7 +1687,7 @@ B.S. University, 20XX</p>
     -->
     <div class="su-global-footer__container container" title="Common Stanford resources">
       <div class="su-global-footer__brand">
-        <a class="su-logo su-global-footer--bright" href="https://www.stanford.edu" rel="external nofollow noopener" target="_blank">
+        <a class="su-logo" href="https://www.stanford.edu" rel="external nofollow noopener" target="_blank">
           <img src="/assets/img/stanford_wordmark_stacked.png">
         </a>
       </div>

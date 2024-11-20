@@ -178,7 +178,13 @@ html[data-theme-setting="light"] {
   }
 }
 
+html[data-theme="dark"] .homepage,
+html[data-theme="light"] .homepage {
+  --global-text-color: #{$black-color};
+  --global-bg-color: #{$white-color};
+}
+
 html[data-theme="dark"] svg.fxlab *:not(rect) {
-  fill: #{$white-color};
-  color: #{$white-color};
+  fill: var(--global-text-color);
+  color: var(--global-text-color);
 }
