@@ -12,7 +12,7 @@ profiles:
   - align: left
     content: people/header_faculty.md
   - align: right
-    image: people/ihme.jpg
+    image: people/ihme.jpeg
     content: people/about_ihme.md
 
   - align: left
@@ -21,7 +21,7 @@ profiles:
     image: people/bonanni.jpeg
     content: people/phdstudents/about_bonanni.md
   - align: left #ARIJIT
-    image: people/tree.png
+    image: people/majumdar.jpeg
     content: people/phdstudents/about_majumdar.md
   - align: left #KHALED
     image: people/tree.png
