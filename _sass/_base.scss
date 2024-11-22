@@ -231,6 +231,10 @@ html[data-theme="light"] .card .card-body {
 .profile {
   width: 100%;
 
+  a {
+    text-decoration:underline;
+  }
+
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
@@ -1476,15 +1480,29 @@ body > header {
     color: #8c1515; }
 
 .su-link,
-.post article p a {
+.post article p a,
+.post article h4 a {
   color: #006cb8;
   text-decoration: underline;
-  font-weight: 600; }
-  .su-link:hover, .su-link:focus, .su-link:active,
-  .post article p a:hover,
-  .post article p a:focus,
-  .post article p a:active {
-    color: #2e2d29; }
+  font-weight: 600; 
+
+  &:hover,
+  &:focus,
+  &:active {
+    color:#53565A
+  }
+}
+
+html[data-theme="dark"] .su-link,
+html[data-theme="dark"] .post article p a {
+  color: #67AFD2;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #DAD7CB;
+  }
+}
 
 .su-link--more {
   text-decoration: none; }

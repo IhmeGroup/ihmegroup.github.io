@@ -39,8 +39,21 @@ body.sticky-bottom-footer {
 }
 
 .banner {
-  max-height:35vh;
+  max-height:45vh;
   object-fit:cover;
+  object-position:bottom;
+}
+
+.profile + .clearfix h5 + ul li a {
+  text-decoration: underline;
+  color: inherit;
+  &:hover {
+    color: var(--global-theme-color);
+  }
+}
+
+.profile + .clearfix h5 + ul li a em {
+  color: inherit;
 }
 
 // Splash

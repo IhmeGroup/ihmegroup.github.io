@@ -78,8 +78,8 @@ profiles:
     image: people/andersen.jpeg
     content: people/phdstudents/about_andersen.md
   - align: left #ELINOR
-    image: people/tree.png
-    content: people/phdstudents/about_lastname.md
+    image: people/tandberg.png
+    content: people/phdstudents/about_tandberg.md
 
   - align: left
     content: people/header_alumni.md
