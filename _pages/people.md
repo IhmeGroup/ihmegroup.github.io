@@ -60,7 +60,7 @@ profiles:
     image: people/tree.png
     content: people/postdocs/about_li.md
   - align: left #KARL
-    image: people/tree.png
+    image: people/topperwien.jpeg
     content: people/postdocs/about_toepperwien.md
   - align: left #JINGCUN
     image: people/fan.jpeg
