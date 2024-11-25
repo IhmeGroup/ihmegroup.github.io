@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-11-21T19:52:02-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">FX Lab at Stanford University</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-11-25T14:40:25-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">FX Lab at Stanford University</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 </subtitle><entry><title type="html">a post with tabs</title><link href="http://localhost:4000/sample-posts/2024/04/30/tabs.html" rel="alternate" type="text/html" title="a post with tabs" /><published>2024-04-30T17:32:13-07:00</published><updated>2024-04-30T17:32:13-07:00</updated><id>http://localhost:4000/sample-posts/2024/04/30/tabs</id><content type="html" xml:base="http://localhost:4000/sample-posts/2024/04/30/tabs.html"><![CDATA[<p>This is how a post with <a href="https://github.com/Ovski4/jekyll-tabs">tabs</a> looks like. Note that the tabs could be used for different purposes, not only for code.</p>
 
 <h2 id="first-tabs">First tabs</h2>
@@ -24,7 +24,7 @@ Content 2
 
 <p>With this you can generate visualizations like:</p>
 
-<ul id="log" class="tab" data-tab="346233fb-da78-4e7d-83b8-9bd44afa61f3" data-name="log">
+<ul id="log" class="tab" data-tab="d13503a2-09ab-4e5f-b112-605807beb00c" data-name="log">
   
       <li class="active" id="log-php">
           <a href="#">php </a>
@@ -39,7 +39,7 @@ Content 2
       </li>
   
 </ul>
-<ul class="tab-content" id="346233fb-da78-4e7d-83b8-9bd44afa61f3" data-name="log">
+<ul class="tab-content" id="d13503a2-09ab-4e5f-b112-605807beb00c" data-name="log">
   
       <li class="active">
 <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">var_dump</span><span class="p">(</span><span class="s1">'hello'</span><span class="p">);</span>
@@ -63,7 +63,7 @@ Content 2
 
 <h2 id="another-example">Another example</h2>
 
-<ul id="data-struct" class="tab" data-tab="48a297ec-f002-4df0-9a24-74e474ea042e" data-name="data-struct">
+<ul id="data-struct" class="tab" data-tab="418a9f74-b881-434b-bca3-a94176426f0e" data-name="data-struct">
   
       <li class="active" id="data-struct-yaml">
           <a href="#">yaml </a>
@@ -74,7 +74,7 @@ Content 2
       </li>
   
 </ul>
-<ul class="tab-content" id="48a297ec-f002-4df0-9a24-74e474ea042e" data-name="data-struct">
+<ul class="tab-content" id="418a9f74-b881-434b-bca3-a94176426f0e" data-name="data-struct">
   
       <li class="active">
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">hello</span><span class="pi">:</span>
@@ -96,7 +96,7 @@ Content 2
 
 <h2 id="tabs-for-something-else">Tabs for something else</h2>
 
-<ul id="something-else" class="tab" data-tab="66f58ae3-8607-4d21-acef-7afaabe2afce" data-name="something-else">
+<ul id="something-else" class="tab" data-tab="b7a234d4-0369-461b-af7e-7e334d25c1c7" data-name="something-else">
   
       <li class="active" id="something-else-text">
           <a href="#">text </a>
@@ -111,7 +111,7 @@ Content 2
       </li>
   
 </ul>
-<ul class="tab-content" id="66f58ae3-8607-4d21-acef-7afaabe2afce" data-name="something-else">
+<ul class="tab-content" id="b7a234d4-0369-461b-af7e-7e334d25c1c7" data-name="something-else">
   
       <li class="active">
 <p>Regular text</p>
