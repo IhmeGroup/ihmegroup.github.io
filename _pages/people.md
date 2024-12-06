@@ -23,12 +23,12 @@ profiles:
   - align: left #ARIJIT
     image: people/majumdar.jpeg
     content: people/phdstudents/about_majumdar.md
-  - align: left #KHALED
-    image: people/tree.png
-    content: people/phdstudents/about_younes.md
   - align: left #BASSEM
     image: people/tree.png
     content: people/phdstudents/about_akoush.md
+  - align: left #KHALED
+    image: people/younes.jpeg
+    content: people/phdstudents/about_younes.md
   - align: left #DAVID
     image: people/wu.jpg
     content: people/phdstudents/about_wu.md
@@ -41,8 +41,11 @@ profiles:
   - align: left #BEVERLEY
     image: people/yeo.jpg
     content: people/phdstudents/about_yeo.md
+  - align: left #BLAKE
+    image: people/andersen.jpeg
+    content: people/phdstudents/about_andersen.md
   - align: left #SHO
-    image: people/tree.png
+    image: people/wada.jpeg
     content: people/phdstudents/about_wada.md
   - align: left #SHIVANSH
     image: people/chaturvedi.jpeg
@@ -74,9 +77,6 @@ profiles:
 
   - align: left
     content: people/header_otherstudents.md
-  - align: left #BLAKE
-    image: people/andersen.jpeg
-    content: people/phdstudents/about_andersen.md
   - align: left #ELINOR
     image: people/tandberg.png
     content: people/phdstudents/about_tandberg.md
