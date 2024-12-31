@@ -8,6 +8,7 @@ related_publications: true
 ---
 
 papers to pull projects from:
+**AUTHOR: KARL**
 - A high-fidelity ensemble simulation framework for interrogating wildland-fire behaviour and benchmarking machine learning models
 - Effect of Burn Parameters on PAH Emissions at Conditions Relevant for Prescribed Fires
 - FireBench: A High-fidelity Ensemble Simulation Framework for Exploring Wildfire Behavior and Data-driven Modeling

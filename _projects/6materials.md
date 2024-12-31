@@ -1,12 +1,13 @@
 ---
 layout: page
-title: Ultrafast Molecular and Phase Dynamics
+title: Ultrafast Molecular Dynamics of Supercritical Fluids
 img: /assets/img/12.jpg
 importance: 6
 category: work
 related_publications: true
 ---
 
+**AUTHORS: ask KHALED, ARIJIT, PRIYANKA, HAOYUAN, JINGCUN**
 papers to pull projects from:
 - Direct observation of ultrafast cluster dynamics in supercritical carbon dioxide using X-ray Photon Correlation Spectroscopy
 - Probing Supercritical Phase Transition using Ultrafast X-ray Diagnostics (Final Technical Report)

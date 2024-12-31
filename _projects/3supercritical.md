@@ -1,11 +1,13 @@
 ---
 layout: page
-title: Transcritical and Supercritical Fluids
+title: Transcritical and Supercritical Flows
 img: /assets/img/12.jpg
 importance: 3
 category: work
 related_publications: true
 ---
+
+Supercritical and transcritical flows from a macroscopic point of view.
 
 Example papers to pull projects from:
 - A regularized-interface method as a unified formulation for simulations of high-pressure multiphase flows
