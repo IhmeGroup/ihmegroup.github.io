@@ -12,6 +12,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap');
 
+// Stanford font
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
 body {
   font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
@@ -911,6 +914,10 @@ footer.fixed-bottom {
   }
 }
 
+.publications.teaching ol.bibliography li .title {
+  font-size:1.5em;
+}
+
 // Rouge Color Customization
 figure.highlight {
   margin: 0 0 1rem;
@@ -1543,6 +1550,7 @@ html[data-theme="dark"] .post article h4 a {
 
 /* reverse engineered from stanford identity branding website */
 .su-global-footer {
+  font-weight:400;
   font-size:62.5%;
   line-height:1.15;
   -webkit-font-smoothing: antialiased;

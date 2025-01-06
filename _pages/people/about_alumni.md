@@ -6,6 +6,9 @@ The first position after graduation is indicated.
 - Nguyen Ly, PhD
 - Wai Tong Chung, PhD
     - [*Overcoming small datasets in machine learning studies of multi-physics flows in propulsion*](https://stacks.stanford.edu/file/druid:xw487vj6602/WTChungPhDDissertation5June2024-augmented.pdf)
+- Yichi Ma, M. Sc.
+- Ryan Chen, M. Sc.
+- Parker Mayhew, M. Sc.
 
 ##### 2023
 - Filip Simeski, PhD, Thermal Engineer at Apple

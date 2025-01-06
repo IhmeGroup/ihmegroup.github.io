@@ -1,3 +1,8 @@
+- Abhishek Pillai, Kyoto University (2024)
+- Timoteo Dinelli, Politecno di Milano (2024) 
+- Younghwa Cho, Hokkaido University (2024)
+- Nozomu Hashimoto, Hokkaido University (2023)
+- Hiroshi Terashima, Hokkaido University (2023)
 - Alvin Lee, Stanford University (2022)
 - Ethan Li, Stanford University (2020)
 - Haiyue Li, Peking University (2019)
