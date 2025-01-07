@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Laboratory of Fluids in Complex Environments
+subtitle: Laboratory of <span class="fx">F</span>luids in Comple<span class="fx">x</span> Environments
 nav: false
 
 news: true # includes a list of news items

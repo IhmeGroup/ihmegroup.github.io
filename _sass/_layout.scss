@@ -113,6 +113,13 @@ body {
   }
 }
 
+@supports (-webkit-text-stroke: 3px white) {
+  .fx {
+    -webkit-text-stroke:3px white;
+    -webkit-text-fill-color:transparent;
+  }
+}
+
 .carousell > figure {
   position:absolute;
   animation:crossfade 60s infinite;
