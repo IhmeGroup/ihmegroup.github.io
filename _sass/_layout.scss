@@ -78,7 +78,12 @@ body {
 
 .carousell, .carousell figure {
   width:100%;
+  min-height:calc(20vh + 150px);
   height:calc(100vh - 136px);
+}
+
+.carousell,.carousell.mt3 {
+  margin-top:0!important;
 }
 
 .hero {
@@ -87,6 +92,7 @@ body {
   display:block;
   width:100%;
   height:calc(100vh - 136px); // need to adjust to put title spacing
+  min-height:calc(250px);
 }
 
 .floatie {
@@ -99,14 +105,17 @@ body {
 
 .floatie .container {
   margin:0 auto;
-  position:relative;
+  overflow:hidden;
 }
 
 // This block of code controls the position of the content inside the splash
 .floatie .container .inner {
-  position:absolute;
   text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
   animation:positioning 60s infinite;
+  -webkit-animation:positioning 60s infinite;
+  margin:50px auto;
+  max-width:100%;
+  padding:0px 15px;
 
   .social {
     text-align:inherit;
@@ -135,14 +144,14 @@ body {
 }
 
 @-webkit-keyframes crossfade {
-    0% {opacity: 0;}
-    1% {opacity: 0;}
-    32.333% {opacity: 0;}
-    34.333% {opacity: 1;}
-    65.667% {opacity: 1;}
-    67.667% {opacity: 0;}
-    99% {opacity: 0;}
-    100% {opacity: 0;}
+  0% {opacity: 0;}
+  1% {opacity: 0;}
+  32.333% {opacity: 0;}
+  34.333% {opacity: 1;}
+  65.667% {opacity: 1;}
+  67.667% {opacity: 0;}
+  99% {opacity: 0;}
+  100% {opacity: 0;}
 }
 @keyframes crossfade {
   0% {opacity: 0;}
@@ -159,48 +168,73 @@ body {
 @keyframes positioning {
   // Image 3 - center
   1% {
-    left:0; 
-    right:0; 
+    float:none;
     text-align:center; 
     max-width:$max-content-width;
-    top:30vh; 
   }
   32.333% {
-    left:0; 
-    right:0; 
+    float:none;
     text-align:center; 
-    max-width:$max-content-width;
-    top:30vh; 
+    max-width:$max-content-width; 
   }
   // Image 1 - right
   34.333% {
     text-align:right;
-    right:0;
-    left:auto;
+    float:right;
     max-width:calc(0.5*$max-content-width);
-    top:10vh;
   }
   65.667% {
     text-align:right;
-    right:0;
-    left:auto;
+    float:right;
     max-width:calc(0.5*$max-content-width);
-    top:10vh;
   }
   // Image 2 - centered
   67.667% {
-    left:0; 
-    right:0; 
+    float:none;
     text-align:center; 
     max-width:$max-content-width;
-    top:8vh;
   }
   99% {
-    left:0; 
-    right:0; 
+    float:none;
     text-align:center; 
     max-width:$max-content-width;
-    top:8vh;
+  }
+}
+
+// Repeat as above for -webkit prefixed browsers 
+@-webkit-keyframes positioning {
+  // Image 3 - center
+  1% {
+    float:none;
+    text-align:center; 
+    max-width:$max-content-width;
+  }
+  32.333% {
+    float:none;
+    text-align:center; 
+    max-width:$max-content-width; 
+  }
+  // Image 1 - right
+  34.333% {
+    text-align:right;
+    float:right;
+    max-width:calc(0.5*$max-content-width);
+  }
+  65.667% {
+    text-align:right;
+    float:right;
+    max-width:calc(0.5*$max-content-width);
+  }
+  // Image 2 - centered
+  67.667% {
+    float:none;
+    text-align:center; 
+    max-width:$max-content-width;
+  }
+  99% {
+    float:none;
+    text-align:center; 
+    max-width:$max-content-width;
   }
 }
 
