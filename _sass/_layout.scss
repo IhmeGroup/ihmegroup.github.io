@@ -105,7 +105,8 @@ body {
 // This block of code controls the position of the content inside the splash
 .floatie .container .inner {
   position:absolute;
-  top:50px; // adjust according to image
+  top:100px;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
   animation:positioning 60s infinite;
 
   .social {
@@ -153,15 +154,21 @@ body {
   // Image 3 - centered
   1% {
     left:0; 
-    right:0; 
-    text-align:center; 
-    max-width:$max-content-width;
+    // right:0; 
+    // text-align:center; 
+    // max-width:$max-content-width;
+    right:auto;
+    text-align:left;
+    max-width:calc(0.5*$max-content-width);
   }
   32.333% {
     left:0; 
-    right:0; 
-    text-align:center; 
-    max-width:$max-content-width;
+    // right:0; 
+    // text-align:center; 
+    // max-width:$max-content-width;
+    right:auto;
+    text-align:left;
+    max-width:calc(0.5*$max-content-width);
   }
   // Image 1 - right
   34.333% {
