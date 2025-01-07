@@ -10,15 +10,16 @@
 //  font-weight: 400;
 //}
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 // Stanford font
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
@@ -288,8 +289,10 @@ html[data-theme="light"] .card .card-body {
 
   a {
     color: inherit;
+    border-bottom:1px solid var(--global-text-color);
 
     &:hover {
+      border-color:var(--global-theme-color);
       color: var(--global-theme-color);
       text-decoration: none;
     }
@@ -454,7 +457,7 @@ html[data-theme="light"] .card .card-body {
 // Social (bottom)
 
 .social {
-  text-align: center;
+  // text-align: center;
 
   .contact-icons {
     font-size: 2rem;
@@ -916,6 +919,12 @@ footer.fixed-bottom {
 
 .publications.teaching ol.bibliography li .title {
   font-size:1.5rem;
+  font-weight:500;
+}
+
+.publications.teaching ol.bibliography li .links a.btn {
+  font-size:0.75em;
+  // font-weight:bolder;
 }
 
 // Rouge Color Customization
