@@ -176,9 +176,15 @@ body {
     float:none;
     text-align:center; 
     max-width:$max-content-width; 
+    opacity:1;
+  }
+  // Transition
+  33.333% {
+    opacity:0;
   }
   // Image 1 - right
   34.333% {
+    opacity:1;
     text-align:right;
     float:right;
     max-width:calc(0.5*$max-content-width);
@@ -187,9 +193,15 @@ body {
     text-align:right;
     float:right;
     max-width:calc(0.5*$max-content-width);
+    opacity:1;
+  }
+  // Transition
+  66.667% {
+    opacity:0;
   }
   // Image 2 - centered
   67.667% {
+    opacity:1;
     float:none;
     text-align:center; 
     max-width:$max-content-width;
@@ -213,9 +225,15 @@ body {
     float:none;
     text-align:center; 
     max-width:$max-content-width; 
+    opacity:1;
+  }
+  // Transition
+  33.333% {
+    opacity:0;
   }
   // Image 1 - right
   34.333% {
+    opacity:1;
     text-align:right;
     float:right;
     max-width:calc(0.5*$max-content-width);
@@ -224,9 +242,15 @@ body {
     text-align:right;
     float:right;
     max-width:calc(0.5*$max-content-width);
+    opacity:1;
+  }
+  // Transition
+  66.667% {
+    opacity:0;
   }
   // Image 2 - centered
   67.667% {
+    opacity:1;
     float:none;
     text-align:center; 
     max-width:$max-content-width;

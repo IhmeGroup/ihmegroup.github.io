@@ -468,7 +468,7 @@ html[data-theme="light"] .card .card-body {
   // text-align: center;
 
   .contact-icons {
-    font-size: 2rem;
+    font-size: 2.5rem;
 
     a {
       margin: 0 0.25rem;
@@ -764,16 +764,24 @@ footer.fixed-bottom {
     margin-bottom: 1rem;
 
     span {
-      font-size: 1.5rem;
+      // font-size: 1.5rem;
+      background:var(--global-bg-color);
     }
   }
 
   h2.bibliography {
-    color: var(--global-divider-color);
-    border-top: 1px solid var(--global-divider-color);
+    color: var(--global-text-color-light);
+    border-top: 1px solid var(--global-text-color-light);
     padding-top: 1rem;
     margin-top: 2rem;
     text-align: right;
+  }
+
+  @media only screen and (min-width:576px){
+    h2.bibliography {
+      position:sticky;
+      top:130px;
+    }
   }
 
   ol.bibliography {
@@ -1266,21 +1274,26 @@ ninja-keys::part(ninja-input-wrapper) {
 
 .newsletter-form-input,
 .bibsearch-form-input {
-  color: var(--global-newsletter-text-color);
-  background: var(--global-newsletter-bg-color);
-  border: 1px solid var(--global-newsletter-text-color);
+  // color: var(--global-newsletter-text-color);
+  // background: var(--global-newsletter-bg-color);
+  // border: 1px solid var(--global-newsletter-text-color);
+  color:var(--global-text-color);
+  background:transparent;
+  border:1px solid transparent;
   outline: none;
   margin: 0px 10px 0px 0px;
   width: 100%;
   max-width: 350px;
   min-width: 100px;
   box-sizing: border-box;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px;
+  // box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px;
   border-radius: 6px;
   padding: 8px 12px;
 }
 
-.newsletter-form-input:focus {
+.newsletter-form-input:focus,
+.bibsearch-form-input:focus {
+  // background:var(--global-divider-color);
   border-color: var(--global-theme-color) !important;
 }
 

@@ -18,3 +18,12 @@ nav_order: 4
 {% bibliography %}
 
 </div>
+
+<!-- Code for sticky year text -->
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+    document.querySelectorAll("h2.bibliography").forEach(function(e){
+        e.innerHTML = '<span>'+e.innerHTML+'</span>';
+    });
+});
+</script>
