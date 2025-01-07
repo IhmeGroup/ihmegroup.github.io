@@ -105,7 +105,6 @@ body {
 // This block of code controls the position of the content inside the splash
 .floatie .container .inner {
   position:absolute;
-  top:100px;
   text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
   animation:positioning 60s infinite;
 
@@ -151,24 +150,20 @@ body {
 
 // Order is 3-1-2
 @keyframes positioning {
-  // Image 3 - centered
+  // Image 3 - center
   1% {
     left:0; 
-    // right:0; 
-    // text-align:center; 
-    // max-width:$max-content-width;
-    right:auto;
-    text-align:left;
-    max-width:calc(0.5*$max-content-width);
+    right:0; 
+    text-align:center; 
+    max-width:$max-content-width;
+    top:30vh; 
   }
   32.333% {
     left:0; 
-    // right:0; 
-    // text-align:center; 
-    // max-width:$max-content-width;
-    right:auto;
-    text-align:left;
-    max-width:calc(0.5*$max-content-width);
+    right:0; 
+    text-align:center; 
+    max-width:$max-content-width;
+    top:30vh; 
   }
   // Image 1 - right
   34.333% {
@@ -176,12 +171,14 @@ body {
     right:0;
     left:auto;
     max-width:calc(0.5*$max-content-width);
+    top:10vh;
   }
   65.667% {
     text-align:right;
     right:0;
     left:auto;
     max-width:calc(0.5*$max-content-width);
+    top:10vh;
   }
   // Image 2 - centered
   67.667% {
@@ -189,12 +186,14 @@ body {
     right:0; 
     text-align:center; 
     max-width:$max-content-width;
+    top:8vh;
   }
   99% {
     left:0; 
     right:0; 
     text-align:center; 
     max-width:$max-content-width;
+    top:8vh;
   }
 }
 
