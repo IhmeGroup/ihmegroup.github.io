@@ -83,6 +83,7 @@ body {
 
 .hero {
   object-fit:cover;
+  object-position:bottom; // snap the droplet image to screen bottom
   display:block;
   width:100%;
   height:calc(100vh - 136px); // need to adjust to put title spacing
