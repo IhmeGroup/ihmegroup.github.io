@@ -178,10 +178,16 @@ html[data-theme-setting="light"] {
   }
 }
 
-html[data-theme="dark"] .homepage,
-html[data-theme="light"] .homepage {
-  --global-text-color: #{$black-color};
-  --global-bg-color: #{$white-color};
+// html[data-theme="dark"] .homepage,
+// html[data-theme="light"] .homepage {
+//   --global-text-color: #{$black-color};
+//   --global-bg-color: #{$white-color};
+// }
+
+html[data-theme="light"] .floatie {
+  *, .social .contact-icons a, .social .contact-icons a i::before {
+    color: #{$white-color};
+  }
 }
 
 html[data-theme="dark"] svg.fxlab *:not(rect) {

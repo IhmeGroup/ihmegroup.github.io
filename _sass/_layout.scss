@@ -93,10 +93,23 @@ body {
 // This block of code controls the position of the content inside the splash
 .floatie .container .inner {
   position:absolute;
-  left:0; // adjust according to image
-  right:0; // adjust according to image
   top:50px; // adjust according to image
-  text-align:center; // adjust according to image
+  max-width:calc(0.5*$max-content-width);
+
+  &.center {
+    left:0; // adjust according to image
+    right:0; // adjust according to image
+    text-align:center; // adjust according to image
+  }
+
+  &.right {
+    text-align:right;
+    right:0;
+
+    .social {
+      text-align:right;
+    }
+  }
 }
 
 article.large {
