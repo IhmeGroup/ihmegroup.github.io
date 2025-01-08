@@ -296,3 +296,53 @@ article.large {
 *****************************************************************************/
 
 // TODO: redefine projects layout.
+.research .card {
+  margin-top:1rem;
+  padding:1rem;
+  background-size:cover;
+  position:relative;
+  overflow:hidden;
+
+  td.list-group-category {
+    color:var(--global-text-color);
+    font-weight:bold;
+  }
+
+  .card-title {
+    z-index:1;
+  }
+
+  &::before {
+    content:"";
+    position:absolute;
+    z-index:0;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:linear-gradient(to right, var(--global-card-bg-color), rgba(0, 0, 0, 0));
+  }
+
+  &:nth-of-type(even) {
+    &::before {
+      background:linear-gradient(to left, var(--global-card-bg-color), rgba(0,0,0,0));
+    }
+
+    .card-title {
+      text-align:right;
+    }
+
+    table td, table th {
+      padding:1px 0 1px 1rem;
+    }
+
+    .col-md-6 {
+      padding-right:0;
+      padding-left:15px;
+    }
+  }
+
+  div.list-group {
+    margin-bottom:0;
+  }
+}
