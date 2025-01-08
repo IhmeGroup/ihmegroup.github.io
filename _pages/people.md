@@ -2,7 +2,7 @@
 layout: profiles
 permalink: /people/
 title: People
-description: '<a href="/contact">Join us!</a>'
+description: "<a href='/contact'>Join us!</a>"
 nav: true
 nav_order: 3
 
