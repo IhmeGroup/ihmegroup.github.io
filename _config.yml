@@ -197,11 +197,11 @@ collections:
     output: true
     permalink: /:collection/:title/
   research:
-    output: true
-    permalink: /:collections/:title/
+    output: false
+    permalink: /:collection/:title/
   capabilities:
     output: true
-    permalink: /:collections/:title/
+    permalink: /:collection/:title/
 
 announcements:
   enabled: true

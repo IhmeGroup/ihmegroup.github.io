@@ -8,144 +8,23 @@ description: >
   This text was totally not stolen and copy pasted from the homepage!
 nav: true
 nav_order: 2
-horizontal: false
 ---
 
-<div class="card" style="background-image:url(/assets/img/scramjet.jpeg)"> 
-  <h3 class="card-title">Propulsion</h3> 
-  <div> 
-    <div class="list-groups">
-      <div class="list-group col-md-6"> 
-        <table class="table-cv list-group-table table-dark"> 
-          <tbody> 
-            <tr> 
-              <td class="list-group-category-icon"> 
-                <i class="fa-solid fa-fire-flame-simple"></i> 
-              </td> 
-              <td colspan="1" class="list-group-category">
-                Flames and ignitions
-              </td> 
-            </tr> 
-            <tr> 
-              <td class="list-group-category-icon"> 
-                <i class="fa-solid fa-shuttle-space"></i> 
-              </td> 
-              <td colspan="1" class="list-group-category">
-                Scramjets and rocket engines
-              </td> 
-            </tr> 
-            <tr> 
-              <td class="list-group-category-icon"> 
-                <i class="fa-solid fa-explosion"></i> 
-              </td> 
-              <td colspan="1" class="list-group-category">
-                Transcritical flows
-              </td> 
-            </tr> 
-          </tbody> 
-        </table> 
-      </div> 
-    </div> 
-  </div> 
-</div>
+{% for item in site.research %}
+{% include research_splash.liquid %}
+{% endfor %}
 
-<div class="card"> 
-  <h3 class="card-title">Energy</h3> 
-  <div> 
-    <div class="list-groups">
-      <div class="list-group col-md-6">
-        <img src="/assets/img/injector.png" class="card-display"/>
-      </div><!-- to flush text to right -->
-      <div class="list-group col-md-6"> 
-        <table class="table-cv list-group-table table-dark"> 
-          <tbody> 
-            <tr> 
-              <td class="list-group-category-icon"> 
-                <i class="fa-solid fa-fire-burner"></i> 
-              </td> 
-              <td colspan="1" class="list-group-category">
-                Porous media combustion
-              </td> 
-            </tr> 
-            <tr> 
-              <td></td> 
-              <td class="list-group-name"> 
-                Big burn but with holes
-              </td> 
-            </tr> 
-            <tr> 
-              <td class="list-group-category-icon"> 
-                <i class="fa-solid fa-cloud-showers-water"></i> 
-              </td> 
-              <td colspan="1" class="list-group-category">
-                Supercritical fluids
-              </td> 
-            </tr> 
-            <tr> 
-              <td></td> 
-              <td class="list-group-name"> 
-                The super in supercritical sounds pretty slay
-              </td> 
-            </tr>
-            <tr> 
-              <td class="list-group-category-icon"> 
-                <i class="fa-solid fa-fire-burner"></i> 
-              </td> 
-              <td colspan="1" class="list-group-category">
-                CO2 sequestration
-              </td> 
-            </tr> 
-            <tr> 
-              <td></td> 
-              <td class="list-group-name"> 
-                In which we try to be plants and stop emitting carbon
-              </td> 
-            </tr> 
-          </tbody> 
-        </table> 
-      </div> 
-    </div> 
-  </div> 
-</div>
+<header class="subheader">
+  <h2 class="post-title">Capabilities</h2>
+</header>
 
-<div class="card"> 
-  <h3 class="card-title">Environment</h3> 
-  <div> 
-    <div class="list-groups">
-      <div class="list-group col-md-6"> 
-        <table class="table-cv list-group-table table-dark"> 
-          <tbody> 
-            <tr> 
-              <td class="list-group-category-icon"> 
-                <i class="fa-solid fa-fire"></i> 
-              </td> 
-              <td colspan="1" class="list-group-category">
-                Wildfire modeling
-              </td> 
-            </tr> 
-            <tr> 
-              <td></td> 
-              <td class="list-group-name"> 
-                Hehe fire go BRRRRRRRR
-              </td> 
-            </tr> 
-            <tr> 
-              <td class="list-group-category-icon"> 
-                <i class="fa-solid fa-jet-fighter-up"></i> 
-              </td> 
-              <td colspan="1" class="list-group-category">
-                Jet and engine noise
-              </td> 
-            </tr> 
-            <tr> 
-              <td></td> 
-              <td class="list-group-name"> 
-                No big boom but big thrust
-              </td> 
-            </tr> 
-          </tbody> 
-        </table> 
-      </div> 
-    </div> 
-  </div> 
+<div class="projects caps">  
+  <!-- Display projects without categories -->
+  {% assign sorted_projects = site.capabilities | sort: "importance" %}
+  <!-- Generate cards for each project -->
+  <div class="row row-cols-1 row-cols-md-2">
+    {% for project in sorted_projects %}
+      {% include capabilities.liquid %}
+    {% endfor %}
+  </div>
 </div>
