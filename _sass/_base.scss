@@ -243,10 +243,10 @@ ul.task-list input[type="checkbox"] {
       background: linear-gradient(to right, rgb(0,0,0,0.8), rgb(0,0,0,0)); /* Optional: Adds a translucent background for readability */
     }
   }
+}
 
-  html[data-theme="light"] .card .card-body {
-    background: linear-gradient(to right, rgba(255,255,255,0.8), rgba(255,255,255,0));
-  }
+html[data-theme="light"] .projects:not(.caps) .card .card-body {
+  background: linear-gradient(to right, rgba(255,255,255,0.8), rgba(255,255,255,0));
 }
 
 // Citation
