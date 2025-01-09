@@ -2,7 +2,7 @@
 layout: page
 title: Experimental
 description: We set fireeeeee to the raiiiiiiiin
-img: /assets/img/burner.png
+img: /assets/img/slacaerial.jpg
 importance: 1
 category: lab
 related_publications: true

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Energy
-img: /assets/img/molecules.png
+img: /assets/img/burner.jpeg
 ---
 
 <p class="card-text">

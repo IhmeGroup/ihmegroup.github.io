@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Propulsion
-img: /assets/img/scramjet.jpeg
+img: /assets/img/flatrdre.jpeg
 ---
 
 <p class="card-text">
@@ -13,7 +13,7 @@ img: /assets/img/scramjet.jpeg
 <p class="card-text">
   <i class="fa-solid fa-shuttle-space"></i>
   <span>
-    We also test <strong>scramjets and rocket engines</strong>
+    Analysis of <strong>supersonic and detonative combustion</strong> in <strong>scramjet engines</strong> with models for ignition probability, residence time distribution, and adaptive combustion dynamics.
   </span>
 </p>
 <p class="card-text">

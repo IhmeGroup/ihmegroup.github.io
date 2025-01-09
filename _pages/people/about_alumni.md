@@ -3,7 +3,9 @@ The first position after graduation is indicated.
 ##### 2024
 - Pushan Sharma, Post-Doc, Principal Product Engineer at Cadence Design Systems
 - Priyanka Muhunthan, PhD
+    - [*Investigating the structure and dynamics of supercritical fluids using X-ray techniques and atomistic-scale simulations*](https://stacks.stanford.edu/file/druid:xv363sj4970/MuhunthanPriyanka_Thesis-augmented.pdf)
 - Nguyen Ly, PhD
+    - [*Modeling and analyses of complex high-pressure multispecies phase-exchange phenomena*](https://stacks.stanford.edu/file/druid:tc671nm2863/Thesis_NguyenLy_Final-augmented.pdf)
 - Wai Tong Chung, PhD
     - [*Overcoming small datasets in machine learning studies of multi-physics flows in propulsion*](https://stacks.stanford.edu/file/druid:xw487vj6602/WTChungPhDDissertation5June2024-augmented.pdf)
 - Yichi Ma, M. Sc.

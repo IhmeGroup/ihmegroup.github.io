@@ -24,7 +24,7 @@ profiles:
     image: people/majumdar.jpeg
     content: people/phdstudents/about_majumdar.md
   - align: left #BASSEM
-    image: people/tree.png
+    image: people/akoush.jpg
     content: people/phdstudents/about_akoush.md
   - align: left #KHALED
     image: people/younes.jpeg
@@ -60,7 +60,7 @@ profiles:
     image: people/vignat.jpeg
     content: people/postdocs/about_vignat.md
   - align: left #HAOYUAN
-    image: people/tree.png
+    image: people/li.jpg
     content: people/postdocs/about_li.md
   - align: left #KARL
     image: people/topperwien.jpeg
