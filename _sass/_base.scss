@@ -331,6 +331,7 @@ html[data-theme="light"] .projects:not(.caps) .card .card-body {
 
 .navbar svg {
   height:80px;
+  max-width:100%;
 }
 
 .navbar .dropdown-menu {
@@ -358,6 +359,19 @@ html[data-theme="light"] .projects:not(.caps) .card .card-body {
   &:hover {
     color: var(--global-hover-color);
     background-color: var(--global-bg-color);
+  }
+}
+
+.navbar {
+  display:block!important;
+  max-width:100%;
+
+  .container {
+    margin:0 auto;
+
+    a.navbar-brand {
+      max-width:calc(100% - 80px);
+    }
   }
 }
 
@@ -483,6 +497,10 @@ html[data-theme="light"] .projects:not(.caps) .card .card-body {
 
   .contact-icons {
     font-size: 2.5rem;
+
+    @media only screen and (max-width:576px){
+      font-size:2rem;
+    }
 
     a {
       margin: 0 0.25rem;

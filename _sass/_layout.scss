@@ -76,6 +76,10 @@ body {
   margin: -3rem -50vw 3rem -50vw;
 }
 
+.carousell {
+  position:relative;
+}
+
 .carousell, .carousell figure {
   width:100%;
   min-height:calc(20vh + 150px);
@@ -320,12 +324,18 @@ article.large {
   line-height:2.5rem;
 }
 
-// News
-.homepage hr {
-  border-top:1px solid transparent;
-  margin:1rem 0;
+.homepage {
+  h1 {
+    font-size:2rem;
+  }
+
+  hr {
+    border-top:1px solid transparent;
+    margin:1rem 0;
+  }
 }
 
+// News
 .news {
   margin-top:1rem;
   font-size:1rem;
@@ -444,16 +454,18 @@ html[data-theme="light"] #navbar.homepage {
     i[class^="fa"]{
       font-size:1.5rem;
       width:2rem;
-      display:block;
-      float:left;
+      display:inline-block;
       text-align:center;
+      vertical-align:middle;
     }
 
-    span {
-      float:left;
-      display:block;
+    i[class^="fa"] + span {
+      display:inline-block;
+      vertical-align:middle;
       max-width:calc(100% - 3rem); //icon width is 2rem
-      margin-left:1rem;
+      margin-left:0.5rem;
+      padding-left:1rem;
+      border-left:1px solid var(--global-text-color);
     }
   }
 

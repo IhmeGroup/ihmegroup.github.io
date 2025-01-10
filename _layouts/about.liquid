@@ -9,12 +9,10 @@ layout: default
 {% endif %}
 
 <div class="splash">
-  <div class="row">
-    <div class="col-sm mt-3 mt-md-0 carousell">
-        {% for image in page.images %}
-        {% include figure.liquid loading="eager" path=image class="hero" %}
-        {% endfor %}
-    </div>
+  <div class="carousell">
+      {% for image in page.images %}
+      {% include figure.liquid loading="eager" path=image class="hero" %}
+      {% endfor %}
   </div>
   <div class="floatie homepage">
     <div class="container">

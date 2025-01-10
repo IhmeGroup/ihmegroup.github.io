@@ -185,6 +185,12 @@ html[data-theme="light"] .floatie {
   *, .social .contact-icons a, .social .contact-icons a i::before {
     color: #{$white-color};
   }
+
+  a:hover,
+  .contact-icons a:hover,
+  .contact-icons a:hover i::before {
+    color: var(--global-theme-color);
+  }
 }
 
 html[data-theme="dark"] svg.fxlab *:not(rect) {
