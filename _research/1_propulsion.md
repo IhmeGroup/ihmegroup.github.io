@@ -2,6 +2,10 @@
 layout: default
 title: Propulsion
 img: /assets/img/flatrdre.jpeg
+align: left
+padded: true
+background: "#0f1c50"
+text: "#ffffff"
 ---
 
 <p class="card-text">

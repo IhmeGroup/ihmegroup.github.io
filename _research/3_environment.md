@@ -2,6 +2,9 @@
 layout: default
 title: Environment
 img:  /assets/img/fire.png
+align: bottom left
+background: "#a1afb6"
+text: "#000000"
 ---
 
 <p class="card-text">

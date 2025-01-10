@@ -2,8 +2,10 @@
 layout: default
 title: Energy
 img: /assets/img/burner.jpeg
+align: right
+background: "#0d0000"
+text: "#ffffff"
 ---
-
 
 <p class="card-text">
   <i class="fa-solid fa-tint"></i>

@@ -1,7 +1,7 @@
-<div class="card">
+<div class="card" style="{% if item.background %}background:{{ item.background }};{% endif %}{% if item.text %}--global-text-color:{{ item.text }}{% endif %}">
   <div class="list-groups">
-    <div class="list-group image-box">
-      <img src="{{ item.img }}" class="card-display"/>
+    <div class="list-group image-box {% if item.padded %}padded-image{% endif %}">
+      <img src="{{ item.img }}" class="card-display" style="object-position:{{ item.align }}"/>
     </div>
     <div class="list-group text-box">
       <h3 class="card-title">{{ item.title }}</h3>
