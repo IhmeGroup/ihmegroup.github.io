@@ -5,20 +5,20 @@ img: /assets/img/flatrdre.jpeg
 ---
 
 <p class="card-text">
-  <i class="fa-solid fa-fire-flame-simple"></i>
-  <span>
-    <strong>Flames and ignitions</strong> are pretty slay
-  </span>
-</p>
-<p class="card-text">
   <i class="fa-solid fa-shuttle-space"></i>
   <span>
-    Analysis of <strong>supersonic and detonative combustion</strong> in <strong>scramjet engines</strong> with models for ignition probability, residence time distribution, and adaptive combustion dynamics.
+    Modeling <strong>supersonic and detonative combustion</strong> in scramjet and rotating detonation engine combustors with large-eddy simulation and adaptive combustion dynamics.
   </span>
 </p>
 <p class="card-text">
-  <i class="fa-solid fa-explosion"></i>
+  <i class="fa-solid fa-fire-flame-simple"></i>
   <span>
-    A lot of the fluid is transcritical which is why we study <strong>transcritical fluids</strong>
+    Predicting stochastic ignition and combustion from <strong>hot surface droplet impact</strong> through integrated experimental and computational approaches.
+  </span>
+</p>
+<p class="card-text">
+  <i class="fa-solid fa-database"></i>
+  <span>
+    Employing <strong>deep learning</strong> and <strong>data assimilation</strong> to study stochastic behaviors reactive and propulsive flows.
   </span>
 </p>

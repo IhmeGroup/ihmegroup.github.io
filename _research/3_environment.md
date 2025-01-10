@@ -5,14 +5,20 @@ img:  /assets/img/fire.png
 ---
 
 <p class="card-text">
+  <i class="fa-solid fa-fire-burner"></i>
+  <span>
+    Advancing understanding of <strong>porous media combustion</strong> by investigating reactive flow dynamics, flame stabilization and pollutant formation.
+  </span>
+</p>
+<p class="card-text">
   <i class="fa-solid fa-fire"></i>
   <span>
-    Modeling and measurement of accidental and prescribed <strong>wildfire spread and emissions</strong> using data-driven ensemble frameworks.
+    Modeling the spread and emissions of <strong>accidental and prescribed wildland fires</strong> with data-driven ensemble frameworks.
   </span>
 </p>
 <p class="card-text">
   <i class="fa-solid fa-jet-fighter-up"></i>
   <span>
-    <strong>Direct and indirect noise</strong> emission of aviation combustors with large-eddy simulation and low-order modeling.
+    Developing numerical methods and reduced-order models to study the <strong>direct and indirect noise emission</strong> from next-generation aviation combustors.
   </span>
 </p>
