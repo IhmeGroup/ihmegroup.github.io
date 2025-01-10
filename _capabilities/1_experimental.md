@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Experimental
-description: We set fireeeeee to the raiiiiiiiin
+description:
 img: /assets/img/slacaerial.jpg
 importance: 1
 category: lab

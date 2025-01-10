@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Computational
-description: "Fun way of saying 'I click buttons on a computer in an organized fashion'"
+description:
 img: /assets/img/jet_0.png
 importance: 1
 category: lab
