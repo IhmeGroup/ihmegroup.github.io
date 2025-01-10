@@ -1,14 +1,19 @@
 ---
 layout: default
 ---
+{% if page._styles %}
+  <!-- Page/Post style -->
+  <style type="text/css">
+    {{ page._styles }}
+  </style>
+{% endif %}
 
 <div class="splash">
   <div class="row">
     <div class="col-sm mt-3 mt-md-0 carousell">
-        {% include figure.liquid loading="eager" path="assets/img/homepage0.png" class="hero" %}
-        {% include figure.liquid loading="eager" path="assets/img/homepage1.gif" class="hero" %}
-        {% include figure.liquid loading="eager" path="assets/img/homepage2.jpeg" class="hero" %}
-        {% include figure.liquid loading="eager" path="assets/img/homepage3.png" class="hero" %}
+        {% for image in page.images %}
+        {% include figure.liquid loading="eager" path=image class="hero" %}
+        {% endfor %}
     </div>
   </div>
   <div class="floatie homepage">
@@ -26,7 +31,7 @@ layout: default
   </div>
 </div>
 
-<div class="post">
+<div class="post homepage">
   <header class="post-header">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
@@ -63,35 +68,32 @@ layout: default
     {% endif %}
 
     <div class="clearfix">{{ content }}</div>
+    <hr>
 
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
       <hr>
       <h2>
-        <!--<a href="{{ '/news/' | relative_url }}" style="color: inherit">Announcements</a>-->
-	Announcements
+        Announcements
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
 
-    <!-- Latest posts -->
-    {% if site.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
-
     <!-- Selected papers -->
     {% if page.selected_papers %}
+      <hr>
       <h2>
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Recent Publications</a>
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}
 
-    {% if site.newsletter.enabled and site.footer_fixed %}
-      {% include scripts/newsletter.liquid center=true %}
+    {% if page.sponsors %}
+      <hr>
+      <h2>
+        Sponsors
+      </h2>
+      {% include sponsors.liquid %}
     {% endif %}
   </article>
 </div>

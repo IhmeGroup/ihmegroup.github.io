@@ -147,6 +147,7 @@ body {
   animation-delay:-20s;
 }
 
+// This is generalized no matter what order the images are arranged in about.liquid
 @keyframes crossfade4 {
   0% {opacity:0;}
   // 0.5% {opacity:0;}
@@ -172,40 +173,42 @@ body {
   100% {opacity:0;}
 }
 
+// This code is NOT generalized and must be reordered according to about.liquid
+// Order goes 4,1,2,3
 @keyframes positioning {
-  // Image 4 (Fire): Left
+  // Image 1: RDRE (Right)
   0% {
     opacity:0;
   }
   0.5% {
     opacity:1;
-    text-align:left;
-    float:left;
-    max-width:calc(0.5*$max-content-width);
-  }
-  24.5% {
-    opacity:1;
-    text-align:left;
-    float:left;
-    max-width:calc(0.5*$max-content-width);
-  }
-  // Image 1 (RDRE): Right
-  25% {
-    opacity:0;
-  }
-  25.5% {
-    opacity:1;
     text-align:right;
     float:right;
     max-width:calc(0.5*$max-content-width);
   }
-  49.5% {
+  24.5% {
     opacity:1;
     text-align:right;
     float:right;
     max-width:calc(0.5*$max-content-width);
   }
   // Image 2 (Buble): Center
+  25% {
+    opacity:0;
+  }
+  25.5% {
+    opacity:1;
+    text-align:center;
+    float:none;
+    max-width:$max-content-width;
+  }
+  49.5% {
+    opacity:1;
+    text-align:center;
+    float:none;
+    max-width:$max-content-width;
+  }
+  // Image 3 (Blobs): Center
   50% {
     opacity:0;
   }
@@ -215,67 +218,67 @@ body {
     float:none;
     max-width:$max-content-width;
   }
-  // 74.5% {
-  //   opacity:1;
-  //   text-align:center;
-  //   float:none;
-  //   max-width:$max-content-width;
-  // }
-  // // Image 3 (Blobs): Center
-  // 75% {
-  //   opacity:0;
-  // }
-  // 75.5% {
-  //   opacity:1;
-  //   text-align:center;
-  //   float:none;
-  //   max-width:$max-content-width;
-  // }
-  99.5% {
+  74.5% {
     opacity:1;
     text-align:center;
     float:none;
     max-width:$max-content-width;
+  }
+  // Image 4 (Fire): Left
+  75% {
+    opacity:0;
+  }
+  75.5% {
+    opacity:1;
+    text-align:left;
+    float:left;
+    max-width:calc(0.5*$max-content-width);
+  }
+  99.5% {
+    opacity:1;
+    text-align:left;
+    float:left;
+    max-width:calc(0.5*$max-content-width);
   }
   100% {
     opacity:0;
   }
 }
-
+// Repeat as above - for backward compatibility with webkit browser
 @-webkit-keyframes positioning {
-  // Image 4 (Fire): Left
+  // Image 1: RDRE (Right)
   0% {
     opacity:0;
   }
   0.5% {
     opacity:1;
-    text-align:left;
-    float:left;
-    max-width:calc(0.5*$max-content-width);
-  }
-  24.5% {
-    opacity:1;
-    text-align:left;
-    float:left;
-    max-width:calc(0.5*$max-content-width);
-  }
-  // Image 1 (RDRE): Right
-  25% {
-    opacity:0;
-  }
-  25.5% {
-    opacity:1;
     text-align:right;
     float:right;
     max-width:calc(0.5*$max-content-width);
   }
-  49.5% {
+  24.5% {
     opacity:1;
     text-align:right;
     float:right;
     max-width:calc(0.5*$max-content-width);
   }
   // Image 2 (Buble): Center
+  25% {
+    opacity:0;
+  }
+  25.5% {
+    opacity:1;
+    text-align:center;
+    float:none;
+    max-width:$max-content-width;
+  }
+  49.5% {
+    opacity:1;
+    text-align:center;
+    float:none;
+    max-width:$max-content-width;
+  }
+  // Image 3 (Blobs): Center
   50% {
     opacity:0;
   }
@@ -285,27 +288,27 @@ body {
     float:none;
     max-width:$max-content-width;
   }
-  // 74.5% {
-  //   opacity:1;
-  //   text-align:center;
-  //   float:none;
-  //   max-width:$max-content-width;
-  // }
-  // // Image 3 (Blobs): Center
-  // 75% {
-  //   opacity:0;
-  // }
-  // 75.5% {
-  //   opacity:1;
-  //   text-align:center;
-  //   float:none;
-  //   max-width:$max-content-width;
-  // }
-  99.5% {
+  74.5% {
     opacity:1;
     text-align:center;
     float:none;
     max-width:$max-content-width;
+  }
+  // Image 4 (Fire): Left
+  75% {
+    opacity:0;
+  }
+  75.5% {
+    opacity:1;
+    text-align:left;
+    float:left;
+    max-width:calc(0.5*$max-content-width);
+  }
+  99.5% {
+    opacity:1;
+    text-align:left;
+    float:left;
+    max-width:calc(0.5*$max-content-width);
   }
   100% {
     opacity:0;
@@ -333,19 +336,66 @@ article.large {
   margin-top:0.5rem;
 }
 
-// TODO: redefine content layout.
+/******************************************************************************
+ * Code for Sponsors
+ ******************************************************************************/
+
+.logo-section {
+  text-align:center;
+  margin-top:2rem;
+  // padding:1.25rem;
+
+  .row img {
+    height: 100px; /* Set the height for all images */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image fits within the height */
+  }
+}
+
+// This code fixes the homepage color scheme
+// So that the sponsors logos are always displayed on a white background
+
+html[data-theme="dark"] .post.homepage {
+  --global-bg-color:#{$white-color};
+  --global-text-color: #{$black-color};
+
+  .table-dark {
+    color:inherit;
+  }
+
+  article p a {
+    color:var(--stanford-link);
+
+    &:hover {
+      color:#53565a;
+    }
+  }
+}
+
+html[data-theme="light"] #navbar.homepage {
+  --global-bg-color:#{$grey-color-dark};
+  --global-text-color: #{$grey-color-light};
+
+  svg.fxlab :not(rect) {
+    fill:var(--global-text-color);
+    color:var(--global-text-color);
+  }
+}
+
+#navbar.homepage #light-toggle {
+  display:none;
+}
+
 
 /******************************************************************************
  * Publications
  ******************************************************************************/
 
-// TODO: redefine publications layout.
 
 /*****************************************************************************
 * Projects
 *****************************************************************************/
 
-// TODO: redefine projects layout.
 .research .card {
   margin-top:1rem;
   // padding:2rem;

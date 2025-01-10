@@ -51,7 +51,7 @@ profiles:
     image: people/chaturvedi.jpeg
     content: people/phdstudents/about_chaturvedi.md
   - align: left #YUXUAN
-    image: people/li.jpeg
+    image: people/li_y.jpeg
     content: people/phdstudents/about_li.md
 
   - align: left
@@ -60,7 +60,7 @@ profiles:
     image: people/vignat.jpeg
     content: people/postdocs/about_vignat.md
   - align: left #HAOYUAN
-    image: people/li.jpg
+    image: people/li_h.jpg
     content: people/postdocs/about_li.md
   - align: left #KARL
     image: people/topperwien.jpeg
