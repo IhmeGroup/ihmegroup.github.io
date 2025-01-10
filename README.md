@@ -24,6 +24,8 @@ This README.md document contains instructions for building and updating the webs
     - [Other features](#other-features)
   - [License](#license)
   - [To-do list](#to-do-list)
+ 
+---
 
 ## Getting started
 
@@ -72,6 +74,8 @@ Finally, install Jekyll and Bundler:
 gem install jekyll bundler
 ```
 
+---
+
 ## Building the site
 
 First, clone the repository:
@@ -98,6 +102,8 @@ There are some options/flags that this command takes, the most pertinent of whic
 
 Make sure to correctly set the `url` and `baseurl` fields in `_config.yml` before building the webpage. The url should be `fxlab.stanford.edu` and baseurl blank, do not delete it.
 
+---
+
 ## Pushing to production
 
 **Never push to production on Fridays!** (jk)
@@ -109,6 +115,8 @@ purgecss -c purgecss.config.js
 which will replace the CSS files in the `_site/assets/css/` folder with the purged css files.
 
 If using Github pages, simply run `bundle exec jekyll clean` to remove the build files, then commit changes and push to the `main` branch. But we don't use this method right now, so just upload the `_site` folder to Stanford's servers.
+
+---
 
 ## Editing contents
 
@@ -146,6 +154,8 @@ For reference, this is the general repository structure, with Most Likely Change
 ├── 📂 _site/: Final build files to upload to server (may not be present before site is built, see above)
 ├── 📂 _teaching/: Contains the course information on the teaching page
 ```
+
+---
 
 ### Homepage - `_pages/about.md`
 
@@ -189,11 +199,28 @@ Up to 3 announcements can be displayed at once, even if there are more than 3 it
 
 These are hardcoded in `_includes/sponsors.liquid`. Play around with the HTML in that file if the arrangement doesn't look appealing to you. To add more logos, upload the file to `/assets/img/sponsors`, then add the sponsor in `_includes/sponsors.liquid`.
 
+The `flex-4` class displays 4 logos in a row on mobile, while the `flex-3` class displays 3 logos in a row on mobile. Other than that, on larger screen sizes, all the logos will be shown in a straight row with maximum height of 100px.
+
+---
+
 ### Research page - `_pages/research.html`
 
-This page shows a list of the lab research split into 3 broad themes of propulsion, energy and environment. Likewise, each of the three broad categories are controlled by the relevant files in `_research` folder. Also, the lab research capabilities are controlled by the relevant files in `_capabilities`, including the title and the image (`img` keyword).
+This page shows a list of the lab research split into 3 broad themes of propulsion, energy and environment. Likewise, each of the three broad categories are controlled by the relevant files in `_research` folder. Also, the lab research capabilities are controlled by the relevant files in `_capabilities`, including the title and the image (`img` keyword). The background and text color of each of the research blocks are controlled by the `background` and `text` keyword in the preamble, and if `padded` is set to `true`, then the image will not sit flush with the border and instead have a margin around it. Finally, the `align` keyword controls how the image will be cropped (left means it will crop from the right, etc). An example preamble is shown below:
+```yaml
+---
+layout: default
+title: Propulsion
+img: /assets/img/flatrdre.jpeg
+align: left
+padded: true
+background: "#0f1c50"
+text: "#ffffff"
+---
+```
 
 MORE INFO NEEDS TO BE ADDED ABOUT THE PROJECTS SECTION, TO BE CONFIRMED WHEN ACTUALLY IMPLEMENTED. WORK IN PROGRESS
+
+---
 
 ### People page - `_pages/people.md`
 
@@ -222,11 +249,15 @@ To update the visitor and alumni lists, simply edit `about_visitors.md` and `abo
 
 ***TODO: I think it's possible to convert this page to a collections-based structure so that maintainer only needs to add the person's markdown file. But I'll think about this at a more opportune time, it's fine for now.***
 
+---
+
 ### Publications page - `_pages/publications.md`
 
 This page displays a list of all the publications from the lab and is automatically generated from the `papers.bib` file in `_bibliography`. This makes it easy to add new publications to the website, just remember to rebuild before pushing to production. Note that in order for the entry to display correctly, it is recommended that author names are given in full (not initials). Also, the `month` and `year` fields should be filled in; if it is desired to include the abstract in the dropdown box, then also specify the `abstract` field. Finally, the DOI field should not contain `https://doi.org/` prefix, just put the DOI itself not the URL.
 
 You can also add new `*.bib` files and customize the look of your publications however you like by editing [\_pages/publications.md](_pages/publications.md). By default, the publications will be sorted by year and the most recent will be displayed first. You can change this behavior and more in the `Jekyll Scholar` section in [\_config.yml](_config.yml) file.
+
+---
 
 ### Teaching page - `_pages/teaching.html`
 
@@ -238,9 +269,13 @@ coursereader: #Coursereader file name in /assets/pdf
 ```
 The title is a mandatory keyword, the other two are optional. For the description, it is simply the content of the markdown file.
 
+---
+
 ### Contact page - `_pages/contact.md`
 
 Self-explanatory. Simply edit the markdown file.
+
+---
 
 ### Other features
 
@@ -271,5 +306,4 @@ Originally, **al-folio** was based on the [\*folio theme](https://github.com/bog
 * Solicit writeups for capabilities page
 * Solicit projects (images and writeups) from labmates
 * Add code for project tiles
-* Remake the research page tiles (soon)
 * Cross-browser testing and compatibility checks
