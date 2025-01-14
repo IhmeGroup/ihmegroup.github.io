@@ -1,5 +1,5 @@
 - Abhishek Pillai, Kyoto University (2024)
-- Timoteo Dinelli, Politecno di Milano (2024) 
+- Timoteo Dinelli, Politecnico di Milano (2024) 
 - Younghwa Cho, Hokkaido University (2024)
 - Nozomu Hashimoto, Hokkaido University (2023)
 - Hiroshi Terashima, Hokkaido University (2023)

@@ -91,6 +91,7 @@ body {
 }
 
 .hero {
+  pointer-events:none; // improve ux
   object-fit:cover;
   object-position:bottom; // snap the droplet image to screen bottom
   display:block;
@@ -325,8 +326,10 @@ article.large {
 }
 
 .homepage {
-  h1 {
-    font-size:2rem;
+  @media only screen and (max-width:576px){
+    h1 {
+      font-size:2rem;
+    }
   }
 
   hr {
