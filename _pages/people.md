@@ -79,7 +79,10 @@ profiles:
     content: people/header_otherstudents.md
   - align: left #ELINOR
     image: people/tandberg.png
-    content: people/phdstudents/about_tandberg.md
+    content: people/undergrads/about_tandberg.md
+  - align: left #KRISSH
+    image: people/chawla.jpg
+    content: people/undergrads/about_chawla.md
 
   - align: left
     content: people/header_alumni.md

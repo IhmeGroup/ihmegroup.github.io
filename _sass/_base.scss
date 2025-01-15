@@ -781,6 +781,14 @@ footer.fixed-bottom {
 
 // Publications
 
+article ~ .publications {
+  margin-top:0;
+
+  h2.bibliography {
+    display:none;
+  }
+}
+
 .publications {
   margin-top: 2rem;
 
@@ -795,18 +803,18 @@ footer.fixed-bottom {
   h2 {
     margin-bottom: 1rem;
 
+    &.bibliography {
+      color: var(--global-text-color-light);
+      border-top: 1px solid var(--global-text-color-light);
+      padding-top: 1rem;
+      margin-top: 2rem;
+      text-align: right;
+    }
+
     span {
       // font-size: 1.5rem;
       background:var(--global-bg-color);
     }
-  }
-
-  h2.bibliography {
-    color: var(--global-text-color-light);
-    border-top: 1px solid var(--global-text-color-light);
-    padding-top: 1rem;
-    margin-top: 2rem;
-    text-align: right;
   }
 
   @media only screen and (min-width:576px){
