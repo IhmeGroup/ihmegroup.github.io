@@ -1,4 +1,4 @@
-**David Wu**  
+**David D. Wu**  
 *Doctoral Candidate in Aeronautics & Astronautics*  
 M.S. Stanford University, 2023
 
