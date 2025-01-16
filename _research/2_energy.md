@@ -5,6 +5,8 @@ img: /assets/img/burner.jpeg
 align: right
 background: "#0d0000"
 text: "#ffffff"
+grouping: energy
+mode: dark
 ---
 
 <p class="card-text">

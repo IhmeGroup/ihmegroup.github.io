@@ -2,6 +2,8 @@
  * Content
  ******************************************************************************/
 
+@use "sass:color";
+
 body {
   // padding-bottom: 70px;
   color: var(--global-text-color);
@@ -15,6 +17,18 @@ body {
   h6 {
     scroll-margin-top: 66px;
   }
+}
+
+h2 {
+  font-size:1.75rem;
+}
+
+h3 {
+  font-size:1.5rem;
+}
+
+h4 {
+  font-size:1.25rem;
 }
 
 body.fixed-top-nav {
@@ -332,6 +346,10 @@ article.large {
     }
   }
 
+  h2 {
+    font-size:2rem;
+  }
+
   hr {
     border-top:1px solid transparent;
     margin:1rem 0;
@@ -488,6 +506,7 @@ html[data-theme="light"] #navbar.homepage {
   .card-title {
     z-index:1;
     margin-bottom:1.5rem;
+    font-size:1.75rem;
   }
 
   div.list-groups {
@@ -503,9 +522,9 @@ html[data-theme="light"] #navbar.homepage {
   &:nth-of-type(odd) .list-groups {
     flex-direction:row-reverse;
 
-    @media only screen and (max-width:768px){
-      flex-direction:column-reverse;
-    }
+    // @media only screen and (max-width:768px){
+    //   flex-direction:column-reverse;
+    // }
   }
 
   div.list-group {
@@ -529,13 +548,13 @@ html[data-theme="light"] #navbar.homepage {
   }
 }
 
-.caps .card {
-  padding:0px;
+.projects.caps .card {
+  margin-top:0;
 
-  .card-body h2.card-title {
-    margin-bottom:0.75rem;
-    font-size:1.75rem;
-    font-weight:bold;
+  .card-body {
+    position:absolute;
+    width:100%;
+    height:100%;
   }
 
   figure,.card-text {
@@ -544,34 +563,10 @@ html[data-theme="light"] #navbar.homepage {
 
   .card-text {
     font-size:1rem;
-    color:var(--global-text-color);
   }
 
-  .card-more {
-    margin-top:1rem;
-
-    a {
-      display:inline-block;
-      font-weight:bold;
-
-      * {
-        transition:0.4s ease-in-out;
-      }
-
-      span {
-        margin-left:0;
-        margin-right:0.5rem;
-        max-width:100%;
-      }
-
-      &:hover {
-        span {
-          border-bottom:1px solid var(--global-theme-color);
-          color:var(--global-theme-color);
-          margin-right:1rem;
-        }
-      }
-    }
+  .card-title {
+    font-weight:500;
   }
 }
 
@@ -582,3 +577,52 @@ html[data-theme="light"] #navbar.homepage {
     font-size:2.5rem;
   }
 }
+
+.dark .projects.sub-projects .card .card-body {
+  background:linear-gradient(to bottom,rgba(0,0,0,1),rgba(0,0,0,0.5));
+  --global-text-color:#{$white-color};
+}
+
+.light .projects.sub-projects .card .card-body {
+  background:linear-gradient(to bottom,rgba(255,255,255,1),rgba(255,255,255,0.5));
+  --global-text-color:#{$black-color};
+}
+
+.projects.sub-projects {
+  display:flex;
+
+  @media only screen and (max-width:576px){
+    flex-wrap:wrap;
+
+    .col {
+      flex-basis:unset; //because its late and idk what valid properties of flex-basis are...
+      padding-bottom:0;
+      margin-bottom:1rem;
+    }
+  }
+
+  .card {
+    margin-top:0;
+    min-height:0px;
+    // max-height:80px;
+    border:1px solid var(--global-text-color);
+
+    h3 {
+      font-size:1.25rem;
+      font-weight:500;
+
+      &.card-title {
+        margin-bottom:0;
+      }
+      // --global-text-color:unset;
+    }
+  }
+}
+
+// html[data-theme="light"] .projects.sub-projects .card .card-body {
+//   --global-text-color:#{$black-color};
+// }
+
+// html[data-theme="dark"] .projects.sub-projects .card .card-body {
+//   --global-text-color:#{$white-color};
+// }

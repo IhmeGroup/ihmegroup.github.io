@@ -1,11 +1,22 @@
-<div class="card" style="{% if item.background %}background:{{ item.background }};{% endif %}{% if item.text %}--global-text-color:{{ item.text }}{% endif %}">
+<div class="card {{ item.mode}}" style="{% if item.background %}background:{{ item.background }};{% endif %}{% if item.text %}--global-text-color:{{ item.text }}{% endif %}">
   <div class="list-groups">
     <div class="list-group image-box {% if item.padded %}padded-image{% endif %}">
       <img src="{{ item.img }}" class="card-display" style="object-position:{{ item.align }}"/>
     </div>
     <div class="list-group text-box">
-      <h3 class="card-title">{{ item.title }}</h3>
+      <h2 class="card-title">{{ item.title }}</h2>
       {{ item.content }}
     </div>
   </div>
+  {% assign filtered_projects = site.projects | where: "category", item.grouping %}
+  <div class="projects sub-projects">
+    {% for project in filtered_projects %}
+      {% include projects.liquid %}
+    {% endfor %}
+  </div>
 </div>
+{% if item._styles %}
+<style>
+{{ item._styles }}
+</style>
+{% endif %}

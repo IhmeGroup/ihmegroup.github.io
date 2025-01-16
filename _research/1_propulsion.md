@@ -6,6 +6,8 @@ align: left
 padded: true
 background: "#0f1c50"
 text: "#ffffff"
+grouping: propulsion
+mode: dark
 ---
 
 <p class="card-text">

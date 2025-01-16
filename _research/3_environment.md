@@ -5,6 +5,8 @@ img:  /assets/img/fire.png
 align: bottom left
 background: "#a1afb6"
 text: "#000000"
+grouping: environment
+mode: light
 ---
 
 <p class="card-text">
