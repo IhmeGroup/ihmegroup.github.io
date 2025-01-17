@@ -10,6 +10,12 @@ _styles: >
   .row.dg img {height:100%; object-fit:contain; background:white;}
   .row.charlesx img {height:100%; object-fit:cover;}
   .row.dg figure, .row.charlesx figure {height:100%; padding-bottom: 1rem;}
+
+  @media only screen and (max-width:576px){
+    .row.dg .col-sm:nth-of-type(even){
+      display:none;
+    }
+  }
 ---
 
 ## Large-Eddy Combustion Simulations with CharLES<sub>x</sub>
@@ -17,10 +23,10 @@ _styles: >
 CharLES<sub>x</sub> is the FX Lab’s primary large eddy simulation (LES) solver. It uses the finite volume method to solve the fully compressible Navier-Stokes equations and has a multitude of capabilities which make it well-suited to both fundamental research and applied engineering problems.
 
 <div class="row charlesx">
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="col-sm mt-3">
     {% include figure.liquid loading="eager" path="assets/img/projects/charlesx.png" title="Turbulent combustor simulation" class="img-fluid rounded z-depth-1" %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="col-sm mt-3">
     {% include figure.liquid loading="eager" path="assets/img/projects/injection.png" title="High pressure diesel injection" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
@@ -57,13 +63,13 @@ Discontinuous Galerkin (DG) methods offer high orders of accuracy with good nume
 Quail {% cite ching_quail_2022 %} is a lightweight, [open-source](https://github.com/ihmegroup/quail) discontinuous Galerkin code written in-house for teaching and prototyping. Vectorized Python operations are used to improve the computational efficiency while retaining code clarity and modularity. Currently, Quail solves first-order and second-order nonlinear systems of partial differential equations common to the flow physics problems tackled in the lab.
 
 <div class="row dg">
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="col-sm mt-3">
     {% include figure.liquid loading="eager" path="assets/img/projects/quail1.png" title="Taylor-Green vortex" class="img-fluid rounded z-depth-1" %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="col-sm mt-3">
     {% include figure.liquid loading="eager" path="assets/img/projects/jax_dg_vortex.gif" title="Isentropic vortex propagating in square domain" class="img-fluid rounded z-depth-1" %}
   </div>
-  <div class="col-sm mt-3 mt-md-0">
+  <div class="col-sm mt-3">
     {% include figure.liquid loading="eager" path="assets/img/projects/quail2.png" title="Flow over Gaussian bump" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
@@ -80,6 +86,6 @@ Machine learning and other data-driven techniques present a wide range of opport
 
 ## GPU and TPU Computing
 
-Placeholder paragraph about ASIC (application-specific integrated circuit) and TPUs
+
 
 ---

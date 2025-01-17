@@ -77,6 +77,9 @@ profiles:
 
   - align: left
     content: people/header_otherstudents.md
+  - align: left #RYAN
+    image: people/finley.jpeg
+    content: people/undergrads/about_finley.md
   - align: left #ELINOR
     image: people/tandberg.png
     content: people/undergrads/about_tandberg.md

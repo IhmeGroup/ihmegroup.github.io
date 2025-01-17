@@ -1,3 +1,5 @@
+// Listen I don't know why this is a separate file from _base.scss but ok
+
 /******************************************************************************
  * Content
  ******************************************************************************/
@@ -19,6 +21,12 @@ body {
   }
 }
 
+@media only screen and (max-width:576px){
+  h1 {
+    font-size:2rem;
+  }
+}
+
 h2 {
   font-size:1.75rem;
 }
@@ -32,12 +40,12 @@ h4 {
 }
 
 body.fixed-top-nav {
-  // Add some padding for the nav-bar.
+  // Add some padding for the navbar
   padding-top: 56px;
 }
 
 body.sticky-bottom-footer {
-  // Remove padding below footer.
+  // Remove padding below footer
   padding-bottom: 0;
 }
 
@@ -45,7 +53,11 @@ body.sticky-bottom-footer {
   max-width: $max-content-width;
 }
 
-// Profile
+
+/*****************************************************************************
+* People page
+*****************************************************************************/
+
 .profile {
   img {
     width: 100%;
@@ -77,31 +89,21 @@ body.sticky-bottom-footer {
   color: inherit;
 }
 
-// Splash
+/*****************************************************************************
+* Homepage
+*****************************************************************************/
+
 body {
   overflow-x:hidden!important;
 }
 
+// Code for the hero/splash images
 .splash {
   position: relative;
   width: 100vw;
   left: 50%;
   right: 50%;
   margin: -3rem -50vw 3rem -50vw;
-}
-
-.carousell {
-  position:relative;
-}
-
-.carousell, .carousell figure {
-  width:100%;
-  min-height:calc(20vh + 150px);
-  height:calc(100vh - 136px);
-}
-
-.carousell,.carousell.mt3 {
-  margin-top:0!important;
 }
 
 .hero {
@@ -148,6 +150,21 @@ body {
   }
 }
 
+// Custom no-javascript carousel fader
+.carousell {
+  position:relative;
+}
+
+.carousell, .carousell figure {
+  width:100%;
+  min-height:calc(20vh + 150px);
+  height:calc(100vh - 136px);
+}
+
+.carousell,.carousell.mt3 {
+  margin-top:0!important;
+}
+
 .carousell > figure {
   position:absolute;
   animation:crossfade4 80s infinite;
@@ -166,7 +183,7 @@ body {
   animation-delay:-20s;
 }
 
-// This is generalized no matter what order the images are arranged in about.liquid
+// This is generalized no matter what order the images are arranged in the about page preamble
 @keyframes crossfade4 {
   0% {opacity:0;}
   // 0.5% {opacity:0;}
@@ -192,7 +209,7 @@ body {
   100% {opacity:0;}
 }
 
-// This code is NOT generalized and must be reordered according to about.liquid
+// This code is NOT generalized and must be reordered according to the about page preamble
 // Order goes 4,1,2,3
 @keyframes positioning {
   // Image 1: RDRE (Right)
@@ -334,6 +351,7 @@ body {
   }
 }
 
+// Increase font size 
 article.large {
   font-size:1.2rem;
   line-height:2.5rem;
@@ -356,7 +374,7 @@ article.large {
   }
 }
 
-// News
+// Announcements section
 .news {
   margin-top:1rem;
   font-size:1rem;
@@ -464,9 +482,36 @@ html[data-theme="light"] #navbar.homepage {
 * Projects
 *****************************************************************************/
 
+.projects {
+  .card {
+    min-height: 150px;
+
+    .card-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      z-index: 1;
+      padding-top:0;
+      filter: brightness(1); /* Optional: Darkens the image for better text contrast */
+    }
+
+    .card-body {
+      position: relative;
+      z-index: 2;
+      background: linear-gradient(to bottom, rgb(0,0,0,0.8), rgb(0,0,0,0)); /* Optional: Adds a translucent background for readability */
+    }
+  }
+}
+
+html[data-theme="light"] .projects .card .card-body {
+  background: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,0));
+}
+
 .research .card {
   margin-top:1rem;
-  // padding:2rem;
   background-size:cover;
   position:relative;
   overflow:hidden;
@@ -544,6 +589,10 @@ html[data-theme="light"] #navbar.homepage {
 
     &.padded-image {
       margin:1.25rem;
+
+      @media only screen and (max-width:576px){
+        margin:0;
+      }
     }
   }
 }
@@ -557,12 +606,19 @@ html[data-theme="light"] #navbar.homepage {
     height:100%;
   }
 
-  figure,.card-text {
+  figure {
+    height:100%;
     margin-bottom:0;
+
+    img {
+      height:100%;
+      object-fit:cover;
+    }
   }
 
   .card-text {
     font-size:1rem;
+    margin-bottom:0;
   }
 
   .card-title {

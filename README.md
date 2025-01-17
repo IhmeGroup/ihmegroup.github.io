@@ -2,7 +2,7 @@
 
 This repository stores the code for the 2025 version of the FxLab website. 
 
-The website is built using [Jekyll](https://jekyllrb.com) and hosted on Stanford's domain, although, of course, it is also possible to host on Github Pages and link the domain to the custom Stanford domain. Both methods have pros and cons, which will not be discussed here. This code stands on the shoulders of the [al-folio Jekyll theme](https://github.com/alshedivat/al-folio) and is used under the MIT license. Note that in order to reduce the storage load on Stanford's filesystem, most if not all of the unused features from the al-folio theme have been removed. This documentation should cover everything needed to maintain the site. TLDR: If the feature isn't here, it isn't supported.
+The website is built using [Jekyll](https://jekyllrb.com) and served via Github Pages over Stanford's domain via a redirect, although, of course, it is also possible to host directly on Stanford's domain and use the internal filesystem. Both methods have pros and cons, which will not be discussed here. This code stands on the shoulders of the [al-folio Jekyll theme](https://github.com/alshedivat/al-folio) and is used under the MIT license. Note that in order to reduce the storage load on Stanford's filesystem, most if not all of the unused features from the al-folio theme have been removed. This documentation should cover everything needed to maintain the site. TLDR: If the feature isn't here, it isn't supported.
 
 This README.md document contains instructions for building and updating the website.
 
@@ -21,6 +21,7 @@ This README.md document contains instructions for building and updating the webs
     - [Publications page](#publications-page---_pagespublicationsmd)
     - [Teaching page](#teaching-page---_pagesteachinghtml)
     - [Contact page](#contact-page---_pagescontactmd)
+    - [More pages](#adding-more-pages)
     - [Other features](#other-features)
   - [License](#license)
   - [To-do list](#to-do-list)
@@ -205,7 +206,7 @@ The `flex-4` class displays 4 logos in a row on mobile, while the `flex-3` class
 
 ### Research page - `_pages/research.html`
 
-This page shows a list of the lab research split into 3 broad themes of propulsion, energy and environment. Likewise, each of the three broad categories are controlled by the relevant files in `_research` folder. Also, the lab research capabilities are controlled by the relevant files in `_capabilities`, including the title and the image (`img` keyword). The background and text color of each of the research blocks are controlled by the `background` and `text` keyword in the preamble, and if `padded` is set to `true`, then the image will not sit flush with the border and instead have a margin around it. Finally, the `align` keyword controls how the image will be cropped (left means it will crop from the right, etc). An example preamble is shown below:
+This page shows a list of the lab research split into 3 broad themes of propulsion, energy and environment. Likewise, each of the three broad categories are controlled by the relevant files in `_research` folder. Also, the lab research capabilities are controlled by the relevant files in `_capabilities`, including the title and the image (`img` keyword). The background and text color of each of the research blocks are controlled by the `background` and `text` keyword in the preamble, and if `padded` is set to `true`, then the image will not sit flush with the border and instead have a margin around it. Finally, the `align` keyword controls how the image will be cropped (left means it will crop from the right, etc). Finally, the `grouping` keyword links the projects to the specific research box (see [Projects](#projects) below), and the `mode` keyword sets the overlay on the projects to `dark` or `light`, respectively (with corresponding text color). An example preamble is shown below:
 ```yaml
 ---
 layout: default
@@ -215,10 +216,54 @@ align: left
 padded: true
 background: "#0f1c50"
 text: "#ffffff"
+grouping: propulsion
+mode: dark
 ---
 ```
 
-MORE INFO NEEDS TO BE ADDED ABOUT THE PROJECTS SECTION, TO BE CONFIRMED WHEN ACTUALLY IMPLEMENTED. WORK IN PROGRESS
+#### Projects
+
+The projects on each of the research boxes link to their own page when clicked, which are all located in the `_projects` folder. These can be either markdown `.md` or HTML `.html` depending on user's preference (markdown is generally easier since not all labmates know HTML). The research page looks best with maybe 3-4 projects per category, but you can add as many as you want. Right now, each category is in its own folder, but this is only for organization and does not really affect anything. More important is the preamble of each of the project pages, which looks like
+```yaml
+layout: page
+title: Modeling of Scramjet Combustors
+img: /assets/img/projects/scramjet_2.png
+importance: 99
+category: propulsion
+related_publications: false
+```
+
+The `category` keyword should correspond to whatever is written in the `grouping` for the research box. That is, if a project is to appear in the `propulsion` box, where the `grouping` keyword in the preamble is `propulsion`, then in the preamble of the project page, the `category` keyword **must** be `propulsion`. This pairing is important, otherwise the page will exist but won't be linked on the research page. The `img` keyword determines what image is displayed in the project box of the research page, and if there are any papers cited in the content of the project page (using `{% cite BIB_KEY %}`), the `related_publications` keyword can be set to `true` to automatically display the bibliography.
+
+To better describe the project, the code also supports video and image embeds. To embed an image, put the image in the `/assets/img/projects` folder and use this HTML code (also works in markdown!)
+```html
+<div class="row justify-content-sm-center">
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/projects/THE_IMAGE.jpg" title="IMAGE TITLE" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+```
+It is also possible to have two or three images in a row, simply make a few copies of the middle three lines and place them inside the `row` `<div>`. For a better explanation or more examples, please refer to the other existing pages, or the [al-folio example project page code](https://github.com/alshedivat/al-folio/blob/c5d0e92dbd9f2d7f12f2f08089340f880dbd45d1/_projects/1_project.md?plain=1).
+
+For videos, the idea is similar, you can either go to Youtube and copy/paste the embed code, or you can use the native video player (recommended for accessibility). To use the native video player, copy the `.mp4` video file into the `assets/video` folder and paste this HTML code where you would like the video to appear:
+```html
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.liquid path="assets/video/FILENAME.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true muted=true loop=true %}
+    </div>
+</div>
+```
+Of course, feel free to remove some of the keywords like `autoplay`, `loop`, `muted` if you would like those to not apply to the video. Similar to the images you can also have multiple videos in a row, here is an example also including a Youtube embed:
+```html
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.liquid path="https://www.youtube.com/embed/TJsjlOik0QU" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.liquid path="assets/video/FILENAME.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true muted=true loop=true %}
+    </div>
+</div>
+```
 
 ---
 
@@ -277,6 +322,23 @@ Self-explanatory. Simply edit the markdown file.
 
 ---
 
+### Adding more pages
+
+At some point I'm sure Matthias will want more stuff on the website. That's fine (and fairly easy) because Jekyll is awesome. To add another page, simply go to the `_pages` folder, make a new markdown/HTML file, and add a preamble like this one:
+```yaml
+---
+layout: page
+permalink: /URL_HERE
+title: PAGE TITLE HERE
+description: OPTIONAL
+nav: true
+nav_order: 99
+---
+```
+The `nav` keyword determines whether the page is included in the top navigation bar (most likely you'll want to set this to `true`), and the `nav_order` determines where it goes (higher number is lower priority, i.e. if you want it furthest left you'll set it to like `1` or something; may need to change the `nav_order` in the currently-existing pages). The `permalink` refers to the page address and `title`/`description` are... well, the page title and page description. The `page` layout is the default for every page that doesn't need specialized structure like the homepage (`about`) or research page (`research`), it's rather versatile and renders markdown perfectly well. If you want some specific styles for this page only, you can add the `_styles` keyword to the preamble and type CSS class rules.
+
+---
+
 ### Other features
 
 #### Full support for math & code
@@ -297,13 +359,14 @@ You will then need to configure what image to display in your site's social medi
 
 ## License
 
-The theme is available as open source under the terms of the [MIT License](https://github.com/alshedivat/al-folio/blob/master/LICENSE).
+The al-folio theme is available as open source under the terms of the [MIT License](https://github.com/alshedivat/al-folio/blob/master/LICENSE).
 
 Originally, **al-folio** was based on the [\*folio theme](https://github.com/bogoli/-folio) (published by [Lia Bogoev](https://liabogoev.com) and under the MIT license). Since then, it got a full re-write of the styles and many additional cool features.
+
+To adhere with the MIT license terms as above, this code is also made available as open source via Github.
 
 ## To-do list
 
 * Solicit writeups for capabilities page
 * Solicit projects (images and writeups) from labmates
-* Add code for project tiles
 * Cross-browser testing and compatibility checks

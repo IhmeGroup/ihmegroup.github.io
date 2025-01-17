@@ -1,1 +1,1 @@
-## Rotation, Visiting and Undergraduate Students
+## Rotation, Visiting, and Undergraduate Students

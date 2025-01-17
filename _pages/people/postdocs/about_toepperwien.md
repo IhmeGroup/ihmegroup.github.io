@@ -1,6 +1,6 @@
 **Karl Toepperwien**  
 *Postdoctoral Scholar in Mechanical Engineering*  
-Ph.D. CentraleSup{\'e}lec, Universit{\'e} Paris-Saclay 2022  
+Ph.D. CentraleSupélec, Université Paris-Saclay 2022  
 M.S. RWTH Aachen University, 2017  
 B.S. RWTH Aachen University, 2015
 
