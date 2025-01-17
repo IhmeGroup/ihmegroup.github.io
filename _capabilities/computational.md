@@ -50,7 +50,8 @@ CharLES<sub>x</sub> is the FX Lab’s primary large eddy simulation (LES) solver
 * Multiple tabulated chemistry models
 * PEC, the fidelity-adaptive chemistry framework
 * Radiative heat loss
-* Advanced flow physics capabilities:
+
+#### Advanced flow physics capabilities:
 * Real fluid equations of state for transcritical and supercritical flows
 * Lagrangian spray particles for multiphase flows
 
