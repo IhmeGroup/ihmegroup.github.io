@@ -1,6 +1,7 @@
 The first position after graduation is indicated.
 
 ##### 2024
+- Davy Brouzet, Post-Doc
 - Pushan Sharma, Post-Doc, Principal Product Engineer at Cadence Design Systems
 - Priyanka Muhunthan, PhD
     - [*Investigating the structure and dynamics of supercritical fluids using X-ray techniques and atomistic-scale simulations*](https://stacks.stanford.edu/file/druid:xv363sj4970/MuhunthanPriyanka_Thesis-augmented.pdf)

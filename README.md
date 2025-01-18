@@ -39,16 +39,16 @@ MacOS comes preinstalled with Ruby, but it is generally not recommended to use t
 brew install chruby ruby-install
 ```
 
-Now, install a stable version of Ruby (e.g. 3.3.5):
+Now, install a stable version of Ruby (e.g. 3.4.1):
 ```bash
-ruby-install ruby 3.3.5
+ruby-install ruby 3.4.1
 ```
 
 Configure the shell to automatically use `chruby` so that the system Ruby will not cause issues:
 ```bash
 echo "source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh" >> ~/.zshrc
 echo "source $(brew --prefix)/opt/chruby/share/chruby/auto.sh" >> ~/.zshrc
-echo "chruby ruby-3.3.5" >> ~/.zshrc # run 'chruby' to see actual version
+echo "chruby ruby-3.4.1" >> ~/.zshrc # run 'chruby' to see actual version
 ```
 
 Finally, **quit and relaunch the terminal**, then verify Ruby is working (`ruby -v`) and install Jekyll:
@@ -86,7 +86,12 @@ git clone https://github.com/ihmegroup/website
 
 You can also fork the repository and clone that, if you prefer.
 
-Then, `cd website` and build the site:
+Then, `cd website` and install dependencies:
+```bash
+bundle install
+```
+
+The site is now ready to  be built using the following command:
 ```bash
 bundle exec jekyll build
 ```
@@ -115,13 +120,12 @@ purgecss -c purgecss.config.js
 ```
 which will replace the CSS files in the `_site/assets/css/` folder with the purged css files.
 
-If using Github pages, simply run `bundle exec jekyll clean` to remove the build files, then commit changes and push to the `main` branch. But we don't use this method right now, so just upload the `_site` folder to Stanford's servers.
-
+If using Github pages, simply run `bundle exec jekyll clean` to remove the build files, then commit changes and push to the `main` branch. I do recommend making major code-breaking or other stylistic changes on a development branch or fork, before making a pull request to the main branch.
 ---
 
 ## Editing contents
 
-I have tried to make this code easy to update and maintain even for labmates with no experience or knowledge of web development tools to the best of my ability; however, if there are any issues or questions or bugs, please ask me and I will be happy to help. Alternatively, if urgent updates are required, the site is not building as expected, and you desperately need a quick fix without any debugging, you can simply edit the files in the `_site` folder and then push to production directly without going through the entire Jekyll build again. I don't recommend this, but sometimes, you gotta do what you gotta do :D
+I have tried to make this code easy to update and maintain even for labmates with no experience or knowledge of web development tools to the best of my ability; however, if there are any issues or questions or bugs, please ask me and I will be happy to help. Alternatively, if urgent updates are required, the site is not building as expected, and you desperately need a quick fix without any debugging, you can simply edit the files in the `_site` folder and then push to production directly without going through the entire Jekyll build again. This does not work if serving over Github pages, only on the internal filesystem.
 
 For labmates that are more familiar with web development, I highly recommend taking a little bit of time to learn about Jekyll and what it can do for you! But to summarize the important points, instead of having to manually code up each page individually and handwrite tens of thousands of lines of HTML markup, Jekyll uses liquid templating to generate contents so you can reuse the same code multiple times. The `research`, `teaching`, `capabilities`, `projects` and `announcements` sections on this site are all generated using Jekyll collections, making them easy to maintain - you really only need to know how to write markdown. 
 
