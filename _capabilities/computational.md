@@ -81,7 +81,21 @@ Quail {% cite ching_quail_2022 %} is a lightweight, [open-source](https://github
 
 Numerical simulations rely on models to describe physical phenomena. Machine learning techniques offer powerful means to improve the accuracy and computational efficiency of these models. At the FX Lab, these methods have been applied to reactive flow fields for super-resolution problems and on supercritical fluids for prediction of critical properties. Physics-informed neural networks have also been developed to enhance the training procedure of these techniques, bridging the gap between data-driven models and fundamental physics.
 
+<div class="row">
+  <div class="col-sm mt-3">
+    {% include figure.liquid loading="eager" path="assets/img/projects/piml.png" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+
+### BLASTNet
+
 [BLASTNet](https://blastnet.github.io) (**B**earable **L**arge **A**ccessible **S**cientific **T**raining **Net**work-of-Datasets) {% cite 10.5555/3666122.3669508 %} is an initiative to curate large amounts of high-fidelity fluid dynamics data in a convenient format for machine learning model applications. There is now over 13 TB of data, which are useful for fluid flows in a wide range of applications tied to automotive, propulsion, energy and the environment. Specifically, scientific engineering tasks related to these domains may include turbulent closure modeling, spatio-temporal modeling, and inverse modeling. In addition, the FX Lab also hosts regular seminars and competitions to disseminate ML for flow physics.
+
+<div class="row">
+  <div class="col-sm mt-3">
+    {% include figure.liquid loading="eager" path="assets/img/projects/blastnet.png" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
 
 ---
 
