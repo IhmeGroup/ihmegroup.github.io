@@ -112,6 +112,10 @@ collections:
     permalink: /:collection/:title/
   research:
     output: false
+<<<<<<< Updated upstream
+=======
+    permalink: /:collections/:title/
+>>>>>>> Stashed changes
   capabilities:
     output: true
     permalink: /:collection/:title/

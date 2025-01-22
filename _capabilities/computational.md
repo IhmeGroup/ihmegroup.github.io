@@ -99,8 +99,31 @@ Numerical simulations rely on models to describe physical phenomena. Machine lea
 
 ---
 
-## GPU and TPU Computing
+## Wildfire Prediction with SwirlLM on Tensor Processing Units (TPUs)
 
+The FX Lab leverages Tensor Processing Units (TPUs) and Graphics Processing Units (GPUs) for machine learning and fire spread simulations. The SwirlLM solver, developed in collaboration with Google Research, is a next-generation, open-source fire/atmosphere solver that captures critical physics of coupled fire/atmosphere interactions.
 
+### Performance:
+* Massively parallel, (almost) linear scaling to thousands of TPU cores
+* Code is compiled by the Accelerated Linear Algebra (XLA) compiler with just-in-time (JIT) approach
+* Three-dimensional data structure and numerical operators are designed to optimize the performance within the TensorFlow programming paradigm
+
+### Numerics:
+* Semi-implicit finite difference solver with second order accuracy in space and time {% cite Wang2022 %}
+* Low-Mach approach with prescribed hydrostatic reference state to allow for larger time steps
+* Two-phase representation of atmospheric fluid flow and solid fuel
+* Lagrangian Particle Tracking for ember transport
+* Cartesian meshes
+* Terrain representation as immersed boundary
+
+### Advanced combustion modeling
+* Solid wood combustion model for pyrolysis and gas-phase combustion
+* Evaporation model for fuel moisture
+* Grey gas model for radiative heat transfer
+
+### Advanced atmosphere model
+* Low-cloud resolving {% cite Chammas2023 %}
+* Anelastic equations for moist air
+* Atmospheric model with three phases: water vapor, liquid water, and ice
 
 ---

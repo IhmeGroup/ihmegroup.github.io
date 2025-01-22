@@ -115,12 +115,14 @@ Make sure to correctly set the `url` and `baseurl` fields in `_config.yml` befor
 **Never push to production on Fridays!** (jk)
 
 Once the site has been built, all the relevant files will be in the `_site` folder, ready to be uploaded to the Stanford domain. I also recommend cleaning up the CSS to remove unused classes, which speeds up loading time and reduces filesize, this can be done by running
+
 ```bash
 purgecss -c purgecss.config.js
 ```
 which will replace the CSS files in the `_site/assets/css/` folder with the purged css files.
 
 If using Github pages, simply run `bundle exec jekyll clean` to remove the build files, then commit changes and push to the `main` branch. I do recommend making major code-breaking or other stylistic changes on a development branch or fork, before making a pull request to the main branch.
+
 ---
 
 ## Editing contents
