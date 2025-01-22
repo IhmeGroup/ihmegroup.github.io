@@ -212,22 +212,6 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-<<<<<<< Updated upstream
-=======
-.research .card {
-  padding: 1rem;
-  margin-top: 1rem;
-}
-
-.research .card:nth-of-type(even) {
-  text-align:right;
-}
-
-html[data-theme="light"] .card .card-body {
-  background: linear-gradient(to right, rgba(255,255,255,0.8), rgba(255,255,255,0));
-}
-
->>>>>>> Stashed changes
 // Citation
 
 .citation,
@@ -673,7 +657,6 @@ article ~ .publications {
 
   h2 {
     margin-bottom: 1rem;
-<<<<<<< Updated upstream
 
     &.bibliography {
       color: var(--global-text-color-light);
@@ -687,19 +670,12 @@ article ~ .publications {
       // font-size: 1.5rem;
       background:var(--global-bg-color);
     }
-=======
->>>>>>> Stashed changes
   }
 
   @media only screen and (min-width:576px){
     h2.bibliography {
       position:sticky;
       top:130px;
-
-      span {
-        // font-size: 1.5rem;
-        background:var(--global-bg-color);
-      }
     }
   }
 
@@ -1862,3 +1838,4 @@ display: flex;
 .su-global-footer__copyright * {
   color: #fff;
 }
+
