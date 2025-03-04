@@ -70,7 +70,24 @@ echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 ```
 
-Finally, install Jekyll and Bundler:
+Install Jekyll and Bundler:
+```
+gem install jekyll bundler
+```
+
+### Windows
+
+Install RubyInstaller for Windows from https://rubyinstaller.org/downloads/ and ensure that you tick ridk install at the end to install MSYS2 and development tools. Click Enter twice. If you did not tick, then open a session in Powershell and type:
+```
+ridk install
+```
+
+In Powershell, verify installation with
+```ruby -v
+gem -v
+```
+
+Install Jekyll and the bundler with
 ```
 gem install jekyll bundler
 ```
