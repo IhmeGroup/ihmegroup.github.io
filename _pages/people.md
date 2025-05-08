@@ -53,15 +53,15 @@ profiles:
   - align: left #YUXUAN
     image: people/li_y.jpeg
     content: people/phdstudents/about_li.md
+  - align: left #NATHAN
+    image: people/laing.jpg
+    content: people/phdstudents/about_laing.md
 
   - align: left
     content: people/header_postdocs.md
   - align: left #GUILAUME
     image: people/vignat.jpeg
     content: people/postdocs/about_vignat.md
-  - align: left #HAOYUAN
-    image: people/li_h.jpg
-    content: people/postdocs/about_li.md
   - align: left #KARL
     image: people/topperwien.jpeg
     content: people/postdocs/about_toepperwien.md

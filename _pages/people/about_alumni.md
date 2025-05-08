@@ -1,5 +1,8 @@
 The first position after graduation is indicated.
 
+##### 2025
+- Haoyuan Li, Post-Doc
+
 ##### 2024
 - Davy Brouzet, Post-Doc
 - Pushan Sharma, Post-Doc, Principal Product Engineer at Cadence Design Systems
