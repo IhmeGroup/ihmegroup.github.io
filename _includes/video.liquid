@@ -50,6 +50,10 @@
       {% if include.poster %}
         poster="{{ include.poster }}"
       {% endif %}
+      {% if site.lazy_loading_images %}
+	loading="lazy" 
+        preload="none"
+      {% endif %}
     />
 
   {% else %}

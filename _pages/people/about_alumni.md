@@ -1,6 +1,8 @@
 The first position after graduation is indicated.
 
 ##### 2025
+- Matthew Bonanni, PhD
+    - [*Multiscale modeling of high-speed propulsion systems*](https://stacks.stanford.edu/file/cg360dx4750/PhD_Thesis%20Upload%20Version-augmented.pdf)
 - Haoyuan Li, Post-Doc
 
 ##### 2024

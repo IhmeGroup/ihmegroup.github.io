@@ -325,6 +325,8 @@ This page displays a list of all the publications from the lab and is automatica
 
 You can also add new `*.bib` files and customize the look of your publications however you like by editing [\_pages/publications.md](_pages/publications.md). By default, the publications will be sorted by year and the most recent will be displayed first. You can change this behavior and more in the `Jekyll Scholar` section in [\_config.yml](_config.yml) file.
 
+***The `papers_new.bib` file is a working file that is not used in the website. We should probably remove it at some point.***
+
 ---
 
 ### Teaching page - `_pages/teaching.html`

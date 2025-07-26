@@ -1,3 +1,4 @@
+- Joel Tomas Pimentel, Imperial College London (2025)
 - Abhishek Pillai, Kyoto University (2024)
 - Timoteo Dinelli, Politecnico di Milano (2024) 
 - Younghwa Cho, Hokkaido University (2024)

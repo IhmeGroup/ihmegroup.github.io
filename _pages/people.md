@@ -17,9 +17,6 @@ profiles:
 
   - align: left
     content: people/header_phdstudents.md
-  - align: left #MATTHEW
-    image: people/bonanni.jpeg
-    content: people/phdstudents/about_bonanni.md
   - align: left #ARIJIT
     image: people/majumdar.jpeg
     content: people/phdstudents/about_majumdar.md
