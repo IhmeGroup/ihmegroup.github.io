@@ -1,6 +1,7 @@
 The first position after graduation is indicated.
 
 ##### 2025
+- Jingcun Fan (Post-Doc)
 - Matthew Bonanni (PhD), Machine Learning Engineer at Red Hat
     - [*Multiscale modeling of high-speed propulsion systems*](https://stacks.stanford.edu/file/cg360dx4750/PhD_Thesis%20Upload%20Version-augmented.pdf)
 - Haoyuan Li (Post-Doc), Associate Scientist at SLAC National Accelerator Laboratory

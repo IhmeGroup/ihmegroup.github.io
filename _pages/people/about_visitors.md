@@ -1,3 +1,4 @@
+- Claudio Muñoz Herrera, Universidad Técnica Federico Santa María (2025)
 - Joel Tomas Pimentel, Imperial College London (2025)
 - Abhishek Pillai, Kyoto University (2024)
 - Timoteo Dinelli, Politecnico di Milano (2024) 

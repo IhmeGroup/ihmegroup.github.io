@@ -61,6 +61,8 @@ body.sticky-bottom-footer {
 .profile {
   img {
     width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1; // make square image
   }
 }
 

@@ -53,6 +53,9 @@ profiles:
   - align: left #NATHAN
     image: people/laing.jpg
     content: people/phdstudents/about_laing.md
+  - align: left #MICHELLE
+    image: people/winhamgee.jpg
+    content: people/phdstudents/about_winhamgee.md
 
   - align: left
     content: people/header_postdocs.md
@@ -62,9 +65,6 @@ profiles:
   - align: left #KARL
     image: people/topperwien.jpeg
     content: people/postdocs/about_toepperwien.md
-  - align: left #JINGCUN
-    image: people/fan.jpeg
-    content: people/postdocs/about_fan.md
   - align: left #JEN ZEN
     image: people/ho.jpeg
     content: people/postdocs/about_ho.md
