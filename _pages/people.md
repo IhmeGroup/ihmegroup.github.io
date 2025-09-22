@@ -38,6 +38,9 @@ profiles:
   - align: left #BEVERLEY
     image: people/yeo.jpg
     content: people/phdstudents/about_yeo.md
+  - align: left #YITONG
+    image: people/li_yitong.jpg
+    content: people/phdstudents/about_yitong.md
   - align: left #BLAKE
     image: people/andersen.jpeg
     content: people/phdstudents/about_andersen.md
@@ -48,8 +51,8 @@ profiles:
     image: people/chaturvedi.jpeg
     content: people/phdstudents/about_chaturvedi.md
   - align: left #YUXUAN
-    image: people/li_y.jpeg
-    content: people/phdstudents/about_li.md
+    image: people/li_yuxuan.jpeg
+    content: people/phdstudents/about_yuxuan.md
   - align: left #NATHAN
     image: people/laing.jpg
     content: people/phdstudents/about_laing.md

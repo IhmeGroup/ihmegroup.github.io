@@ -12,6 +12,7 @@ This README.md document contains instructions for building and updating the webs
   - [Getting started](#getting-started)
     - [MacOS](#macos)
     - [Linux](#linux-debian-ubuntu-mint)
+    - [Windows](#windows)
   - [Building the site](#building-the-site)
   - [Pushing to production](#pushing-to-production)
   - [Editing contents](#editing-contents)
@@ -168,7 +169,7 @@ For reference, this is the general repository structure, with Most Likely Change
 │   └── 📂 people/: 
     │   └── 📂 phdstudents/: Contains the profile markdown files for the PhD students
     │   └── 📂 postdocs/: Contains the profile markdown files for the postdocs
-├── 📂 _projects/: Contains the research projects
+├── 📂 _projects/: Contains the research projects in folders corresponding to research themes
 ├── 📂 _research/: Contains the research themes on the research page
 └── 📂 _sass/: contains the SASS files that define the style of the website
     ├── 📄 _base.scss: base style of the website (most code is in here)
