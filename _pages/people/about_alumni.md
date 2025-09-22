@@ -16,7 +16,7 @@ The first position after graduation is indicated.
 - Wai Tong Chung (PhD), AI Researcher at Together AI
     - [*Overcoming small datasets in machine learning studies of multi-physics flows in propulsion*](https://stacks.stanford.edu/file/druid:xw487vj6602/WTChungPhDDissertation5June2024-augmented.pdf)
 - Yichi Ma (MS), Engineer at Mainspring Energy
-- Ryan Chen (MS), Operational Test Analyst at United Stated Air Force
+- Ryan Chen (MS), Operational Test Analyst at United States Air Force
 - Parker Mayhew (MS), Aerospace Engineer at Systems Engineering Group
 
 ##### 2023

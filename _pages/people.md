@@ -56,6 +56,9 @@ profiles:
   - align: left #MICHELLE
     image: people/winhamgee.jpg
     content: people/phdstudents/about_winhamgee.md
+  - align: left #MEHMET
+    image: people/adiguzel.jpg
+    content: people/phdstudents/about_adiguzel.md
 
   - align: left
     content: people/header_postdocs.md
