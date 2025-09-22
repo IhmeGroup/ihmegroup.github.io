@@ -62,6 +62,9 @@ profiles:
   - align: left #MEHMET
     image: people/adiguzel.jpg
     content: people/phdstudents/about_adiguzel.md
+  - align: left #YOUSSEF
+    image: people/wahba.png
+    content: people/phdstudents/about_wahba.md
 
   - align: left
     content: people/header_postdocs.md
