@@ -1,102 +1,81 @@
-The first position after graduation is indicated.
+Latest known position is indicated.
 
-##### 2025
-- Jingcun Fan (Post-Doc)
-- Matthew Bonanni (PhD), Machine Learning Engineer at Red Hat
+##### Postdoctoral Scholars
+- Jingcun Fan (2025)
+- Haoyuan Li (2025), Associate Scientist at SLAC National Accelerator Laboratory
+- Davy Brouzet (2024), Founding Researcher at Spinoza Labs
+- Pushan Sharma (2024), Principal Product Engineer at Cadence Design Systems
+- Thorsten Zirwes (2022), Deputy Director, Institute of Reactive Flows, University of Stuttgart
+- Narendra Singh (2022), Assistant Professor at Texas A&M University
+- Alexander Späh (2021), Physicist at Elekta Instrument AB 
+- Changxiao Shao (2021), Professor at Harbin Institute of Technology
+- Quentin Douasbin (2020), Senior Researcher at CERFACS
+- Alireza Ostadhossein (2019), Staff Cell Materials Modeling Engineer at Tesla
+- Dong Li (2019), Associate Professor at Beijing Institute of Technology
+- Michael Dodd (2019), Senior Software Engineer at iRacing
+- Jeff Labahn (2018), Staff Software Engineer at Intuitive
+- Thomas Jaravel (2018), Research Scientist at CERFACS
+- Muralikrishna Raju (2017), Staff Engineer at Samsung Semiconductor
+- Daniel Thomas Banuti (2017), Professor at Karlsruhe Institute of Technology
+- Jeonglae Kim (2017), Assistant Professor at Arizona State University
+- Luca Magri (2016), Professor at Imperial College London
+- Lucas Esclapez (2016), Research Software Engineer, Utecht University
+- Benedetta Giulia Franzelli (2015), CNRS Senior Researcher at Université Paris-Saclay
+- Aymeric Vié (2015), Professor at CentraleSupélec, Université Paris-Saclay
+- Mehdi B. Nik (2015), Senior Staff Software Engineer at Samsung Semiconductor
+- Jean-Pierre Hickey (2014), Associate Professor at University of Waterloo
+
+##### Ph.D. Students
+- Matthew Bonanni (2025), Machine Learning Engineer at Red Hat
     - [*Multiscale modeling of high-speed propulsion systems*](https://stacks.stanford.edu/file/cg360dx4750/PhD_Thesis%20Upload%20Version-augmented.pdf)
-- Haoyuan Li (Post-Doc), Associate Scientist at SLAC National Accelerator Laboratory
-
-##### 2024
-- Davy Brouzet (Post-Doc)
-- Pushan Sharma (Post-Doc), Principal Product Engineer at Cadence Design Systems
-- Priyanka Muhunthan (PhD)
+- Priyanka Muhunthan (2024)
     - [*Investigating the structure and dynamics of supercritical fluids using X-ray techniques and atomistic-scale simulations*](https://stacks.stanford.edu/file/druid:xv363sj4970/MuhunthanPriyanka_Thesis-augmented.pdf)
-- Nguyen Ly (PhD), Aerospace Engineer at NASA Ames
+- Nguyen Ly (2024), Aerospace Engineer at NASA Ames
     - [*Modeling and analyses of complex high-pressure multispecies phase-exchange phenomena*](https://stacks.stanford.edu/file/druid:tc671nm2863/Thesis_NguyenLy_Final-augmented.pdf)
-- Wai Tong Chung (PhD), AI Researcher at Together AI
+- Wai Tong Chung (2024), Technical Staff for AGI Autonomy, Amazon
     - [*Overcoming small datasets in machine learning studies of multi-physics flows in propulsion*](https://stacks.stanford.edu/file/druid:xw487vj6602/WTChungPhDDissertation5June2024-augmented.pdf)
-- Yichi Ma (MS), Engineer at Mainspring Energy
-- Ryan Chen (MS), Operational Test Analyst at United States Air Force
-- Parker Mayhew (MS), Aerospace Engineer at Systems Engineering Group
-
-##### 2023
-- Filip Simeski (PhD), Thermal Engineer at Apple
+- Filip Simeski (2023), Thermal Engineer at Apple
     - [*Molecular simulations of adsorption, phase behavior, and reactivity in subsurface fluid-solid systems*](https://stacks.stanford.edu/file/druid:kd116tq5321/Simeski2023_dissertation-augmented.pdf)
-- Jack Guo (PhD), Post-Doc at Lawrence Livermore National Laboratory
+- Jack Guo (2023), Postdoctoral Researcher at Lawrence Livermore National Laboratory
     - [*Study of wall-bounded turbulent heat transfer and flow dynamics at transcritical conditions*](https://stacks.stanford.edu/file/druid:hr621jr2401/Jack_Guo_thesis_final-augmented.pdf)
-
-##### 2022
-- Emeric Boigne (PhD), Research & Develpment Scientist at Furno Materials
+- Emeric Boigne (2022), Research & Develpment Scientist at Furno Materials
     - [*Study of wildfire and biomass combustion physics using X-ray computed tomography*](https://stacks.stanford.edu/file/druid:tz501vf4608/EmericThesisFinal%20Submitted-augmented.pdf)
-- Thorsten Zirwes (Post-Doc), Deputy Director at IRST Stuttgart
-- Steven Brill (PhD), Post-Doc at Lawrence Livermore National Laboratory
+- Steven Brill (2022), Computational Physicist at Lawrence Livermore National Laboratory
     - [*An enriched-basis high-order method for wall-modeled large eddy simulation*](https://stacks.stanford.edu/file/druid:vg777rr1477/Steven_Thesis_final_no_copy-augmented.pdf)
-- Narendra Singh (Post-Doc), Post-Doc at University of Illinois Urbana-Champaign
-- Danyal Mohaddes (PhD), Senior Research Scientist at FM Global
+- Danyal Mohaddes (2022), Senior Research Scientist at FM Global
     - [*Numerical simulation of hot surface ignition and combustion of fuel sprays*](https://stacks.stanford.edu/file/druid:qd297kf9064/Thesis_MohaddesKhorassani-augmented.pdf)
-
-##### 2021
-- Alexander Späh (Post-Doc), Physicist at Elekta Instrument AB 
-- Eric Ching (PhD), Researcher at Naval Research Laboratory
+- Eric Ching (2021), Research Scientist at Naval Research Laboratory
     - [*Development of high-order discontinuous Galerkin methods for simulations of high-speed particle-laden fluid flows*](https://stacks.stanford.edu/file/druid:ph076kk9546/Thesis_final-augmented.pdf)
-- Changxiao Shao (Post-Doc), Assistant Professor at Harbin Institute of Technology
-
-##### 2020
-- Quentin Douasbin (Post-Doc), Postdoctoral Fellow at CERFACS
-
-##### 2019
-- Alireza Ostadhossein (Post-Doc), Battery Cell Engineer at Rivian
-- Sadaf Sobhani (PhD), Post-Doc at Lawrence Livermore National Laboratory
+- Sadaf Sobhani (2019), Assistant Professor at Cornell University
     - [*Computational and experimental investigation of flow and combustion physics in porous media*](https://stacks.stanford.edu/file/druid:qr848tv8220/0_SUBMITTED_thesis-pages-deleted-augmented.pdf)
-- Dong Li (Post-Doc), Associate Professor at Beijing Institute of Technology
-- Michael Dodd (Post-Doc), Physics Software Engineer at Private Division
-
-##### 2018
-- Qing Wang (PhD), Software Engineer at Google
+- Qing Wang (2018), Software Engineer at Google
     - [*A regularized deconvolution method for large-eddy simulations of multiphase reacting flows*](https://stacks.stanford.edu/file/druid:dz339vk1807/main-augmented.pdf)
-- Pavan Govindaraju (MS)
-- Jeff Labahn (Post-Doc), Simulation Development Engineer at Avametric
-- Thomas Jaravel (Post-Doc), Researcher at CERFACS
-- Hao Wu (PhD), Senior Software Engineering at Cruise Automation
+- Hao Wu (2018), Staff Software Engineer at Figure
     - [*Numerical simulations of turbulent reacting flows with finite-rate chemistry and combustion-model adaptation*](https://stacks.stanford.edu/file/druid:xr890dw2735/thesis_final-augmented.pdf)
-- Peter Ma (PhD), Software Engineer at Google
+- Peter Ma (2018), Software Engineer at Google
     - [*Modeling of turbulent mixing and combustion at transcritical conditions*](https://stacks.stanford.edu/file/druid:xb567kv4007/thesis-augmented.pdf)
-
-##### 2017
-- Kevin Grogan (PhD), Project Engineer at ATA Engineering
+- Kevin Grogan (2017), Machine Learning Engineer at Snapchat
     - [*Modeling and simulation of non-ideal combustion*](https://stacks.stanford.edu/file/druid:wg011yr4003/Main-augmented.pdf)
-- Muralikrishna Raju (Post-Doc), Research Associate at Ames National Laboratory
-- Daniel Thomas Banuti (Post-Doc), Senior Research Scientist at Cascade Technologies Inc.
-- Jared Dunnmon (PhD), Post-Doc in Computer Science at Stanford University
+- Jared Dunnmon (2017), Cofounder & Chief Scientist at Stealth Startup
     - [*Development of X-ray absorption diagnostics for gas-phase reacting flows*](https://stacks.stanford.edu/file/druid:fk069hr3117/Sept1SubmissionDunnmonThesis%20-%20Adobe-augmented.pdf)
-- Jeffrey O’Brien (PhD), Research Scientist at Cascade Technologies Inc.
+- Jeffrey O’Brien (2017), Product Design Engineer at Apple
     - [*Hybrid modeling of engine core noise*](https://stacks.stanford.edu/file/druid:sv185sh2553/thesis17_OBRIEN_FINAL-augmented.pdf)
-- Jeonglae Kim (Post-Doc), Assistant Professor at Arizona State University
-
-##### 2016
-- Luca Magri (Post-Doc), Royal Academy of Engineering Research Fellow at University of Cambridge
-- Lucas Esclapez (Post-Doc), Researcher at CERFACS
-- Wai Lee Chan (PhD), Assistant Professor at Nanyang Technological University
+- Wai Lee Chan (2016), Senior Lecturer at Singapore University of Technology and Design
     - [*A higher-order flamelet model for turbulent combustion simulations*](https://deepblue.lib.umich.edu/handle/2027.42/133466)
-- Yu Lv (PhD), Assistant Professor at Mississippi State University
+- Yu Lv (2016), Assistant Professor at Mississippi State University
     - [*Embedded entropy concept for fluid dynamic simulations with discontinuous Galerkin scheme*](https://stacks.stanford.edu/file/druid:gm681pq2419/thesis_submit-augmented.pdf)
-
-##### 2015
-- Benedetta Giulia Franzelli (Post-Doc), CNRS researcher at Laboratoire EM2C, École Centrale Paris
-- Aymeric Vié (Post-Doc), Assistant Professor at École Centrale Paris
-- Mehdi B. Nik (Post-Doc), Data Scientist at Omniscience
-- Yuntao Chen (PhD), Combustion Technology Engineer at Siemens Power and Gas
+- Yuntao Chen (2015), Technology Center Manager, American Bureau of Shipping
     - [*Investigation of partially premixed combustion instabilities through experimental, theoretical, and computational methods*](https://deepblue.lib.umich.edu/handle/2027.42/111342)
-
-##### 2014
-- Jean-Pierre Hickey (Post-Doc), Assistant Professor at University of Waterloo
-- Yee Chee See (PhD), Research Engineer at Convergent Science Inc.
+- Yee Chee See (2014), Research Engineer at Convergent Science Inc.
     - [*Analysis of hydrodynamic instabilities and combustion dynamics in turbulent reacting flow*s](https://deepblue.lib.umich.edu/handle/2027.42/107148)
-
-##### 2012
-- Sean Torrez, co-advised PhD, Principal Engineer at Physical Sciences Inc.
+- Sean Torrez (2012), Vice President at Physical Sciences Inc.
     - [*Design refinement and modeling methods for highly-integrated hypersonic vehicles*](https://deepblue.lib.umich.edu/handle/2027.42/93832)
-
-##### 2009
-- Emre Sozer, co-advised PhD, Principal Engineer at Siemens
+- Emre Sozer (2009), Senior Research Scientist at NASA Ames
     - [*Modeling of gaseous reacting flow and thermal environment of liquid rocket injectors*](https://deepblue.lib.umich.edu/handle/2027.42/77684)
+    
+##### Masters Students
+- Yichi Ma (2024), Engineer at Mainspring Energy
+- Ryan Chen (2024), F-22 Operational Test Analyst at United States Air Force
+- Parker Mayhew (2024), Aerospace Engineer at Systems Engineering Group
+- Pavan Govindaraju (2018), Maintainer at SplitFXM
+
