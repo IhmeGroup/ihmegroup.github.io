@@ -100,13 +100,33 @@ body {
 }
 
 :root {
-  --homepage-hero-top-space: 2rem;
-  --homepage-hero-bottom-space: 2rem;
-  --homepage-window-radius: 18px; // try 0px, 8px, 16px, 24px
+  --homepage-hero-top-space: 0rem;
+  --homepage-social-top-space: 0.25rem;
+  --homepage-content-top-space: 2rem;
+  --homepage-window-radius: 18px;
+  --homepage-window-aspect-ratio: 11 / 5;
 }
 
 .homepage-hero {
-  padding: var(--homepage-hero-top-space) 0 var(--homepage-hero-bottom-space) 0;
+  padding-top: var(--homepage-hero-top-space);
+  background: white;
+}
+
+.homepage-hero__social {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+  margin-top: var(--homepage-social-top-space);
+}
+
+.homepage-post {
+  margin-top: var(--homepage-content-top-space);
+}
+
+.homepage-hero {
+  padding: var(--homepage-hero-top-space) 0 0 0;
+  margin-bottom: var(--homepage-hero-bottom-space);
   background: white;
 }
 
@@ -139,12 +159,30 @@ body {
   -webkit-text-stroke: 0 !important;
 }
 
-.homepage-hero__social,
-.homepage-hero__social a,
-.homepage-hero__social i,
-.homepage-hero__social svg {
+/* Default (non-hover) state */
+body.homepage-force-light .homepage-hero__social .social .contact-icons a,
+body.homepage-force-light .homepage-hero__social .social .contact-icons a:visited {
   color: #111111 !important;
-  fill: #111111 !important;
+  opacity: 1 !important;
+}
+
+/* Hover state (Stanford red) */
+body.homepage-force-light .homepage-hero__social .social .contact-icons a:hover,
+body.homepage-force-light .homepage-hero__social .social .contact-icons a:active {
+  color: #8c1515 !important;
+}
+
+/* Ensure icons inside follow the anchor color */
+body.homepage-force-light .homepage-hero__social .social .contact-icons a i,
+body.homepage-force-light .homepage-hero__social .social .contact-icons a i::before,
+body.homepage-force-light .homepage-hero__social .social .contact-icons a .fa,
+body.homepage-force-light .homepage-hero__social .social .contact-icons a .fas,
+body.homepage-force-light .homepage-hero__social .social .contact-icons a .far,
+body.homepage-force-light .homepage-hero__social .social .contact-icons a .fab,
+body.homepage-force-light .homepage-hero__social .social .contact-icons a .fa-solid,
+body.homepage-force-light .homepage-hero__social .social .contact-icons a .fa-brands,
+body.homepage-force-light .homepage-hero__social .social .contact-icons a .ai {
+  color: inherit !important;
 }
 
 .homepage-hero__window {
@@ -157,10 +195,17 @@ body {
   background: white;
 }
 
+:root {
+  --homepage-hero-top-space: 2rem;
+  --homepage-hero-bottom-space: 2rem;
+  --homepage-window-radius: 18px;
+  --homepage-window-aspect-ratio: 11 / 5; // about 2.2:1
+}
+
 .homepage-carousel {
   position: relative;
   width: 100%;
-  height: 500px;
+  aspect-ratio: var(--homepage-window-aspect-ratio);
   margin: 0 !important;
 }
 
@@ -192,42 +237,21 @@ body {
   max-width: 1100px;
   display: flex;
   justify-content: center;
-  margin-top: 0.25rem;
+  margin-top: var(--homepage-social-top-space);
 }
 
 .homepage-hero__social .social {
   text-align: center;
 }
 
+.homepage-post {
+  margin-top: var(--homepage-content-top-space);
+}
+
 .homepage-post .post-header {
   display: none;
 }
 
-@media only screen and (max-width: 992px) {
-  .homepage-carousel {
-    height: 400px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  :root {
-    --homepage-hero-bottom-space: 1.5rem;
-  }
-
-  .homepage-carousel {
-    height: 320px;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .homepage-carousel {
-    height: 240px;
-  }
-
-  .homepage-hero__title {
-    font-size: 2rem;
-  }
-}
 // Repeat as above - for backward compatibility with webkit browser
 @-webkit-keyframes positioning {
   // Image 1: RDRE (Right)
