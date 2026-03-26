@@ -69,7 +69,7 @@ profiles:
     image: people/laing.jpg
     content: people/phdstudents/about_laing.md
   - align: left #MICHELLE
-    image: people/winhamgee.jpg
+    image: people/winhamgee.png
     content: people/phdstudents/about_winhamgee.md
   - align: left #MEHMET
     image: people/adiguzel.jpg

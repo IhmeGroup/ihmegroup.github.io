@@ -2,34 +2,48 @@
 layout: default
 ---
 {% if page._styles %}
-  <!-- Page/Post style -->
   <style type="text/css">
     {{ page._styles }}
   </style>
 {% endif %}
 
-<div class="splash">
-  <div class="carousell">
-      {% for image in page.images %}
-      {% include figure.liquid loading="eager" path=image class="hero" %}
-      {% endfor %}
-  </div>
-  <div class="floatie homepage">
-    <div class="container">
-      <div class="inner">
-      <h1 class="desc">{{ page.subtitle }}</h1>
-      <!-- Social -->
+<div class="homepage-hero">
+  <div class="container">
+    <div class="homepage-hero__inner">
+      <div class="homepage-hero__header">
+        <h1 class="homepage-hero__title">{{ page.subtitle }}</h1>
+      </div>
+
+      <div class="homepage-hero__window">
+        <div
+          class="homepage-carousel js-homepage-carousel"
+          data-interval="5000"
+        >
+          {% for image in page.images %}
+            <div class="homepage-carousel__slide{% if forloop.first %} is-active{% endif %}">
+              <img
+                class="homepage-carousel__image"
+                src="{{ image | relative_url }}"
+                alt="Homepage image {{ forloop.index }}"
+                loading="eager"
+              >
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+
       {% if page.social %}
-        <div class="social">
-          <div class="contact-icons">{% include social.liquid %}</div>
+        <div class="homepage-hero__social">
+          <div class="social">
+            <div class="contact-icons">{% include social.liquid %}</div>
+          </div>
         </div>
       {% endif %}
-      </div>
     </div>
   </div>
 </div>
 
-<div class="post homepage">
+<div class="post homepage homepage-post">
   <header class="post-header">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
@@ -49,11 +63,9 @@ layout: default
           {% if page.profile.image_circular %}
             {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
           {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
+            {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
           {% endif %}
-          {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
+          {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
           {%
             include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
             cache_bust=true
@@ -67,16 +79,12 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
-    <!-- News -->
     {% if page.news and site.announcements.enabled %}
       <hr>
-      <h2>
-        Announcements
-      </h2>
+      <h2>Announcements</h2>
       {% include news.liquid limit=true %}
     {% endif %}
 
-    <!-- Selected papers -->
     {% if page.selected_papers %}
       <hr>
       <h2>
@@ -87,10 +95,28 @@ layout: default
 
     {% if page.sponsors %}
       <hr>
-      <h2>
-        Sponsors
-      </h2>
+      <h2>Sponsors</h2>
       {% include sponsors.liquid %}
     {% endif %}
   </article>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const carousel = document.querySelector('.js-homepage-carousel');
+    if (!carousel) return;
+
+    const slides = Array.from(carousel.querySelectorAll('.homepage-carousel__slide'));
+    if (slides.length <= 1) return;
+
+    const interval = parseInt(carousel.dataset.interval || '5000', 10);
+    let current = 0;
+
+    setInterval(function () {
+      const next = (current + 1) % slides.length;
+      slides[current].classList.remove('is-active');
+      slides[next].classList.add('is-active');
+      current = next;
+    }, interval);
+  });
+</script>
