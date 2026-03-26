@@ -1,5 +1,5 @@
 **Guillaume Vignat**  
-*Postdoctoral Scholar in Mechanical Engineering*  
+*Research Engineer*  
 Ph.D., Universite Paris-Saclay, 2020  
 Diplôme d'Ingénieur, Ecole Centrale des Arts et Manufactures, 2016
 
