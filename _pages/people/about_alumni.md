@@ -64,13 +64,13 @@ Latest known position is indicated.
     - [*A higher-order flamelet model for turbulent combustion simulations*](https://deepblue.lib.umich.edu/handle/2027.42/133466)
 - Yu Lv (2016), Assistant Professor at Mississippi State University
     - [*Embedded entropy concept for fluid dynamic simulations with discontinuous Galerkin scheme*](https://stacks.stanford.edu/file/druid:gm681pq2419/thesis_submit-augmented.pdf)
-- Yuntao Chen (2015), Technology Center Manager, American Bureau of Shipping
+- Yuntao Chen (Co-Advised 2015), Technology Center Manager, American Bureau of Shipping
     - [*Investigation of partially premixed combustion instabilities through experimental, theoretical, and computational methods*](https://deepblue.lib.umich.edu/handle/2027.42/111342)
 - Yee Chee See (2014), Research Engineer at Convergent Science Inc.
     - [*Analysis of hydrodynamic instabilities and combustion dynamics in turbulent reacting flow*s](https://deepblue.lib.umich.edu/handle/2027.42/107148)
-- Sean Torrez (2012), Vice President at Physical Sciences Inc.
+- Sean Torrez (Co-Advised 2012), Vice President at Physical Sciences Inc.
     - [*Design refinement and modeling methods for highly-integrated hypersonic vehicles*](https://deepblue.lib.umich.edu/handle/2027.42/93832)
-- Emre Sozer (2009), Senior Research Scientist at NASA Ames
+- Emre Sozer (Co-Advised 2009), Senior Research Scientist at NASA Ames
     - [*Modeling of gaseous reacting flow and thermal environment of liquid rocket injectors*](https://deepblue.lib.umich.edu/handle/2027.42/77684)
     
 ##### Masters Students

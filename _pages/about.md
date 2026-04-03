@@ -5,7 +5,7 @@ permalink: /
 subtitle: Laboratory of <span class="fx">F</span>luids in Comple<span class="fx">x</span> Environments
 nav: false
 
-news: true # includes a list of news items
+news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 sponsors: true # Includes sponsors

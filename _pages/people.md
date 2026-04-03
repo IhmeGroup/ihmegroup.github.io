@@ -60,7 +60,7 @@ profiles:
     image: people/andersen.jpeg
     content: people/phdstudents/about_andersen.md
   - align: left #SHO
-    image: people/wada.jpeg
+    image: people/wada.png
     content: people/phdstudents/about_wada.md
   - align: left #SHIVANSH
     image: people/chaturvedi.jpeg
@@ -74,12 +74,18 @@ profiles:
   - align: left #MEHMET
     image: people/adiguzel.jpg
     content: people/phdstudents/about_adiguzel.md
+  - align: left #LIU
+    image: people/deng.png
+    content: people/phdstudents/about_deng.md
   - align: left #SOURAV
     image: people/tree.png
     content: people/phdstudents/about_dassuvro.md
 
   - align: left
     content: people/header_otherstudents.md
+  - align: left #MUHAMMAD
+    image: people/harchaoui.jpeg
+    content: people/undergrads/about_harchaoui.md
   - align: left #KRISSH
     image: people/chawla.jpg
     content: people/undergrads/about_chawla.md
