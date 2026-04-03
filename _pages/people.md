@@ -83,9 +83,9 @@ profiles:
 
   - align: left
     content: people/header_otherstudents.md
-  - align: left #MUHAMMAD
-    image: people/harchaoui.jpeg
-    content: people/undergrads/about_harchaoui.md
+#  - align: left #MUHAMMAD
+#    image: people/harchaoui.jpeg
+#    content: people/undergrads/about_harchaoui.md
   - align: left #KRISSH
     image: people/chawla.jpg
     content: people/undergrads/about_chawla.md
