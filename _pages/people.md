@@ -87,7 +87,7 @@ profiles:
     image: people/gaertner.png
     content: people/visitors/about_gaertner.md
   - align: left #MUHAMMAD
-    image: people/harchaoui.jpeg
+    image: people/harchaoui.jpg
     content: people/visitors/about_harchaoui.md
   - align: left #KRISSH
     image: people/chawla.jpg
