@@ -1,7 +1,7 @@
 ---
 layout: profiles
-permalink: /people/
-title: People
+permalink: /team/
+title: Team
 description: "<a href='/contact'>Join us!</a>"
 nav: true
 nav_order: 3
@@ -78,17 +78,20 @@ profiles:
     image: people/deng.png
     content: people/phdstudents/about_deng.md
   - align: left #SOURAV
-    image: people/tree.png
+    image: people/dassuvro.png
     content: people/phdstudents/about_dassuvro.md
 
   - align: left
     content: people/header_otherstudents.md
-#  - align: left #MUHAMMAD
-#    image: people/harchaoui.jpeg
-#    content: people/undergrads/about_harchaoui.md
+  - align: left #JAN
+    image: people/gaertner.png
+    content: people/visitors/about_gaertner.md
+  - align: left #MUHAMMAD
+    image: people/harchaoui.jpeg
+    content: people/visitors/about_harchaoui.md
   - align: left #KRISSH
     image: people/chawla.jpg
-    content: people/undergrads/about_chawla.md
+    content: people/visitors/about_chawla.md
 
   - align: left
     content: people/header_alumni.md
