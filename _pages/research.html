@@ -10,21 +10,84 @@ _styles: >
   .post-description {font-size:1rem;}
 ---
 
-{% for item in site.research %}
-{% include research_splash.liquid %}
-{% endfor %}
-
-<header class="subheader">
-  <h2 class="post-title">Capabilities</h2>
-</header>
-
-<div class="projects caps">  
-  <!-- Display projects without categories -->
-  {% assign sorted_projects = site.capabilities | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include capabilities.liquid %}
-    {% endfor %}
-  </div>
+<div class="research-page research-accordion-page">
+  {% for item in site.research %}
+    {% include research_splash.liquid %}
+  {% endfor %}
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggles = document.querySelectorAll('.js-research-category-toggle');
+
+    function openTile(tile) {
+      const toggle = tile.querySelector('.js-research-category-toggle');
+      const content = tile.querySelector('.research-category-tile__content');
+
+      tile.classList.add('is-open');
+      toggle.setAttribute('aria-expanded', 'true');
+      content.hidden = false;
+
+      const fullHeight = content.scrollHeight;
+      content.style.maxHeight = '0px';
+      content.style.opacity = '0';
+
+      requestAnimationFrame(function () {
+        content.style.maxHeight = fullHeight + 'px';
+        content.style.opacity = '1';
+      });
+    }
+
+    function closeTile(tile) {
+      const toggle = tile.querySelector('.js-research-category-toggle');
+      const content = tile.querySelector('.research-category-tile__content');
+
+      toggle.setAttribute('aria-expanded', 'false');
+      tile.classList.remove('is-open');
+
+      content.style.maxHeight = content.scrollHeight + 'px';
+      content.style.opacity = '1';
+
+      requestAnimationFrame(function () {
+        content.style.maxHeight = '0px';
+        content.style.opacity = '0';
+      });
+
+      content.addEventListener(
+        'transitionend',
+        function handler(event) {
+          if (event.propertyName === 'max-height') {
+            content.hidden = true;
+            content.removeEventListener('transitionend', handler);
+          }
+        },
+        { once: true }
+      );
+    }
+
+    toggles.forEach(function (toggle) {
+      toggle.addEventListener('click', function () {
+        const tile = toggle.closest('.research-category-tile');
+        const isOpen = tile.classList.contains('is-open');
+
+        document.querySelectorAll('.research-category-tile.is-open').forEach(function (openTileEl) {
+          if (openTileEl !== tile) {
+            closeTile(openTileEl);
+          }
+        });
+
+        if (isOpen) {
+          closeTile(tile);
+        } else {
+          openTile(tile);
+        }
+      });
+    });
+
+    window.addEventListener('resize', function () {
+      document.querySelectorAll('.research-category-tile.is-open .research-category-tile__content').forEach(function (content) {
+        content.style.maxHeight = content.scrollHeight + 'px';
+      });
+    });
+  });
+</script>
