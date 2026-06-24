@@ -102,9 +102,10 @@ layout: default
 </div>
 
 <script>
+  /* Fallback image carousel — only activates if fluid-hero.js did not hide it */
   document.addEventListener('DOMContentLoaded', function () {
     const carousel = document.querySelector('.js-homepage-carousel');
-    if (!carousel) return;
+    if (!carousel || carousel.style.display === 'none') return;
 
     const slides = Array.from(carousel.querySelectorAll('.homepage-carousel__slide'));
     if (slides.length <= 1) return;
@@ -120,3 +121,4 @@ layout: default
     }, interval);
   });
 </script>
+<script src="{{ '/assets/js/fluid-hero.js' | relative_url }}"></script>
