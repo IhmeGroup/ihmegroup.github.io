@@ -7,7 +7,7 @@ The existing file is completely replaced on every run — no merging, no patchin
 Filters applied:
   - Excluded types: dataset, paratext, peer-review, grant, editorial,
     erratum, dissertation (theses are not listed on the site)
-  - NICT machine-translations filtered by source name
+  - Machine-translated duplicates removed (NICT source, or non-Latin title)
   - Preprints (arXiv, SSRN, etc.) removed when a published version exists
   - Manual exclusions read from scripts/publications_exclusions.txt
 
@@ -273,12 +273,28 @@ def is_excluded(work: dict, exclusions: set) -> bool:
     return doi in exclusions or work_id in exclusions
 
 
-def is_nict_translation(work: dict) -> bool:
-    """Return True for machine-translated entries from Japan's NICT service."""
+# Non-Latin script ranges (CJK ideographs, hiragana, katakana, fullwidth forms,
+# and the 【 】 brackets used by translation services). The group publishes in
+# English, so any title containing these is an OpenAlex machine-translation
+# duplicate — e.g. 【Powered by NICT】 or 【JST・京大機械翻訳】 — of an English work.
+_NONLATIN_TITLE_RE = re.compile(
+    r'[　-〿぀-ヿ㐀-䶿一-鿿＀-￯]'
+)
+
+
+def is_machine_translation(work: dict) -> bool:
+    """Return True for non-English, machine-translated duplicate entries.
+
+    Two signals: (1) the source is a known translation service (NICT), or
+    (2) the title carries non-Latin script, which for this group only ever
+    appears on auto-translated copies of an English original.
+    """
     loc = work.get('primary_location') or {}
     src = loc.get('source') or {}
     name = (src.get('display_name') or loc.get('raw_source_name') or '').lower()
-    return 'nict' in name
+    if 'nict' in name:
+        return True
+    return bool(_NONLATIN_TITLE_RE.search(work.get('title') or ''))
 
 
 def is_preprint(work: dict) -> bool:
@@ -538,8 +554,8 @@ def main():
           f'(dataset, paratext, etc.).')
 
     before = len(works)
-    works = [w for w in works if not is_nict_translation(w)]
-    print(f'  Dropped {before - len(works)} NICT machine-translation(s).')
+    works = [w for w in works if not is_machine_translation(w)]
+    print(f'  Dropped {before - len(works)} machine-translated/non-English entry/entries.')
 
     before = len(works)
     works = [w for w in works if not is_excluded(w, exclusions)]
