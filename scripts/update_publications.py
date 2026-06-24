@@ -5,7 +5,8 @@ Fetches all works for ORCID 0000-0002-4158-7050 and writes a clean papers.bib.
 The existing file is completely replaced on every run — no merging, no patching.
 
 Filters applied:
-  - Excluded types: dataset, paratext, peer-review, grant, editorial, erratum
+  - Excluded types: dataset, paratext, peer-review, grant, editorial,
+    erratum, dissertation (theses are not listed on the site)
   - NICT machine-translations filtered by source name
   - Preprints (arXiv, SSRN, etc.) removed when a published version exists
   - Manual exclusions read from scripts/publications_exclusions.txt
@@ -45,10 +46,12 @@ EXTRA_AUTHOR_IDS = [
     "A5123899714",
 ]
 
-# Work types to keep (everything else is silently dropped)
+# Work types to keep (everything else is silently dropped).
+# Note: 'dissertation' (PhD/master's theses) is intentionally excluded — the
+# group does not list theses on the publications page.
 ALLOWED_TYPES = frozenset({
     'article', 'preprint', 'proceedings-article', 'book-chapter',
-    'dissertation', 'book', 'review', 'report', 'letter',
+    'book', 'review', 'report', 'letter',
 })
 
 # Source names that identify a preprint server (case-insensitive substring match)
@@ -341,7 +344,6 @@ _TYPE_MAP = {
     'preprint': 'article',
     'proceedings-article': 'inproceedings',
     'book-chapter': 'incollection',
-    'dissertation': 'phdthesis',
     'book': 'book',
     'review': 'article',
     'report': 'techreport',
