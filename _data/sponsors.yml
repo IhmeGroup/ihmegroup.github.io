@@ -1,0 +1,64 @@
+# Sponsors & collaborators shown in the homepage marquee.
+# Edit this list to add/remove logos or reorder them.
+#
+# `current: true`  → an active sponsor.
+# `current: false` → a past supporter. For now every entry is shown
+#   regardless; once we decide how to treat past supporters, flipping this
+#   flag (or filtering on it in _includes/sponsors.liquid) is all it takes.
+#
+# `logo` is a filename in assets/img/logos/.
+
+- name: Department of Energy
+  logo: doe_logo.png
+  current: true
+- name: National Science Foundation
+  logo: nsf_logo.png
+  current: true
+- name: Air Force Office of Scientific Research
+  logo: afosr_logo.png
+  current: true
+- name: Office of Naval Research
+  logo: onr_logo.png
+  current: true
+- name: National Aeronautics and Space Administration
+  logo: nasa_logo.png
+  current: true
+- name: Federal Aviation Administration
+  logo: faa_logo.png
+  current: true
+- name: American Chemical Society
+  logo: acs_logo.png
+  current: true
+- name: Center for Mechanistic Control of Unconventional Formations
+  logo: cmcuf_logo.png
+  current: true
+- name: Predictive Science Academic Alliance Program
+  logo: psaap_logo.png
+  current: true
+- name: Boeing
+  logo: boeing_logo.png
+  current: true
+- name: ExxonMobil
+  logo: exxon_logo.png
+  current: true
+- name: Total
+  logo: total_logo.png
+  current: true
+- name: Google
+  logo: google_logo.png
+  current: true
+- name: Daikin
+  logo: daikin_logo.png
+  current: true
+- name: FM Global
+  logo: fmglobal_logo.png
+  current: true
+- name: Stanford Precourt Institute for Energy
+  logo: precourt_logo.png
+  current: true
+- name: Stanford Doerr School of Sustainability
+  logo: doerr_logo.png
+  current: true
+- name: Stanford Woods Institute for the Environment
+  logo: woods_logo.png
+  current: true

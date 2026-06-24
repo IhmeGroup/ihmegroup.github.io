@@ -551,40 +551,84 @@ article.large {
  * Code for Sponsors
  ******************************************************************************/
 
-.logo-section {
-  text-align:center;
-  margin-top:1rem;
-  // padding:1.25rem;
+// Homepage sponsor / collaborator marquee (markup in _includes/sponsors.liquid,
+// data in _data/sponsors.yml). Logos scroll continuously right-to-left.
+.sponsors-marquee {
+  margin-top: 1.5rem;
+  text-align: center;
+}
 
-  .row {
-    display:flex;
-    flex-wrap:nowrap;
-    justify-content:center;
-    align-items:center;
+.sponsors-marquee__label {
+  margin: 0 0 1rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light, #6b6b6b);
+}
 
-    figure {
-      margin:1rem 0;
-    }
-  
-    img {
-      max-height: 100px;
-      width: auto; /* Maintain aspect ratio */
-      object-fit: contain; /* Ensure the image fits within the height */
-    }
+.sponsors-marquee__viewport {
+  position: relative;
+  overflow: hidden;
+  // Fade the logos in/out at the left and right edges.
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+          mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+}
+
+.sponsors-marquee__track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: sponsors-scroll 90s linear infinite;
+}
+
+// Pause the scroll while the visitor hovers, so they can read a logo.
+.sponsors-marquee:hover .sponsors-marquee__track {
+  animation-play-state: paused;
+}
+
+.sponsors-marquee__item {
+  flex: 0 0 auto;
+  margin: 0 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.sponsors-marquee__img {
+  height: 56px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: filter 0.25s ease, opacity 0.25s ease;
+
+  &:hover {
+    filter: none;
+    opacity: 1;
+  }
+}
+
+@keyframes sponsors-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); } // half the track = one full logo set
+}
+
+// Respect reduced-motion: stop the scroll and lay the logos out as a static,
+// wrapping row (only the first copy is shown; the duplicate is hidden).
+@media (prefers-reduced-motion: reduce) {
+  .sponsors-marquee__viewport {
+    -webkit-mask-image: none;
+            mask-image: none;
   }
 
-  @media only screen and (max-width:576px){
-    .row {
-      flex-wrap:wrap;
+  .sponsors-marquee__track {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
 
-      &.flex-4 .col-sm {
-        flex:1 0 22%;
-      }
-
-      &.flex-3 .col-sm {
-        flex:1 0 30%;
-      }
-    }
+  .sponsors-marquee__item[aria-hidden="true"] {
+    display: none;
   }
 }
 
