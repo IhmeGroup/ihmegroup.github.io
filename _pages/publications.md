@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: "See <a href='https://scholar.google.com/citations?user=g1q2D9sAAAAJ&hl=en'>Google Scholar</a> for full updated list."
+description: "See <a href='https://scholar.google.com/citations?user=g1q2D9sAAAAJ&hl=en'>Google Scholar</a> for complete list."
 nav: true
 nav_order: 4
 ---
@@ -25,10 +25,11 @@ document.addEventListener('DOMContentLoaded',function(){
     document.querySelectorAll("h2.bibliography").forEach(function(e){
         e.innerHTML = '<span>'+e.innerHTML+'</span>';
     });
-    // Script to add request paper button
+    // Script to add request paper button (skipped for open access papers)
     document.querySelectorAll('ol.bibliography > li > .row > div').forEach(function(e) {
-      let title = encodeURIComponent(e.querySelectorAll('.title')[0].textContent);
       let linkBar = e.querySelectorAll('.links')[0];
+      if (linkBar.querySelectorAll('.open-access-link').length > 0) return;
+      let title = encodeURIComponent(e.querySelectorAll('.title')[0].textContent);
       let newLink = document.createElement('a');
       newLink.classList += 'btn btn-sm z-depth-0'
       newLink.href = 'mailto:fxlabpubs@gmail.com?subject=Requesting paper&body=Hi there,%0D%0AMay I request a copy of the paper "'+title+'" please?%0D%0AThank you!'
