@@ -1,7 +1,7 @@
 ---
 layout: profiles
-permalink: /team/
-title: Team
+permalink: /people/
+title: People
 description: "<a href='/contact'>Join us!</a>"
 nav: true
 nav_order: 3
@@ -35,18 +35,12 @@ profiles:
 
   - align: left
     content: people/header_phdstudents.md
-  - align: left #ARIJIT
-    image: people/majumdar.jpeg
-    content: people/phdstudents/about_majumdar.md
   - align: left #BASSEM
     image: people/akoush.jpg
     content: people/phdstudents/about_akoush.md
   - align: left #KHALED
     image: people/younes.jpeg
     content: people/phdstudents/about_younes.md
-  - align: left #DAVID
-    image: people/wu.jpg
-    content: people/phdstudents/about_wu.md
   - align: left #JAMES
     image: people/hansen.jpeg
     content: people/phdstudents/about_hansen.md

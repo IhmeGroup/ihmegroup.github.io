@@ -26,6 +26,11 @@ Latest known position is indicated.
 - Jean-Pierre Hickey (2014), Associate Professor at University of Waterloo
 
 ##### Ph.D. Students
+- Khaled Younes (2026)
+- David Wu (2026)
+    - *Modeling multi-jet plume physics for supersonic retropropulsion*
+- Arijit Majumdar (2026)
+    - [*Study of ultrafast dynamics in supercritical fluids using coherent X-ray scattering and atomistic simulations*](https://stacks.stanford.edu/file/vd945rq6537/Thesis_Arijit_v3-augmented.pdf)
 - Matthew Bonanni (2025), Machine Learning Engineer at Red Hat
     - [*Multiscale modeling of high-speed propulsion systems*](https://stacks.stanford.edu/file/cg360dx4750/PhD_Thesis%20Upload%20Version-augmented.pdf)
 - Priyanka Muhunthan (2024)
