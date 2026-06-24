@@ -6,7 +6,7 @@ The existing file is completely replaced on every run — no merging, no patchin
 
 Filters applied:
   - Excluded types: dataset, paratext, peer-review, grant, editorial,
-    erratum, dissertation (theses are not listed on the site)
+    erratum, dissertation (theses), report (technical reports)
   - Machine-translated duplicates removed (NICT source, or non-Latin title)
   - Preprints (arXiv, SSRN, etc.) removed when a published version exists
   - Manual exclusions read from scripts/publications_exclusions.txt
@@ -47,11 +47,11 @@ EXTRA_AUTHOR_IDS = [
 ]
 
 # Work types to keep (everything else is silently dropped).
-# Note: 'dissertation' (PhD/master's theses) is intentionally excluded — the
-# group does not list theses on the publications page.
+# Note: 'dissertation' (theses) and 'report' (technical reports) are
+# intentionally excluded — the group does not list either on the page.
 ALLOWED_TYPES = frozenset({
     'article', 'preprint', 'proceedings-article', 'book-chapter',
-    'book', 'review', 'report', 'letter',
+    'book', 'review', 'letter',
 })
 
 # Source names that identify a preprint server (case-insensitive substring match)
@@ -362,7 +362,6 @@ _TYPE_MAP = {
     'book-chapter': 'incollection',
     'book': 'book',
     'review': 'article',
-    'report': 'techreport',
     'letter': 'article',
 }
 
