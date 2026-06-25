@@ -10,11 +10,11 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 sponsors: true # Includes sponsors
 
-images:
-  - /assets/img/homepage0.png
-  - /assets/img/homepage1.gif
-  - /assets/img/homepage2.jpeg
-  - /assets/img/homepage3.png
+# Homepage hero. Until the simulation reel is ready, the static image shows.
+# When the video is rendered, set hero_video and it takes over automatically:
+# the image then serves as the poster and the reduced-motion / fallback frame.
+hero_image: /assets/img/homepage0.png
+hero_video: # e.g. /assets/video/hero.mp4
 
 _styles: >
   body.homepage-force-light,

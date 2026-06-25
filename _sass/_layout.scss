@@ -192,16 +192,18 @@ body.homepage-force-light .homepage-hero__social .social .contact-icons a .ai {
   border-radius: var(--homepage-window-radius);
   overflow: hidden;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.14);
-  background: #07070e; // dark fallback while WebGL loads
-  position: relative;  // needed for canvas overlay
+  background: #f5f5f5; // neutral backdrop behind the hero media while it loads
+}
 
-  // Fluid simulation canvas
-  canvas#fluid-canvas,
-  canvas {
-    display: block;
-    width: 100%;
-    aspect-ratio: var(--homepage-window-aspect-ratio);
-  }
+// Hero media: the static placeholder image now, the simulation reel later.
+// Fills the rounded window at a fixed aspect ratio. To switch to video, set
+// `hero_video` in _pages/about.md front matter — no markup changes needed.
+.homepage-hero__media {
+  display: block;
+  width: 100%;
+  aspect-ratio: var(--homepage-window-aspect-ratio);
+  object-fit: cover;
+  object-position: center;
 }
 
 :root {
@@ -209,36 +211,6 @@ body.homepage-force-light .homepage-hero__social .social .contact-icons a .ai {
   --homepage-hero-bottom-space: 2rem;
   --homepage-window-radius: 18px;
   --homepage-window-aspect-ratio: 11 / 5; // about 2.2:1
-}
-
-.homepage-carousel {
-  position: relative;
-  width: 100%;
-  aspect-ratio: var(--homepage-window-aspect-ratio);
-  margin: 0 !important;
-}
-
-.homepage-carousel__slide {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 0.9s ease-in-out;
-  pointer-events: none;
-}
-
-.homepage-carousel__slide.is-active {
-  opacity: 1;
-  z-index: 1;
-}
-
-.homepage-carousel__image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
 }
 
 .homepage-hero__social {

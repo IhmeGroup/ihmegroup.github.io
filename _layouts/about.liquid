@@ -15,21 +15,30 @@ layout: default
       </div>
 
       <div class="homepage-hero__window">
-        <div
-          class="homepage-carousel js-homepage-carousel"
-          data-interval="5000"
-        >
-          {% for image in page.images %}
-            <div class="homepage-carousel__slide{% if forloop.first %} is-active{% endif %}">
-              <img
-                class="homepage-carousel__image"
-                src="{{ image | relative_url }}"
-                alt="Homepage image {{ forloop.index }}"
-                loading="eager"
-              >
-            </div>
-          {% endfor %}
-        </div>
+        {% if page.hero_video %}
+          <video
+            class="homepage-hero__media js-hero-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            {% if page.hero_image %}poster="{{ page.hero_image | relative_url }}"{% endif %}
+          >
+            <source src="{{ page.hero_video | relative_url }}" type="video/mp4">
+            {% comment %} Fallback for browsers that can't play the video {% endcomment %}
+            {% if page.hero_image %}
+              <img class="homepage-hero__media" src="{{ page.hero_image | relative_url }}" alt="{{ site.title }}">
+            {% endif %}
+          </video>
+        {% elsif page.hero_image %}
+          <img
+            class="homepage-hero__media"
+            src="{{ page.hero_image | relative_url }}"
+            alt="{{ site.title }}"
+            loading="eager"
+          >
+        {% endif %}
       </div>
 
       {% if page.social %}
@@ -101,24 +110,17 @@ layout: default
   </article>
 </div>
 
+{% if page.hero_video %}
 <script>
-  /* Fallback image carousel — only activates if fluid-hero.js did not hide it */
-  document.addEventListener('DOMContentLoaded', function () {
-    const carousel = document.querySelector('.js-homepage-carousel');
-    if (!carousel || carousel.style.display === 'none') return;
-
-    const slides = Array.from(carousel.querySelectorAll('.homepage-carousel__slide'));
-    if (slides.length <= 1) return;
-
-    const interval = parseInt(carousel.dataset.interval || '5000', 10);
-    let current = 0;
-
-    setInterval(function () {
-      const next = (current + 1) % slides.length;
-      slides[current].classList.remove('is-active');
-      slides[next].classList.add('is-active');
-      current = next;
-    }, interval);
-  });
+  /* Respect prefers-reduced-motion: don't autoplay the hero reel; hold the poster. */
+  (function () {
+    var video = document.querySelector('.js-hero-video');
+    if (!video || !window.matchMedia) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      video.removeAttribute('autoplay');
+      video.addEventListener('loadedmetadata', function () { video.pause(); });
+      video.pause();
+    }
+  })();
 </script>
-<script src="{{ '/assets/js/fluid-hero.js' | relative_url }}"></script>
+{% endif %}
