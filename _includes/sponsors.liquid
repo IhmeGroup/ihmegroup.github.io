@@ -9,7 +9,7 @@
 {% endcomment %}
 
 <section class="sponsors-marquee" aria-label="Sponsors and collaborators">
-  <p class="sponsors-marquee__label">Our sponsors &amp; collaborators</p>
+  <p class="sponsors-marquee__label">Thanks to our sponsors &amp; collaborators</p>
 
   <div class="sponsors-marquee__viewport">
     <div class="sponsors-marquee__track">
@@ -22,7 +22,7 @@
               src="{{ logo_url }}"
               alt="{{ sponsor.name | escape }}"
               title="{{ sponsor.name | escape }}"
-              loading="lazy"
+              loading="eager"
             >
           </div>
         {% endfor %}
