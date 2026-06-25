@@ -23,10 +23,8 @@ _styles: >
   }
 ---
 
-We are a part of the Mechanical Engineering department at Stanford University and Photon Science at the Stanford Linear Accelerator Center (SLAC). Our research aims to develop an improved holistic understanding of fluids in complex environments, with application to energy conversion, propulsion, wildfire modeling, and carbon capture and sequestration. To do so, we combine experimental, theoretical, and computational approaches. Current research activities at the lab include but are not limited to:
+Some of the most challenging problems in fluid mechanics occur at the extremes, where conventional models break down: in the turbulent flames that power engines and aircraft, in fluids near their critical point, and along the front of a spreading wildfire. Our group studies the dynamics and underlying phenomena of fluids in these complex environments.
 
-- ultrafast X-ray experiments to reveal fluid microstructure,
-- large-scale molecular dynamics simulations to characterize macroscopic behavior, and
-- large-eddy simulations of combustion systems, ranging from rocket engines to wildfires.
+Our work spans a broad range of systems and scales, from molecular interactions to laboratory experiments to full-scale propulsion and environmental flows. We combine high-fidelity simulation, theory, experiments, and data-driven modeling, including advanced X-ray diagnostics at SLAC, to develop a deeper and more predictive understanding of how these fluids behave.
 
-Learn more about our [research](/research). [Join us](/contact). Stay up to date with our latest work by following us on [X](https://twitter.com/fxlabstanford).
+[Explore our research](/research) · [Join the lab](/contact) · [Follow us on LinkedIn](https://www.linkedin.com/company/fxlab-stanford)
