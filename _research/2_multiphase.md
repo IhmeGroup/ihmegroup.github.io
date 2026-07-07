@@ -15,28 +15,22 @@ mode: dark
 <!-- Top section -->
 <div class="research-detail-top">
   <div class="research-detail-top__figure">
-    <img src="/assets/img/projects/fig_insert.png" alt="Main figure for combustion research">
-    <div class="research-detail-caption">
-      Large-eddy simulation of a high-speed reacting flow with coupled shock and flame dynamics.
-    </div>
+    <img src="/assets/img/mphero.png" alt="Experimental shadowgraphy snapshots of a fuel droplet undergoing transcritical transition">
+    <p><i>Figure: Experimental snapshots of the transcritical transition of a slow-moving fuel droplet.</i></p>
   </div>
 
   <div class="research-detail-top__text">
     <p>
-      Physics of phase transitions, interfacial dynamics, and high-pressure mixing.
-      Multiscale interactions in supercritical fluids and complex thermodynamic regimes.
-      Interface-resolving methods for transcritical and multiphase flow systems.
-      Our work in advanced combustion systems and propulsion focuses on the physics and modeling of
-      high-speed reacting flows, combustion instabilities, ignition, and next-generation propulsion
-      concepts. We combine large-scale simulation, reduced-order modeling, data-driven methods, and
-      theory to study systems ranging from scramjets and gas turbines to detonative combustion devices.
+      Many propulsion and energy systems operate at pressures near or above the critical point of their fuels and combustion products, where the clean distinction between liquid and gas breaks down. Under these conditions, real-fluid thermodynamics, phase separation, and interfacial dynamics govern how fuels mix, evaporate, and ignite. We study these multiphase and real-fluid interactions through theory, high-fidelity simulation, and experiment, developing the models needed to predict mixing and combustion in the next generation of power-generation devices.
     </p>
-
     <p>
-      Across these problems, we aim to connect fundamental flow physics to practical performance,
-      stability, and design. This includes understanding how turbulence, shocks, chemistry, and
-      heat release interact in extreme environments, as well as how computational and machine-learning
-      tools can accelerate analysis and control.
+      Our activities in this area center around the following:
+      <ul>
+        <li><ins>Real-fluid thermodynamics and phase behavior:</ins> Characterizing how phase separation, species immiscibility, and sharp property variations across the Widom line govern evaporation, mixing, and stability at transcritical and supercritical pressures.</li>
+        <li><ins>Unified interface-resolving methods:</ins> Developing numerical methods, such as the regularized interface method (RIM), to capture complex interfacial and mixing dynamics for high-pressure multiphase flows.</li>
+        <li><ins>Fuel injection and spray dynamics:</ins> Performing large-eddy simulations of turbulent sprays and propellant mixing layers to predict ignition and combustion-instability behavior in engines.</li>
+        <li><ins>Experiments and diagnostics:</ins> Using high-speed shadowgraphy and hot-surface ignition experiments to measure droplet breakup, evaporation, and stochastic ignition for both conventional and sustainable fuels.</li>
+      </ul>
     </p>
   </div>
 </div>
@@ -45,20 +39,18 @@ mode: dark
 <div class="research-detail-bottom">
 
   <div class="research-detail-card">
-    <img src="/assets/img/multiph1.png" alt="Detonation dynamics figure">
+    <img src="/assets/img/multiph1.png" alt="Interface-resolving simulation of a high-pressure multi-species mixing layer showing liquid and vapor phase separation">
     <h3>High-Pressure Multi-Species Phase Exchange</h3>
     <p>
-      We study the structure, stability, and sensitivity of detonative combustion systems, with
-      emphasis on unsteady wave dynamics, shock interactions, and the role of inhomogeneities.
+      When immiscible fluids are injected into high-pressure environments, subcritical interfacial dynamics and supercritical mixing can coexist as temperature varies around the mixture's critical point. Resolving liquid and vapor interfaces significantly changes predicted atomization and mixing, effects that diffuse-interface models neglect.
     </p>
   </div>
 
   <div class="research-detail-card">
-    <img src="/assets/img/multiph2.png" alt="Propulsion system figure">
+    <img src="/assets/img/multiph2.png" alt="Simulation of a shock wave passing through a water droplet, driving its interface into transcritical conditions">
     <h3>Shock Droplet Interaction</h3>
     <p>
-      We investigate propulsion-relevant combustion in compressible and high-enthalpy environments,
-      including ignition, mixing, and flameholding in advanced propulsion architectures.
+      Modern high-pressure propulsion systems drive strong shocks through liquid droplets. Using RIM, we resolve how a shock can push a droplet interface into transcritical conditions, where the interface momentarily vanishes and re-emerges. These dynamics, typically neglected in engine simulations, influence mixing and combustion at elevated chamber pressures.
     </p>
   </div>
 
@@ -68,8 +60,7 @@ mode: dark
     </video>
     <h3>Hot Surface Ignition and Droplet Dynamics</h3>
     <p>
-      Our research examines thermoacoustic instability, direct and indirect combustion noise, and
-      the mechanisms through which unsteady heat release couples to acoustic and entropy modes.
+      When leaking fuel contacts a hot surface, its vapor can ignite and start a fire. We combine experiments and modeling to study this process: high-speed shadowgraphy captures how a droplet breaks up on impact, while stochastic low-order models predict the ignition probability and combustion dynamics.
     </p>
   </div>
 

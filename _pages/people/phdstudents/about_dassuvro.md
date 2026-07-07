@@ -1,5 +1,5 @@
 **Sourav Das Suvro**  
-*Doctoral Student in Mechanical Engineering*  
+*Doctoral Student, Mechanical Engineering*  
 B.Sc. Bangladesh University of Engineering and Technology (BUET), 2024
 
 Sourav’s research explores the behavior of fluids under extreme conditions through a

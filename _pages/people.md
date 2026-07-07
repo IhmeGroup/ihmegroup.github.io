@@ -32,15 +32,21 @@ profiles:
   - align: left #TAEKEUN
     image: people/yoon.jpeg
     content: people/postdocs/about_yoon.md
+  - align: left #ANDRES
+    image: people/romero.jpg
+    content: people/postdocs/about_romero.md
+  - align: left #ARIJIT
+    image: people/majumdar.jpeg
+    content: people/postdocs/about_majumdar.md
 
   - align: left
     content: people/header_phdstudents.md
   - align: left #BASSEM
     image: people/akoush.jpg
     content: people/phdstudents/about_akoush.md
-  - align: left #KHALED
-    image: people/younes.jpeg
-    content: people/phdstudents/about_younes.md
+  #- align: left #KHALED
+  #  image: people/younes.jpeg
+  #  content: people/phdstudents/about_younes.md
   - align: left #JAMES
     image: people/hansen.jpeg
     content: people/phdstudents/about_hansen.md
@@ -86,6 +92,12 @@ profiles:
   - align: left #KRISSH
     image: people/chawla.jpg
     content: people/visitors/about_chawla.md
+  - align: left #HANNAH
+    image: people/ramsperger.jpg
+    content: people/visitors/about_ramsperger.md
+  - align: left #BRYCE
+    image: people/myers.jpeg
+    content: people/visitors/about_myers.md
 
   - align: left
     content: people/header_alumni.md

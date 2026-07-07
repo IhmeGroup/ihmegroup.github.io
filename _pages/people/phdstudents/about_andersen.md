@@ -1,5 +1,5 @@
 **Blake Andersen**  
-*Doctoral Student in Mechanical Engineering*  
+*Doctoral Candidate, Mechanical Engineering*  
 M.S. University of California San Diego, 2024  
 B.S. University of California San Diego, 2024
 

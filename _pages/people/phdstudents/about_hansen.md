@@ -1,5 +1,5 @@
 **James Hansen**  
-*Doctoral Candidate in Aeronautics & Astronautics*  
+*Doctoral Candidate, Aeronautics & Astronautics*  
 M.S. Stanford University, 2023  
 B.S.E. Arizona State University, 2021
 

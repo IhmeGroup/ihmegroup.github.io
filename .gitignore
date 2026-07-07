@@ -1,3 +1,10 @@
 _site/*
 _bibliography/_site/*
 Gemfile.lock
+
+# OS / editor / local tooling junk
+.DS_Store
+.claude/
+
+# Hero-animation production scratch (render frames + WIP scripts, not served)
+scripts/hero/

@@ -1,5 +1,5 @@
 **Jan Wilhelm Gärtner**  
-*Visiting Scholar*\
+*Visiting Postdoctoral Scholar*\
 Ph.D. University of Stuttgart, 2024\
 M. Sc. University of Stuttgart, 2018\
 B. Sc. University of Stuttgart, 2015

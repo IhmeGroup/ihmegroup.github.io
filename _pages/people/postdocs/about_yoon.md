@@ -1,5 +1,5 @@
 **Taekeun Yoon**  
-*Postdoctoral Scholar in Mechanical Engineering*  
+*Postdoctoral Scholar, Mechanical Engineering*  
 Ph.D. Seoul National University, 2023  
 B.S. Seoul National University, 2017
 

@@ -1,5 +1,5 @@
 **Sho Wada**  
-*Doctoral Candidate in Mechanical Engineering*  
+*Doctoral Candidate, Mechanical Engineering*  
 M.S. Kyoto University, 2024  
 B.S. Kyoto University, 2022
 

@@ -1,5 +1,5 @@
 **Khaled Younes**  
-*Doctoral Candidate in Mechanical Engineering*  
+*Doctoral Candidate, Mechanical Engineering*  
 M.A.Sc. University of Waterloo, 2021  
 B.A.Sc. University of Waterloo, 2017
 

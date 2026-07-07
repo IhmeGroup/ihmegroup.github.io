@@ -1,5 +1,5 @@
 **Benyamin Krisna**  
-*Doctoral Candidate, Department of Mechanical Engineering*  
+*Doctoral Candidate, Mechanical Engineering*  
 M.S. Stanford University, 2024  
 B.Sc. RWTH, RWTH Aachen University, 2021
 

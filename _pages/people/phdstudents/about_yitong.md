@@ -1,5 +1,5 @@
 **Yitong Li**  
-*Doctoral Candidate in Civil and Environmental Engineering*   
+*Doctoral Candidate, Civil and Environmental Engineering*   
 B.Sc. Technion - Israel Institute of Technology, 2023
 
 Yitong advances data-driven predictive modeling for environmental and energy systems. She's a HAI graduate fellow with a love for live music.

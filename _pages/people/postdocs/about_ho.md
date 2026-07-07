@@ -1,5 +1,5 @@
 **Jen Zen Ho**  
-*Postdoctoral Scholar in Mechanical Engineering*  
+*Postdoctoral Scholar, Mechanical Engineering*  
 Ph.D. Melbourne, 2023  
 M.S. Melbourne, 2017  
 B.S. Melbourne, 2015

@@ -1,5 +1,5 @@
 **Shivansh Chaturvedi**  
-*Doctoral Student in Mechanical Engineering*  
+*Doctoral Candidate, Mechanical Engineering*  
 B.Tech. Indian Institute of Technology (BHU) Varanasi, 2023
 
 Shivansh works on combustion diagnostics and ammonia-hydrogen blends. He loves photography and enjoys cooking.

@@ -1,5 +1,5 @@
 **Bassem Akoush**  
-*Doctoral Candidate in Mechanical Engineering*  
+*Doctoral Candidate, Mechanical Engineering*  
 M.Sc. Cairo University, 2020  
 B.Sc. Cairo University, 2018
 

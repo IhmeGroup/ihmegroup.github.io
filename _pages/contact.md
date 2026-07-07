@@ -4,7 +4,35 @@ permalink: /contact/
 title: Contact
 nav: true
 nav_order: 7
+_styles: >
+  .contact-figures {
+    float: right;
+    width: 40%;
+    min-width: 300px;
+    margin: 0.25rem 0 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .contact-figures img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+  @media (max-width: 576px) {
+    .contact-figures {
+      float: none;
+      width: 100%;
+      max-width: 100%;
+      margin: 1rem 0;
+    }
+  }
 ---
+
+<div class="contact-figures">
+  <img src="/assets/img/530b.png" alt="Building 530 at Stanford, home of the FX Laboratory">
+  <img src="/assets/img/map.png" alt="Map showing the location of the FX Laboratory on the Stanford campus">
+</div>
 
 <!-- ## **Contact** -->
 FX Laboratory  

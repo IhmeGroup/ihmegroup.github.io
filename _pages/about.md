@@ -14,13 +14,7 @@ sponsors: true # Includes sponsors
 # When the video is rendered, set hero_video and it takes over automatically:
 # the image then serves as the poster and the reduced-motion / fallback frame.
 hero_image: /assets/img/homepage0.png
-hero_video: # e.g. /assets/video/hero.mp4
-
-_styles: >
-  body.homepage-force-light,
-  html[data-theme='dark'] body.homepage-force-light {
-    background: white !important;
-  }
+hero_video: /assets/video/reel.mp4 # PROTOTYPE preview — revert before commit
 ---
 
 Some of the most challenging problems in fluid mechanics occur at the extremes, where conventional models break down: in the turbulent flames that power engines and aircraft, in fluids near their critical point, and along the front of a spreading wildfire. Our group studies the dynamics and underlying phenomena of fluids in these complex environments.

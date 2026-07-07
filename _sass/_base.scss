@@ -260,6 +260,56 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// Two-column profile rows: a fixed-width photo column beside a bio column that
+// does NOT wrap underneath the photo (replaces the old float, which left a
+// ragged left edge on desktop and a full-bleed square photo on mobile).
+.profile-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.profile-row--right {
+  flex-direction: row-reverse;
+}
+
+.profile-row .profile {
+  flex: 0 0 200px;
+  width: 200px;
+  max-width: 35%;
+  margin: 0;
+}
+
+.profile-row__bio {
+  flex: 1 1 auto;
+  min-width: 0; // let the bio shrink instead of overflowing
+}
+
+// Mobile: stack the photo above the bio and cap the photo so it no longer
+// takes the full screen width.
+@media (max-width: 575.98px) {
+  .profile-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .profile-row--right {
+    flex-direction: column;
+  }
+
+  .profile-row .profile {
+    flex-basis: auto;
+    width: 55%;
+    max-width: 200px;
+  }
+
+  .profile-row__bio {
+    width: 100%;
+  }
+}
+
 .post-description {
   margin-bottom: 2rem;
   font-size: 0.875rem;
@@ -392,11 +442,17 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-// Reduce logo size on small screens to prevent overflow
-@media only screen and (min-width: 576px) and (max-width: 992px) {
-  .navbar .navbar-brand {
-    max-width:66px;
-    overflow:hidden;
+// Logo: full mark + wordmark on wide screens. In the tablet range the inline nav
+// competes for space, so crop the brand to just the square FX mark (the logo's
+// natural width stays ~326px, so overflow:hidden shows only the leftmost ~80px
+// square). The high-specificity selector is needed to beat the calc() max-width
+// on a.navbar-brand above; an under-specific rule was why this used to clip the
+// wordmark mid-word instead of cropping cleanly to the mark.
+@media only screen and (min-width: 576px) and (max-width: 991.98px) {
+  .navbar .container a.navbar-brand {
+    width: 66px; // the FX mark box is ~64px wide; crop just past it
+    max-width: 66px;
+    overflow: hidden;
   }
 }
 
