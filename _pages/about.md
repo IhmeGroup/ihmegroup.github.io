@@ -10,11 +10,11 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 sponsors: true # Includes sponsors
 
-# Homepage hero. Until the simulation reel is ready, the static image shows.
-# When the video is rendered, set hero_video and it takes over automatically:
-# the image then serves as the poster and the reduced-motion / fallback frame.
-hero_image: /assets/img/homepage0.png
-hero_video: /assets/video/reel.mp4 # PROTOTYPE preview — revert before commit
+# Homepage hero. hero_video plays and takes over automatically; hero_image is
+# the poster shown until the video loads and the reduced-motion / fallback frame.
+# hero_image is the reel's first frame so the swap to video is seamless.
+hero_image: /assets/img/hero_poster.jpg
+hero_video: /assets/video/reel.mp4
 ---
 
 Some of the most challenging problems in fluid mechanics occur at the extremes, where conventional models break down: in the turbulent flames that power engines and aircraft, in fluids near their critical point, and along the front of a spreading wildfire. Our group studies the dynamics and underlying phenomena of fluids in these complex environments.
