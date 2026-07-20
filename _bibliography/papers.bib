@@ -1,17 +1,8 @@
-% Auto-generated from OpenAlex on 2026-07-13 08:56 UTC
+% Auto-generated from OpenAlex on 2026-07-20 08:46 UTC
 % ORCID: 0000-0002-4158-7050
 % Do not edit by hand — run scripts/update_publications.py to regenerate
 % To permanently exclude an entry, add its DOI or OpenAlex ID
 % to scripts/publications_exclusions.txt
-
-@article{yeo2026development,
-  title={Development of a Mixed-Precision Discontinuous Galerkin Framework for Compressible Flow Calculations},
-  author={Yeo, B. K. W. and Ihme, M.},
-  journal={AIAA SCITECH 2026 Forum},
-  year={2026},
-  doi={10.2514/6.2026-0376},
-  abstract={Discontinuous Galerkin (DG) methods combine features of finite element (FE) and finite volume (FV) solvers to solve partial differential equations in an element-local framework. This offers inherent advantages for massively-parallel computing architectures due to the high arithmetic intensity and lower memory requirements of element-local schemes. This paper presents a DG framework built using JAX, which targets several hardware platforms using the XLA compiler. The framework achieves an arbitrarily high order of accuracy and correctly simulates canonical fluid dynamics test cases using single-precision, but the associated convergence rate degrades very quickly using single-precision. Concurrently, single- and double-precision compute time is compared across a variety of hardware architecture including graphics processing units (GPUs), tensor processing units (TPUs), and both x86_64 and ARM computers. It is shown that single-precision produces as much as 2x speedup even on traditional architectures. This motivates the development of a mixed-precision framework that combines the speedup from using single-precision with the improved accuracy from double-precision representations. To this end, this paper demonstrates that selectively increasing the precision of certain operations in a DG solver can lower the machine-precision error floor. Some observations on the contributions of the precision of different operations in a DG solver to its overall accuracy and convergence rate are also presented.},
-}
 
 @article{majumdar2026two,
   title={Two-component dynamics in supercritical CO₂ from inelastic X-ray scattering},
@@ -183,6 +174,16 @@
   doi={10.1016/j.proci.2025.105802},
 }
 
+@article{alexander2025observations,
+  title={Observations and analysis of near-critical fuel injection},
+  author={Alexander, Z. and Krause, T. and Ly, N. and Hegde, U. and Hicks, M. and Ihme, M.},
+  journal={The Journal of Supercritical Fluids},
+  volume={220},
+  pages={106549--106549},
+  year={2025},
+  doi={10.1016/j.supflu.2025.106549},
+}
+
 @article{akoush2025deep,
   title={Deep reinforcement learning for adaptive control of thermoacoustic instabilities in a lean-premixed methane/hydrogen/air combustor},
   author={Akoush, B. and Vignat, G. and Finley, R. and Chung, W. T. and Ihme, M.},
@@ -214,43 +215,6 @@
   doi={10.1016/j.aiig.2025.100120},
   open_access_url={https://doi.org/10.1016/j.aiig.2025.100120},
   abstract={High-resolution spatiotemporal simulations effectively capture the complexities of atmospheric plume dispersion in complex terrain. However, their high computational cost makes them impractical for applications requiring rapid responses or iterative processes, such as optimization, uncertainty quantification, or inverse modeling. To address this challenge, this work introduces the Dual-Stage Temporal Three-dimensional UNet Super-resolution (DST3D-UNet-SR) model, a highly efficient deep learning model for plume dispersion predictions. DST3D-UNet-SR is composed of two sequential modules: the temporal module (TM), which predicts the transient evolution of a plume in complex terrain from low-resolution temporal data, and the spatial refinement module (SRM), which subsequently enhances the spatial resolution of the TM predictions. We train DST3D-UNet-SR using a comprehensive dataset derived from high-resolution large eddy simulations (LES) of plume transport. We propose the DST3D-UNet-SR model to significantly accelerate LES of three-dimensional (3D) plume dispersion by three orders of magnitude. Additionally, the model demonstrates the ability to dynamically adapt to evolving conditions through the incorporation of new observational data, substantially improving prediction accuracy in high-concentration regions near the source.},
-}
-
-@article{vignat2025effect,
-  title={Effect of Synthetic Aviation Fuels on the Stochastic Ignition of Fuel Droplets on Hot Surfaces},
-  author={Vignat, G. and Ma, Y. and Ho, J. Z. and Cho, Y.-H. and Hashimoto, N. and Dinelli, T. and Yoon, T. and Fisher, C. A. and Ihme, M.},
-  journal={AIAA SCITECH 2025 Forum},
-  year={2025},
-  doi={10.2514/6.2025-0741},
-  abstract={When a flammable liquid is put in contact with a very hot surface, thermal ignition of fuel vapors can occur. In the event of a leak, this process, called hot surface ignition, can lead to fires in aircrafts, spacecrafts, vehicles, and machinery. In the aerospace industry, design practices and certification processes must ensure that this fire hazard is mitigated. In the present work, we performed experiments to assess whether sustainable aviation fuels have a different hot surface ignition behavior compared to petroleum-derived jet fuel. In a canonical configuration, 2.5mm fuel droplets were released onto a high temperature optically accessible surface. After a 150mm fall representative of a typical aircraft engine compartment, the droplets broke up upon impact and ignition occured if the surface temperature was sufficiently high. The temperature of ignition was quantified and we found that all investigated fuels had a similar or higher hot surface ignition temperature to jet-A in this configuration. The temperature of ignition spanned a 70K range for the 4 fuels investigated. High speed shadowgraphy revealed the effect of fuel surface tension on the droplet break-up process, and high speed chemiluminescence imaging revealed the multi-step ignition process that the droplet underwent.},
-}
-
-@article{krisna2025shock,
-  title={Shock-Induced Vanishing Dynamics of Water-Droplet Interface},
-  author={Krisna, B. and Ly, N. and Ihme, M.},
-  journal={AIAA SCITECH 2025 Forum},
-  year={2025},
-  doi={10.2514/6.2025-1502},
-  abstract={Novel combustion systems in aerospace propulsion systems as scramjets and rotating detonation engines utilize higher pressure conditions to achieve optimal thermodynamic efficiency. As a result, the combustion chamber pressure may affect the interface stability of water, one of the main combustion products. Although the immiscibility between the liquid water droplet and the ambiance guarantees the formation of the subcritical interface, its dynamics and impact is typically neglected in many simulations. These are even more prominent with interfacial dynamics due to transcritical effects that arise due to strong shocks inside the combustion chamber, which is typical in modern detonation engines. To elucidate this, we consider a shock of M=1.36 for a water/nitrogen system, where the post-shock liquid- and vapor-phase conditions (T_1=600 K and T_2=730 K) are fully transcritical with respect to the critical mixing point. In this work, we employ the Regularized Interface Method (RIM), since it is able to resolve both subcritical interfacial dynamics along with supercritical mixing dynamics. Vanishing and spontaneous emergence of the interface is observed, indicating the need of resolving the interfacial dynamics and effects.},
-}
-
-@article{ly2025interface,
-  title={Interface-Capturing Simulation of High-Pressure LOX/GH2 Mixing Layer},
-  author={Ly, N. and Ihme, M.},
-  journal={AIAA SCITECH 2025 Forum},
-  year={2025},
-  doi={10.2514/6.2025-0355},
-  abstract={The mixing dynamics of injected propellants is a key factor in determining the ignition performance and combustion-instability response of liquid rocket engines. A key source of uncertainty in the prediction of LOX/GH2 mixing dynamics is the immiscibility of the injected propellants at supercritical pressure conditions, which induces liquid/vapor phase separation and surface-tension effects. However, modeling of LOX/GH2 mixing layers typically employs the Diffuse Interface Method (DIM), where interfacial dynamics are neglected. Recently, the Regularized Interface Method (RIM) was developed to consistently model the interfacial flows of immiscible mixtures at high pressure. Thus, the objective of this paper is to provide quantification of the impact of resolving interfacial effects on modeling of LOX/GH2 injection dynamics in both cryogenic temperature and transcritical conditions, simulating cold-start and stable operation, respectively. To accomplish this, we analyze simulation results of a benchmark high-pressure LOX/GH2 mixing layer configuration using RIM and DIM formulations at these respective conditions. Results of the study will quantify the need for interface-capturing simulations of propellant injection, even at supercritical pressure, as well as shed light on the complex transition dynamics from subcritical interfacial flows to supercritical mixing as the surface temperature is heated beyond the mixture's critical point.},
-}
-
-@article{alexander2025observations,
-  title={Observations and analysis of near-critical fuel injection},
-  author={Alexander, Z. and Krause, T. and Ly, N. and Hegde, U. and Hicks, M. and Ihme, M.},
-  journal={The Journal of Supercritical Fluids},
-  volume={220},
-  pages={106549--106549},
-  year={2025},
-  doi={10.1016/j.supflu.2025.106549},
 }
 
 @article{brouzet2025multi,
@@ -378,6 +342,17 @@
   open_access_url={https://www.osti.gov/biblio/2318575},
 }
 
+@article{li2024small,
+  title={Small-scale turbulent characteristics in transcritical wall-bounded flows},
+  author={Li, F. and Zhang, W. and Bai, B. and Ihme, M.},
+  journal={Journal of Fluid Mechanics},
+  volume={986},
+  year={2024},
+  doi={10.1017/jfm.2024.348},
+  open_access_url={https://www.osti.gov/biblio/2405139},
+  abstract={Considerable efforts have been devoted to the understanding of the small-scale characteristics in turbulent flows. While the universality of small-scale quantities has been established for incompressible flows, their extension to high-pressure transcritical flows remains an open area of research. To address this question, we investigate the real-fluid thermodynamic effects on small-scale velocity statistics of high-pressure transcritical wall-bounded turbulence. We show that in the locally isotropic region for transcritical flows, low-order moments of small-scale statistics collapse for all cases and Kolmogorov's (1941) theory holds. However, real-fluid thermodynamic effects introduce deviations in the tails of the probability density function for the velocity derivative and, consequently, high-order moments of velocity gradients and dissipation rate in transcritical flows cannot collapse in the locally isotropic region. Analysis of the intermittency shows that the low-order structure functions in transcritical flows follow extended self-similarity, while the dependence of the intermittency factor on real-fluid effects is observed for high-order structure functions. The real-fluid effects on intermittency are explained by turbulent structures related to rare events. Additionally, the dissipation rate moments for transcritical flows follow a universal scaling with Reynolds number, and the scaling exponents are different from those of incompressible flows. These results extend the small-scale universality in incompressible flows (Schumacher et al. , Proc. Natl Acad. Sci. USA , vol. 111, 2014, pp. 10961–10965) to realistic flows with significant changes in thermodynamic properties, and provide a physical underpinning of the scaling laws of small-scale statistics at transcritical conditions.},
+}
+
 @article{nicolle2024mixtures,
   title={Mixtures Recomposition by Neural Nets: A Multidisciplinary Overview},
   author={Nicolle, A. and Deng, S. and Ihme, M. and Kuzhagaliyeva, N. and Al Ibrahim, E. and Farooq, A.},
@@ -388,17 +363,6 @@
   year={2024},
   doi={10.1021/acs.jcim.3c01633},
   abstract={Artificial Neural Networks (ANNs) are transforming how we understand chemical mixtures, providing an expressive view of the chemical space and multiscale processes. Their hybridization with physical knowledge can bridge the gap between predictivity and understanding of the underlying processes. This overview explores recent progress in ANNs, particularly their potential in the 'recomposition' of chemical mixtures. Graph-based representations reveal patterns among mixture components, and deep learning models excel in capturing complexity and symmetries when compared to traditional Quantitative Structure-Property Relationship models. Key components, such as Hamiltonian networks and convolution operations, play a central role in representing multiscale mixtures. The integration of ANNs with Chemical Reaction Networks and Physics-Informed Neural Networks for inverse chemical kinetic problems is also examined. The combination of sensors with ANNs shows promise in optical and biomimetic applications. A common ground is identified in the context of statistical physics, where ANN-based methods iteratively adapt their models by blending their initial states with training data. The concept of mixture recomposition unveils a reciprocal inspiration between ANNs and reactive mixtures, highlighting learning behaviors influenced by the training environment.},
-}
-
-@article{li2024small,
-  title={Small-scale turbulent characteristics in transcritical wall-bounded flows},
-  author={Li, F. and Zhang, W. and Bai, B. and Ihme, M.},
-  journal={Journal of Fluid Mechanics},
-  volume={986},
-  year={2024},
-  doi={10.1017/jfm.2024.348},
-  open_access_url={https://www.osti.gov/biblio/2405139},
-  abstract={Considerable efforts have been devoted to the understanding of the small-scale characteristics in turbulent flows. While the universality of small-scale quantities has been established for incompressible flows, their extension to high-pressure transcritical flows remains an open area of research. To address this question, we investigate the real-fluid thermodynamic effects on small-scale velocity statistics of high-pressure transcritical wall-bounded turbulence. We show that in the locally isotropic region for transcritical flows, low-order moments of small-scale statistics collapse for all cases and Kolmogorov's (1941) theory holds. However, real-fluid thermodynamic effects introduce deviations in the tails of the probability density function for the velocity derivative and, consequently, high-order moments of velocity gradients and dissipation rate in transcritical flows cannot collapse in the locally isotropic region. Analysis of the intermittency shows that the low-order structure functions in transcritical flows follow extended self-similarity, while the dependence of the intermittency factor on real-fluid effects is observed for high-order structure functions. The real-fluid effects on intermittency are explained by turbulent structures related to rare events. Additionally, the dissipation rate moments for transcritical flows follow a universal scaling with Reynolds number, and the scaling exponents are different from those of incompressible flows. These results extend the small-scale universality in incompressible flows (Schumacher et al. , Proc. Natl Acad. Sci. USA , vol. 111, 2014, pp. 10961–10965) to realistic flows with significant changes in thermodynamic properties, and provide a physical underpinning of the scaling laws of small-scale statistics at transcritical conditions.},
 }
 
 @article{ly2024regularized,
@@ -469,19 +433,6 @@
   abstract={Supercritical fluids (SCFs) can be found in a variety of environmental and industrial processes. They exhibit an anomalous thermodynamic behavior, which originates from their fluctuating heterogeneous micro-structure. Characterizing the dynamics of these fluids at high temperature and high pressure with nanometer spatial and picosecond temporal resolution has been very challenging. The advent of hard x-ray free electron lasers has enabled the development of novel multi-pulse ultrafast x-ray scattering techniques, such as x-ray photon correlation spectroscopy (XPCS) and x-ray pump x-ray probe (XPXP). These techniques offer new opportunities for resolving the ultrafast microscopic behavior in SCFs at unprecedented spatiotemporal resolution, unraveling the dynamics of their micro-structure. However, harnessing these capabilities requires a bespoke high-pressure and high-temperature sample system that is optimized to maximize signal intensity and address instrument-specific challenges, such as drift in beamline components, x-ray scattering background, and multi-x-ray-beam overlap. We present a pressure cell compatible with a wide range of SCFs with built-in optical access for XPCS and XPXP and discuss critical aspects of the pressure cell design, with a particular focus on the design optimization for XPCS.},
 }
 
-@article{ly2024stable,
-  title={Stable supercritical interfaces do not exist without surface tension},
-  author={Ly, N. and Ihme, M.},
-  journal={Nature Communications},
-  volume={15},
-  number={1},
-  pages={9353--9353},
-  year={2024},
-  doi={10.1038/s41467-024-53175-8},
-  open_access_url={https://www.nature.com/articles/s41467-024-53175-8.pdf},
-  abstract={Recently, Longmire et al. 1 studied the thermal diffusion process of (i) the steady-state configuration of a 1D heat-conduction problem with fixed Dirichlet boundary conditions and (ii) the unsteady configuration of supercritical liquid-like droplets placed in a supercritical gas-like environment. From theoretical analyses of the 1D boundary-value problem (BVP), they proposed a necessary condition on the fluid’s thermo-transport properties for the emergence of an inflection point in the steady-state solution, which they then interpreted as a stable supercritical interfacial structure that can be exhibited by pure fluids even in the absence of surface tension. Longmire et al. 1 then further corroborated their claim of stable supercritical interfacial dynamics, limited to single-species systems, using results from their supercritical droplet diffusion simulations, most importantly the observed initial density-gradient sharpening dynamics. Here, we offer an alternative explanation of their analyses and observations that does not imply a stable supercritical pure-fluid interface in the absence of capillary forces.},
-}
-
 @article{bonanni2024coupling,
   title={Coupling of detonation structure and upstream inhomogeneities in a rotating detonation engine},
   author={Bonanni, M. and Brouzet, D. and Vignat, G. and Ihme, M.},
@@ -503,13 +454,16 @@
   doi={10.1016/j.ijmultiphaseflow.2024.105069},
 }
 
-@article{hansen2024normal,
-  title={A Normal-Score Ensemble Kalman Filter for 1D Shock Waves},
-  author={Hansen, J. J. and Brouzet, D. and Ihme, M.},
-  journal={AIAA SCITECH 2024 Forum},
+@article{chung2024ensemble,
+  title={Ensemble predictions of laser ignition with a hybrid stochastic physics-embedded deep-learning framework},
+  author={Chung, W. T. and Laurent, C. and Passiatore, D. and Ihme, M.},
+  journal={Proceedings of the Combustion Institute},
+  volume={40},
+  number={1-4},
+  pages={105304--105304},
   year={2024},
-  doi={10.2514/6.2024-1022},
-  abstract={A normal-score ensemble Kalman filter (NS-EnKF) formulation was developed and implemented to evaluate performance in assimilating observations into non-linearly evolving, non-Gaussian distributed systems. The NS-EnKF was benchmarked against the stochastic ensemble Kalman filter (EnKF) without localization on the Lorenz-96 system. Each filter was run for 100 stochastic trials with 10, 25, and 100 ensemble members. Compared to the EnKF, assimilation of 10 and 25 ensemble members with the NS-EnKF generated predictions which were more stable and had lower state prediction errors. When 100 ensemble members were used, the EnKF had lower prediction error on average while the NS-EnKF continued to offer greater solution stability. Filters were also compared using a numerical shock tube configuration with uncertainty in initial pressures and temperatures. Several trials were run to assimilate sparse pressure observations with varying measurement error into pressure, temperature, and velocity fields. While the relative performance of the EnKF and NS-EnKF varied with the assumed measurement error, both filters improved predictions of shock location as well as pressure, temperature and velocity fields. Results indicate that the NS-EnKF can provide superior prediction accuracy to the EnKF in cases where non-Gaussian distributed states are prevalent, but that further study is required to determine the value of the NS-EnKF in improving state prediction for shock-related applications.},
+  doi={10.1016/j.proci.2024.105304},
+  open_access_url={https://www.osti.gov/biblio/2391045},
 }
 
 @article{ho2024augmenting,
@@ -538,6 +492,19 @@
   abstract={A multi-scale U-Net machine learning (ML) model is developed to assess its validity as a surrogate for non-intrusive flame temperature measurement in jet-in-hot-coflow (JHC) flames. Inputs to the model are simultaneous hydroxyl (OH) and formaldehyde (CH2O) planar laser-induced fluorescence (PLIF) measurements, with target temperature fields derived from Rayleigh scattering measurements. Coflow oxygen (O2) concentration, jet Reynolds number, coflow temperature, and fuel inputs were considered in the dataset, resulting in 33 unique flame conditions, and ∼17,000 training images. The ML model reconstructs the instantaneous temperature images to within an absolute error of 7 ± 10% of the measured values for the initial natural gas/ethylene model. Transfer learning was employed to accelerate training across conditions of different fuels, with mean absolute reconstruction error of 7 ± 9% for models of ethanol and dimethyl ether. A fourth model including data from all four fuels was trained using transfer learning, with 6 ± 9% error. Multi-layer perceptron (MLP) classification models were applied to the deepest layers of the four-fuel model to identify whether physical and chemical flame features were being encoded. Experimentally verifiable features were found to be encoded within the latent space of the model, demonstrating that it is not solely an image regression tool, but is capable of predicting flame features including the fuel type, initial coflow temperature, downstream axial location, and coflow O2 concentration. These findings indicate that the model is not only well suited for temperature predictions, but can provide scientific insight as well.},
 }
 
+@article{ly2024stable,
+  title={Stable supercritical interfaces do not exist without surface tension},
+  author={Ly, N. and Ihme, M.},
+  journal={Nature Communications},
+  volume={15},
+  number={1},
+  pages={9353--9353},
+  year={2024},
+  doi={10.1038/s41467-024-53175-8},
+  open_access_url={https://www.nature.com/articles/s41467-024-53175-8.pdf},
+  abstract={Recently, Longmire et al. 1 studied the thermal diffusion process of (i) the steady-state configuration of a 1D heat-conduction problem with fixed Dirichlet boundary conditions and (ii) the unsteady configuration of supercritical liquid-like droplets placed in a supercritical gas-like environment. From theoretical analyses of the 1D boundary-value problem (BVP), they proposed a necessary condition on the fluid’s thermo-transport properties for the emergence of an inflection point in the steady-state solution, which they then interpreted as a stable supercritical interfacial structure that can be exhibited by pure fluids even in the absence of surface tension. Longmire et al. 1 then further corroborated their claim of stable supercritical interfacial dynamics, limited to single-species systems, using results from their supercritical droplet diffusion simulations, most importantly the observed initial density-gradient sharpening dynamics. Here, we offer an alternative explanation of their analyses and observations that does not imply a stable supercritical pure-fluid interface in the absence of capillary forces.},
+}
+
 @article{brill2024enrichment,
   title={An enrichment wall modeling framework for spectral element methods},
   author={Brill, S. and Pal, P. and Ameen, M. and Xu, C. and Ihme, M.},
@@ -548,18 +515,6 @@
   doi={10.1063/5.0242532},
   open_access_url={https://www.osti.gov/biblio/2481649},
   abstract={In the present work, a first-of-its-kind enrichment wall-model is developed within the spectral element method (SEM) framework for large-eddy simulations (LES) of wall-bounded turbulent flows. The method augments the polynomial solution in the wall-adjacent elements with an analytical law-of-the-wall enrichment function representing the mean velocity near the wall. In the solution representation, this enrichment function captures the large gradients in the boundary layer, which allows the polynomial modes to represent the turbulent fluctuations. The enriched solution is able to resolve the shear stress at the wall without any modification to the no-slip wall boundary conditions, which allows for greater accuracy in the near-wall region compared to traditional methods. The enrichment wall modeling approach is implemented in a high-order SEM computational fluid dynamics solver, Nek5000, and its performance is assessed in turbulent channel flow wall-modeled LES for a range of Reynolds numbers. It is demonstrated that the enrichment wall-model improves solution accuracy on under-resolved near-wall grids as compared to traditional shear stress wall-models.},
-}
-
-@article{chung2024ensemble,
-  title={Ensemble predictions of laser ignition with a hybrid stochastic physics-embedded deep-learning framework},
-  author={Chung, W. T. and Laurent, C. and Passiatore, D. and Ihme, M.},
-  journal={Proceedings of the Combustion Institute},
-  volume={40},
-  number={1-4},
-  pages={105304--105304},
-  year={2024},
-  doi={10.1016/j.proci.2024.105304},
-  open_access_url={https://www.osti.gov/biblio/2391045},
 }
 
 @article{schwerdtner2024uncertainty,
@@ -624,15 +579,6 @@
   abstract={Wildfire smoke is a health hazard as it contains a mixture of carcinogenic volatile compounds and fine particulate matter. In particular, exposure to polycyclic aromatic hydrocarbons (PAHs) is a major concern, since these compounds have been recognized as important contributors to the overall carcinogenic risk of smoke exposure. In this work, gas and particle-phase PAH emissions from the combustion of Eastern White Pine (pinus strobus) were quantified using time-of-flight mass spectrometry over a range of burn conditions representative of wildfires and prescribed fires. These experiments allow for controlling conditions of fuel moisture, heat flux, and oxygen concentration to understand their impact on PAH emissions. We find that optimal conditions for fuel moisture content of 20 - 30%, heat load onto the sample of 60 - 70 kW/m$^2$, and oxygen concentrations of the burn environment of 5 - 15% can reduce the emissions of the heavy molar weight PAHs by up to 77%. Our analysis shows that the relative carcinogenic risk can be reduced by more than 50% under optimal conditions, offering a way for reducing emission exposure from forest treatment activities.},
 }
 
-@article{chen2024low,
-  title={Low Order Model for Generating Supersonic Cavity Combustion Ignition Probability Maps},
-  author={Chen, R. and Bonanni, M. and Ihme, M.},
-  journal={AIAA AVIATION FORUM AND ASCEND 2024},
-  year={2024},
-  doi={10.2514/6.2024-3809},
-  abstract={Ignition probability maps are useful for characterizing ignition mechanisms in supersonic combustion engines. However, evaluating the ignition probability in 3D scramjet geometries using high-fidelity ensemble simulations is computationally expensive. This work offers a cost-effective alternative by using low-order models to approximate results obtained from 3D large-eddy simulations (LES), with a focus on the RC19 scramjet geometry located at the Air Force Research Laboratory (AFRL). To accomplish this, a quasi-3D RC19 mesh geometry that assumes spanwise uniformity is used to generate a 2D probabilistic ignition map using LES. Validated through comparison with experimental and computational ignition maps of the RC19 scramjet cavity, this map is used as a baseline of comparison for low-order model approaches. Statistical quantities from an inert simulation of the quasi-3D scramjet cavity are then sampled to perform stochastic 0D perfectly stirred reactor (PSR) simulations and produce a low-order ignition map. Next, the 0D simulation is modified to incorporate the advection and mixing properties present in the flow, improving the prediction. The ignition maps for the quasi-3D geometry generated from LES and 0D PSR models are compared to assess the performance of the proposed modeling approaches. The 0D PSR and advecting 0D PSR maps produced mean absolute errors of 22.8% and 12.7%, respectively, with a 99.7% reduction in computational cost. Qualitatively, the advecting 0D PSR map produced a profile similar to the baseline LES map in shape and region of highest ignition probability with exception to the left wall region due to the effects of flame kernel growth. Overall, the low-order models serve well as a preliminary assessment of ignition probability by finding ignition locations where higher fidelity simulations can then be focused.},
-}
-
 @article{boign2024turbulence,
   title={Turbulence in disguise: Reactive flows in porous media mimic turbulent behavior},
   author={Boign{\'e}, {\'E}. and Sobhani, S. and Ferguson, J. C. and Ihme, M.},
@@ -651,23 +597,6 @@
   year={2024},
   doi={10.2139/ssrn.5022807},
   open_access_url={http://dx.doi.org/10.2139/ssrn.5022807},
-}
-
-@article{bonanni2024video,
-  title={Video: Large-eddy simulation of the AFRL rotating detonation rocket engine},
-  author={Bonanni, M. and Vignat, G. and Brouzet, D. and Ihme, M.},
-  journal={77th Annual Meeting of the APS Division of Fluid Dynamics - Gallery of Fluid Motion},
-  year={2024},
-  doi={10.1103/aps.dfd.2024.gfm.v2677881},
-  open_access_url={http://dx.doi.org/10.1103/aps.dfd.2024.gfm.v2677881},
-}
-
-@article{ihme2024compostional,
-  title={COMPOSTIONAL INHOMOGENEITIES AS A SOURCE OF INDIRECT COMBUSTION NOISE: PHYSICAL MECHANISMS AND FUEL EFFECTS},
-  author={Ihme, M. and O’Brien, J. R. and Kim, J.},
-  journal={24th International Conference on Sound and Vibration 2017, London Calling},
-  year={2024},
-  doi={10.25144/24331},
 }
 
 @article{sharma2023review,
@@ -752,17 +681,6 @@
   open_access_url={https://www.osti.gov/servlets/purl/2405181},
 }
 
-@article{mohaddes2023cost,
-  title={Cost-constrained adaptive simulations of transient spray combustion in a gas turbine combustor},
-  author={Mohaddes, D. and Brouzet, D. and Ihme, M.},
-  journal={Combustion and Flame},
-  volume={249},
-  pages={112530--112530},
-  year={2023},
-  doi={10.1016/j.combustflame.2022.112530},
-  open_access_url={https://www.osti.gov/biblio/1961478},
-}
-
 @article{li2023analysis,
   title={Analysis of real-fluid thermodynamic effects on turbulent statistics in transcritical channel flows},
   author={Li, F. and Guo, J. and Bai, B. and Ihme, M.},
@@ -773,6 +691,17 @@
   doi={10.1103/physrevfluids.8.024605},
   open_access_url={https://www.osti.gov/servlets/purl/1993712},
   abstract={High-pressure transcritical turbulence with strong density fluctuations are encountered in many technical applications. Understanding of the turbulent energy transport modulated by real-fluid thermodynamic effects at transcritical conditions remains an open issue for developing reliable computational models. We clarify the effects of real-fluid thermodynamics through budget analyses of turbulent kinetic energy and dissipation rate from DNS of transcritical channel flows. From this physical underpinning, new scaling laws for turbulent length scales and turbulent kinetic energy budgets are proposed, thereby contributing to improvements of wall-models for LES and RANS simulations.},
+}
+
+@article{mohaddes2023cost,
+  title={Cost-constrained adaptive simulations of transient spray combustion in a gas turbine combustor},
+  author={Mohaddes, D. and Brouzet, D. and Ihme, M.},
+  journal={Combustion and Flame},
+  volume={249},
+  pages={112530--112530},
+  year={2023},
+  doi={10.1016/j.combustflame.2022.112530},
+  open_access_url={https://www.osti.gov/biblio/1961478},
 }
 
 @incollection{echekki2023machine,
@@ -837,15 +766,6 @@
   abstract={Droplets provide unique opportunities for the investigation of laser-induced surface chemistry. Chemical reactions on the surface of charged droplets are ubiquitous in nature and can provide critical insight into more efficient processes for industrial chemical production. Here, we demonstrate the application of the reaction nanoscopy technique to strong-field ionized nanodroplets of propanediol (PDO). The technique's sensitivity to the near-field around the droplet allows for the in-situ characterization of the average droplet size and charge. The use of ultrashort laser pulses enables control of the amount of surface charge by the laser intensity. Moreover, we demonstrate the surface chemical sensitivity of reaction nanoscopy by comparing droplets of the isomers 1,2-PDO and 1,3-PDO in their ion emission and fragmentation channels. Referencing the ion yields to gas-phase data, we find an enhanced production of methyl cations from droplets of the 1,2-PDO isomer. Density functional theory simulations support that this enhancement is due to the alignment of 1,2-PDO molecules on the surface. The results pave the way towards spatio-temporal observations of charge dynamics and surface reactions on droplets.},
 }
 
-@article{akoush2023turbulence,
-  title={Turbulence in Focus: Benchmarking Scaling Behavior of 3D Volumetric Super-Resolution with BLASTNet 2.0 Data},
-  author={Akoush, B. and Brouzet, D. and Chen, J. and Chung, W. T. and Guo, J. and Ihme, M. and Jung, K. S. and Poludnenko, A. and Savard, B. and Sharma, P. and Talei, M. and Tamkin, A.},
-  journal={Advances in Neural Information Processing Systems 36},
-  pages={77430--77484},
-  year={2023},
-  doi={10.52202/075280-3386},
-}
-
 @article{simeski2023corrosive,
   title={Corrosive Influence of Carbon Dioxide on Crack Initiation in Quartz: Comparison With Liquid Water and Vacuum Environments},
   author={Simeski, F. and Ihme, M.},
@@ -896,15 +816,6 @@
   abstract={Fluids under nanoconfinement control many environmental and engineering processes. In particular, nanoconfined ethane commonly occurs in hydrocarbon production and gas separation applications. While previous research has measured the pore critical properties and self-diffusivity of nanoconfined ethane, the relationship between molecular organization and phase behavior in nanoporous media persists as a knowledge gap. Through experimental adsorption measurements and molecular dynamics simulations, we report the impact of pore wall proximity, pore size, and temperature on the structure of nanoconfined ethane. We offer evidence for an energetically favorable rearrangement of ethane molecules in the adsorption layer that may contribute to more accurate gas-in-place estimates and more efficient design of gas separation membranes.},
 }
 
-@article{brouzet2023noise,
-  title={On the noise analysis of a N+3 next-generation combustor through LES},
-  author={Brouzet, D. and Ihme, M. and McCormick, D. C. and Reimann, C. A. and Mendoza, J.},
-  journal={AIAA AVIATION 2023 Forum},
-  year={2023},
-  doi={10.2514/6.2023-3939},
-  abstract={View Video Presentation: https://doi.org/10.2514/6.2023-3939.vid A next-generation axially-staged combustor operating at take-off conditions is analyzed through large eddy simulations (LES) with the objective to analyze scaling laws for combustion noise modeling. Comparisons to experimental results are reported, including spray, chemiluminescence, and acoustic measurements. Given the high computational cost of LES, semi-empirical models are necessary to estimate combustion noise in aviation engines, especially in the preliminary design stages. Legacy models have proven valuable for many applications, but the databases underpinning these models are outdated, narrow in scope, and with limited geometric variations. To address these limitations, we tackle the low-order modeling aspect of this next-generation combustor by assessing scaling laws for the peak frequency and spectral shape of direct combustion noise. Existing combustion spectra models represent well the direct noise acoustic source term, as long as the frequency of peak emission is accurate. It is shown that the latter can be estimated with the model from Rajaram \& Lieuwen (2009), at least when turbulent premixed flames are considered.},
-}
-
 @article{muhunthan2023local,
   title={The Local Electronic Structure of Supercritical CO₂from X-ray Raman Spectroscopy and Atomistic-Scale Modeling},
   author={Muhunthan, P. and Mellone, O. A. P. and Kr{\"o}ll, T. and Sokaras, D. and Ihme, M.},
@@ -929,22 +840,14 @@
   open_access_url={https://pmc.ncbi.nlm.nih.gov/articles/PMC12382457/pdf/nihms-2084438.pdf},
 }
 
-@article{bonanni2023adaptive,
-  title={Adaptive Modeling of Supersonic Combustion in a Cavity-Stabilized Scramjet},
-  author={Bonanni, M. and Ihme, M.},
-  journal={AIAA SCITECH 2023 Forum},
+@article{chung2023turbulence,
+  title={Turbulence in Focus: Benchmarking Scaling Behavior of 3D Volumetric Super-Resolution with BLASTNet 2.0 Data},
+  author={Chung, W. T. and Akoush, B. and Sharma, P. and Tamkin, A. and Jung, K. S. and Chen, J. H. and Guo, J. and Brouzet, D. and Talei, M. and Savard, B. and Poludnenko, A. and Ihme, M.},
+  journal={arXiv (Cornell University)},
   year={2023},
-  doi={10.2514/6.2023-1466},
-  abstract={View Video Presentation: https://doi.org/10.2514/6.2023-1466.vid Large-eddy simulations of scramjet engines with accurate combustion modeling is generally prohibitively expensive because of the complex combustion processes occurring within these systems. Under these conditions, traditional tabulated chemistry methods perform poorly, leading to a reliance on finite-rate chemistry. The Pareto-efficient combustion (PEC) framework enables the dynamic assignment of different combustion models to specific regions of the computational domain, based on user-specified accuracy of quantities of interest and cost requirements. This enables the simulation to maintain fidelity where necessary and otherwise reduce cost where possible. To date, this framework has only been applied to low-Mach combustion problems. This work extends this PEC framework to supersonic combustion via application to steady-state combustion in the RC19 scramjet combustor rig at Wright-Patterson Air Force Base. The effectiveness of the framework is demonstrated via a comparison against experimental data to evaluate simulation accuracy.},
-}
-
-@article{tonicello2023high,
-  title={A high-order diffused-interface approach for fully compressible two-phase flow simulations using a Discontinuous Galerkin method},
-  author={Tonicello, N. and Ihme, M.},
-  journal={AIAA SCITECH 2023 Forum},
-  year={2023},
-  doi={10.2514/6.2023-2154},
-  abstract={View Video Presentation: https://doi.org/10.2514/6.2023-2154.vid A diffused-interface approach based on Allen-Cahn phase-field equation is developed within a high-order Discontinuous Galerkin framework. The interface capturing technique is based on the balance between an explicit diffusion contribution and a sharpening term in the phase-field equation. The latter term involves the computation of the normal vectors to the interface. Due to the steep profile of the interface, the computation of the normal vectors can be particularly delicate in such conditions. To this end, a non-linear preconditioning strategy is proposed in this work where an additional smooth level-set function is advected by the flow and used for the evaluation of the normal vectors. It is shown that for appropriate choices of numerical fluxes and parameters of the model, the phase-field remains bounded without any need for explicit clipping or mass redistribution. The proposed diffused-interface technique is then implemented within a five equation model for fully compressible two-phase flows. In order to preserve isolated interfaces, a quasi-conservative discretisation of the phase-field equation is employed. A series of numerical experiments are performed to assess the accuracy and robustness of the developed methodology, including inviscid two-phase flows.},
+  doi={10.48550/arxiv.2309.13457},
+  open_access_url={https://arxiv.org/pdf/2309.13457},
+  abstract={Analysis of compressible turbulent flows is essential for applications related to propulsion, energy generation, and the environment. Here, we present BLASTNet 2.0, a 2.2 TB network-of-datasets containing 744 full-domain samples from 34 high-fidelity direct numerical simulations, which addresses the current limited availability of 3D high-fidelity reacting and non-reacting compressible turbulent flow simulation data. With this data, we benchmark a total of 49 variations of five deep learning approaches for 3D super-resolution - which can be applied for improving scientific imaging, simulations, turbulence models, as well as in computer vision applications. We perform neural scaling analysis on these models to examine the performance of different machine learning (ML) approaches, including two scientific ML techniques. We demonstrate that (i) predictive performance can scale with model size and cost, (ii) architecture matters significantly, especially for smaller models, and (iii) the benefits of physics-based losses can persist with increasing model size. The outcomes of this benchmark study are anticipated to offer insights that can aid the design of 3D super-resolution models, especially for turbulence models, while this data is expected to foster ML methods for a broad range of flow physics applications. This data is publicly available with download links and browsing tools consolidated at https://blastnet.github.io.},
 }
 
 @article{ihme2022combustion,
@@ -1153,18 +1056,6 @@
   abstract={We propose to use piecewise linear interpolation (PLI) in time to reduce motion artifacts in transmission computed tomography (CT). PLI is motivated by the natural occurrence of piecewise-linear evolution of voxel values during object motion. The method is specifically examined in the context of high-accuracy quantitative measurements that are compromised by small motions, and particularly sub-pixel motion. Compared to existing methods, the proposed approach offers three advantages: (i) the flexibility in the interpolation parameters provides a framework for joint optimization and data-informed dynamic CT, (ii) both continuous motion and sudden changes in voxel values can be represented while preserving the continuity of the interpolated solution, and (iii) the compactness of the interpolation functions reduces the increase in algorithmic cost. Total variation regularization is used with a second-order accurate discretization, and the resulting formulation is solved with the Chambolle-Pock proximal algorithm. The applicability of the method in practical cases is demonstrated using synchrotron data, with an algorithmic cost of two to four times that of equivalent static reconstruction algorithms.},
 }
 
-@article{ching2022quail,
-  title={Quail: A lightweight open-source discontinuous Galerkin code in Python for teaching and prototyping},
-  author={Ching, E. J. and Bornhoft, B. and Lasemi, A. and Ihme, M.},
-  journal={SoftwareX},
-  volume={17},
-  pages={100982--100982},
-  year={2022},
-  doi={10.1016/j.softx.2022.100982},
-  open_access_url={https://doi.org/10.1016/j.softx.2022.100982},
-  abstract={In this paper, we present Quail, a lightweight discontinuous Galerkin solver written in Python. The aim of this code is to serve not only as a teaching tool for newcomers to the rapidly growing field, but also as a prototyping platform for testing algorithms, physical models, and other features in the discontinuous Galerkin framework. Code readability, modularity, and ease of use are emphasized. Currently, Quail solves first- and second-order partial differential equations on 1D and 2D unstructured meshes. A variety of time stepping schemes, quadrature rules, basis types, equation sets, and other features are included. The structure and capabilities of the code, as well as representative examples involving propagation of a 2D isentropic vortex and a 2D Riemann problem with a gravity source term, will be discussed.},
-}
-
 @article{ching2022computation,
   title={Computation of hypersonic viscous flows with the thermally perfect gas model using a discontinuous Galerkin method},
   author={Ching, E. J. and Bensassi, K. and Lv, Y. and Ihme, M.},
@@ -1202,15 +1093,6 @@
   open_access_url={https://www.osti.gov/servlets/purl/2418061},
 }
 
-@article{brill2022enrichment,
-  title={An Enrichment Wall Model for the Spectral Element Method},
-  author={Brill, S. and Pal, P. and Ameen, M. and Xu, C. and Ihme, M.},
-  journal={AIAA SCITECH 2022 Forum},
-  year={2022},
-  doi={10.2514/6.2022-1206},
-  abstract={View Video Presentation: https://doi.org/10.2514/6.2022-1206.vid An enrichment wall-model for spectral element method (SEM) is developed and implemented in the high-order Nek5000 CFD solver. The enrichment method augments the polynomial solution with a non-polynomial enrichment function that represents a feature in the flow that cannot be accurately resolved with the polynomial basis. The method is applied to wall-modeling by enriching the polynomial solution in the wall-adjacent elements with an analytical law-of-the-wall function representing the mean velocity near the wall. This enrichment function is able to represent the high-gradients near the wall which allows the polynomial modes to represent the turbulent fluctuations. It is shown that the proposed method greatly improves solution accuracy on under resolved grids as compared to the traditional spectral element method by better capturing the shear stress at the wall and reducing unphysical oscillations. Additionally, the enrichment wall-model shows good agreement for coarser grids than traditional shear stress wall-models. The method is applied to turbulent channel flow simulations for a range of Reynolds numbers in Reynolds-averaged Navier-Stokes and large-eddy simulations. The results show great improvements in the prediction of turbulent shear stress and the log-law profile.},
-}
-
 @article{mohaddes2022wall,
   title={Wall heat transfer and flame structure transitions in stagnating spray flames},
   author={Mohaddes, D. and Ihme, M.},
@@ -1241,15 +1123,6 @@
   doi={10.48550/arxiv.2207.12546},
   open_access_url={https://arxiv.org/pdf/2207.12546},
   abstract={In general, large datasets enable deep learning models to perform with good accuracy and generalizability. However, massive high-fidelity simulation datasets (from molecular chemistry, astrophysics, computational fluid dynamics (CFD), etc. can be challenging to curate due to dimensionality and storage constraints. Lossy compression algorithms can help mitigate limitations from storage, as long as the overall data fidelity is preserved. To illustrate this point, we demonstrate that deep learning models, trained and tested on data from a petascale CFD simulation, are robust to errors introduced during lossy compression in a semantic segmentation problem. Our results demonstrate that lossy compression algorithms offer a realistic pathway for exposing high-fidelity scientific data to open-source data repositories for building community datasets. In this paper, we outline, construct, and evaluate the requirements for establishing a big data framework, demonstrated at https://blastnet.github.io/, for scientific machine learning.},
-}
-
-@article{wright2022development,
-  title={Development of a Fidelity-Adaptive Combustion Modeling Framework in a Rule-Based All-Speed Implicit Flow Solver},
-  author={Wright, J. and Thakur, S. and Neal, C. and Ihme, M.},
-  journal={AIAA SCITECH 2022 Forum},
-  year={2022},
-  doi={10.2514/6.2022-2249},
-  abstract={View Video Presentation: https://doi.org/10.2514/6.2022-2249.vid The work presented here involves the implementation of a fidelity-adaptive combustion modeling framework based on the Pareto-Efficient Combustion (PEC) model developed by Ihme and co-workers [Combustion and Flame, Vol 162, Issue 11, 2015, pages 4208–4230.) into an all-speed implicit flow solver called Loci-STREAM for fidelity-adaptive combustion modeling of rocket injectors. The objective is to develop a high-fidelity, high-performance multiphysics simulation capability to enhance current simulation capability of unsteady turbulent reacting flows involving cryogenic propellants in space propulsion applications. The PEC model utilizes a combustion submodel assignment, combining flamelet-based combustion models (such as inert-mixing models, equilibrium chemistry, diffusion-flame Flamelet/Progress Variable (FPV) or premixed-flame models) for computationally efficient characterization of quasi one-dimensional, steady, and equilibrated combustion regimes, with combustion models of higher physical fidelity (such as detailed or reduced/lumped chemistry models) for accurate representation of topologically complex combustion regions (associated with flame-anchoring, autoignition, flame-liftoff, thermoacoustic coupling, and non-equilibrium combustion processes) that are not adequately represented by flamelet models. Algorithmic and implementation details of the PEC model in Loci-STREAM are presented, followed by the results of its application to a tribrachial flame and a shear coaxial rocket injector configuration.},
 }
 
 @article{singh2021general,
@@ -1451,33 +1324,6 @@
   abstract={Gradient-based optimization is used to reliably and optimally induce ignition in three examples of laminar non-premixed mixture configurations. Using time-integrated heat release as a cost functional, the non-convex optimization problem identified optimal energy source locations that coincide with the stoichiometric local mixture fraction surface for short optimization horizons, while for longer horizons, the hydrodynamics plays an increasingly important role and a balance between flow and chemistry features determines non-trivial optimal ignition locations. Rather than identifying a single optimal ignition location, the results of this study show that there may be several equally good ignition locations in a given flow configuration.},
 }
 
-@article{bando2021development,
-  title={Development of a discontinuous Galerkin solver using Legion for heterogeneous high-performance computing architectures},
-  author={Bando, K. and Brill, S. and Slaughter, E. and Sekachev, M. and Aiken, A. and Ihme, M.},
-  journal={AIAA Scitech 2021 Forum},
-  year={2021},
-  doi={10.2514/6.2021-0140},
-  abstract={View Video Presentation: https://doi.org/10.2514/6.2021-0140.vid This work discusses the development, verification and performance assessment of a discontinuous Galerkin solver for the compressible Navier-Stokes equations using the Legion programming system. This is motivated by (i) the potential of this family of high-order numer- ical methods to accurately and efficiently realize scale-resolving simulations on unstructured grids and (ii) the desire to accommodate the utilization of emerging compute platforms that exhibit increased parallelism and heterogeneity. As a task-based programming model specifically designed for performance portability across distributed heterogeneous architectures, Legion represents an interesting lternative to the traditional approach of using Message Passing Interface for massively parallel computational physics solvers. Following detailed discussion of the implementation, the high-order convergence of the solver is demonstrated by a suite of canonical test cases and good strong scaling behavior is obtained. This work constitutes a first step towards a research platform that is able to be deployed and efficiently run on modern supercomputers.},
-}
-
-@article{bonanni2021toward,
-  title={Toward Numerical Investigation of Ignition and Combustion Transition in a Subscale LOX/Methane Rocket Combustor},
-  author={Bonanni, M. and Mohaddes, D. and Ly, N. and Perakis, N. and Hardi, J. and B{\"o}rner, M. and Ihme, M.},
-  journal={AIAA Scitech 2021 Forum},
-  year={2021},
-  doi={10.2514/6.2021-1141},
-  abstract={View Video Presentation: https://doi.org/10.2514/6.2021-1141.vid LOX/methane is a promising alternative to hypergolic fuels in spacecraft thrusters, featuring advantages such as nontoxicity, high specific impulse, and low cost. Its reliable ignition, however, is a challenging problem due to its dependence on the local mixture composition, its requirement of overcoming ionization energies, and its process of transition to a sustained combustion mode. Experimental research has focused on laser pulses as an ignition mechanism for these thrusters, and has demonstrated significant viability. This work presents a numerical study of a reacting LOX/methane thruster using large eddy simulation combined with a Lagrangian description of the LOX spray. This model is successfully employed to simulate reacting flow in the Reaction Control System (RCS) breadboard combustor at DLR, achieving spray behavior that is qualitatively similar to the pre-ignition experimental data. This work represents a forward step towards simulating the startup process of this thruster via laser ignition.},
-}
-
-@article{ching2021discontinuous,
-  title={Discontinuous Galerkin simulations of dusty flows over a full-scale capsule during Mars atmospheric entry},
-  author={Ching, E. J. and Ihme, M.},
-  journal={AIAA Scitech 2021 Forum},
-  year={2021},
-  doi={10.2514/6.2021-1518},
-  abstract={View Video Presentation: https://doi.org/10.2514/6.2021-1518.vid Suspended dust particles can have adverse effects on heat shields during Mars atmospheric entry. For instance, they can increase surface heat fluxes and surface recession. Current studies on this subject often make many simplifications, focus on one or two specific physical processes, or include flow conditions different from those on Mars. To address this, we perform simulations of hypersonic dusty flows over a full-scale entry capsule based on a realistic trajectory. The simulations are performed with an Euler-Lagrange methodology in which the carrier gas solution is obtained with a discontinuous Galerkin method. The effects of various factors, such as particle size distribution, drag correlation, and two-way coupling, on dust-induced heating augmentation and erosion are assessed.},
-}
-
 @article{chung2021interpretable,
   title={Interpretable data-driven methods for subgrid-scale closure in LES for transcritical LOX/GCH4 combustion},
   author={Chung, W. T. and Mishra, A. and Ihme, M.},
@@ -1489,15 +1335,6 @@
   open_access_url={https://arxiv.org/pdf/2103.06397},
 }
 
-@article{bornhoft2021time,
-  title={Time integration considerations for the solution of reacting flows using discontinuous Galerkin methods},
-  author={Bornhoft, B. and Ching, E. J. and Ihme, M.},
-  journal={AIAA Scitech 2021 Forum},
-  year={2021},
-  doi={10.2514/6.2021-0745},
-  abstract={View Video Presentation: https://doi.org/10.2514/6.2021-0745.vid In this work, we present intermediate steps to develop a discontinuous Galerkin (DG) discretization in both space and time applicable to multi-component reacting flows. Here, we choose the ADER time integration method for its compact stencil, arbitrary order of accuracy in space and time, and its ability to handle stiff source terms such as those present in reacting flows. In this paper, we verify the scheme for an isentropic vortex, assess its behavior for discontinuous properties, and compare the scheme to explicit methods under a simplified stiff source term. We conclude this paper by conducting a demonstration of an overdriven detonation with a single-step irreversible reaction mechanism.},
-}
-
 @article{perakis2021heat,
   title={Heat transfer augmentation by recombination reactions in turbulent reacting boundary layers at elevated pressures},
   author={Perakis, N. and Haidn, O. and Ihme, M.},
@@ -1507,33 +1344,6 @@
   year={2021},
   doi={10.1016/j.ijheatmasstransfer.2021.121628},
   open_access_url={https://arxiv.org/pdf/2102.06821},
-}
-
-@article{frout2021evaluation,
-  title={Evaluation of Electron Tomography Reconstruction Methods for a Barnett Shale},
-  author={Frout{\'e}, L. and Boign{\'e}, {\'E}. and Ihme, M. and Kovscek, A. R.},
-  journal={Proceedings of the 9th Unconventional Resources Technology Conference},
-  year={2021},
-  doi={10.15530/urtec-2021-5668},
-}
-
-@article{ly2021numerical,
-  title={Numerical Analyses of Transcritical Evaporation using Diffuse-Interface Method},
-  author={Ly, N. and Ihme, M.},
-  journal={International Conference on Liquid Atomization and Spray Systems (ICLASS)},
-  volume={1},
-  number={1},
-  year={2021},
-  doi={10.2218/iclass.2021.6113},
-  open_access_url={http://journals.ed.ac.uk/ICLASS_Edinburgh/article/download/6113/7960},
-  abstract={Liquid fuel placed in a supercritical environment (with respect to the fuel's critical properties) can undergo different evaporation processes that is determined by the droplet's surface temperature T s in comparison with the critical mixing temperature T c . In the transcritical regime, the ambient condition is such that at initial time, T s < T c , a sharp liquid-vapor interface exists, and evaporation occurs at subcritical condition. Eventually, the surface temperature approaches the critical mixing temperature, and the evaporation process becomes supercritical, with no distinct liquid-vapor interface. Traditional methods for simulating this complex evaporation behavior employ separate formulations for the liquid and vapor phases during subcritical evaporation and a continuous formulation during supercritical evaporation. Here, we developed a holistic formulation for the simulation of transcritical evaporation that is valid for both sub-and super-critical evaporation regimes using a diffuse-interface method derived from Linear Gradient Theory. The formulation allows for direct modeling of surface tension and interface thickness during the process of interface thickening as T s T c . The diffuse-interface model was employed in simulations of a nanoscale transcritical planar evaporation configuration. Furthermore, the ability of the diffuse-interface model to resolve both macroscale fluid behavior and nanoscale liquid-vapor interface structure was demonstrated.},
-}
-
-@article{chung2021accelerating,
-  title={Accelerating High-fidelity Combustion Simulations with Classification Algorithms.},
-  author={Chung, W. T. and Mishra, A. and Perakis, N. and Ihme, M.},
-  journal={National Conference on Artificial Intelligence},
-  year={2021},
 }
 
 @article{brill2021enriched,
@@ -1575,25 +1385,6 @@
   abstract={Heat-shield design for spacecraft entering the atmosphere of Mars may be affected by the presence of atmospheric dust. Particle impacts with sufficient kinetic energy can cause spallation damage to the heat shield that must be estimated. The dust environment in terms of particle size distribution and number density can be inferred from ground-based or atmospheric observations at Mars. Using a Lagrangian approach, the particle trajectories through the shock layer can be computed using a set of coupled ordinary differential equations. The dust particles are small enough that noncontinuum effects must be accounted for when computing the drag coefficient and heat transfer to the particle surface. Surface damage correlations for impact crater diameter and penetration depth are presented for fused silica, AVCOAT, shuttle tiles, cork, and Norcoat® Li{\`e}ge. The cork and Norcoat Li{\`e}ge correlations are new and were developed in this study. The modeling equations presented in this paper are applied to compute the heat-shield erosion due to dust particle impacts on the ExoMars Schiaparelli entry capsule during dust storm conditions.},
 }
 
-@article{palmer2020modelingb,
-  title={Modeling Heatshield Erosion due to Dust Particle Impacts for Martian Entries},
-  author={Palmer, G. and Ching, E. J. and Ihme, M. and Kerkhoff, D. and Guelhan, A.},
-  journal={AIAA Scitech 2020 Forum},
-  year={2020},
-  doi={10.2514/6.2020-0254},
-  abstract={Heatshield design for spacecraft entering the atmosphere of Mars may be affected by the presence of atmospheric dust. Particle impacts with sufficient kinetic energy can cause spallation damage to the heatshield that must be estimated. The dust environment in terms of particle size distribution and number density can be inferred from ground-based or atmospheric observations at Mars. Using a Lagrangian approach, the particle trajectories through the shock layer can be computed using a set of coupled ordinary differential equations. The dust particles are small enough that non-continuum effects must be accounted for when computing the drag coefficient and heat transfer to the particle surface. Surface damage correlations for impact crater diameter and penetration depth are presented for fused-silica, AVCOAT, Shuttle tiles, cork, and Norcoat Li{\`e}ge. The cork and Norcoat Li{\`e}ge correlations are new and were developed in this study. The modeling equations presented in this paper are applied to compute the heatshield erosion due to dust particle impacts on the ExoMars Schiaparelli entry capsule during dust storm conditions.},
-}
-
-@article{mohaddes2020thermodynamic,
-  title={Thermodynamic cycle analysis of superadiabatic matrix-stabilized combustion for gas turbine engines},
-  author={Mohaddes, D. and Chang, C. T. and Ihme, M.},
-  journal={Energy},
-  volume={207},
-  pages={118171--118171},
-  year={2020},
-  doi={10.1016/j.energy.2020.118171},
-}
-
 @article{ferguson2020pore,
   title={Pore-resolved simulations of porous media combustion with conjugate heat transfer},
   author={Ferguson, J. C. and Sobhani, S. and Ihme, M.},
@@ -1625,6 +1416,16 @@
   pages={425--438},
   year={2020},
   doi={10.1007/s00193-019-00935-x},
+}
+
+@article{mohaddes2020thermodynamic,
+  title={Thermodynamic cycle analysis of superadiabatic matrix-stabilized combustion for gas turbine engines},
+  author={Mohaddes, D. and Chang, C. T. and Ihme, M.},
+  journal={Energy},
+  volume={207},
+  pages={118171--118171},
+  year={2020},
+  doi={10.1016/j.energy.2020.118171},
 }
 
 @article{boign2020simultaneous,
@@ -1774,33 +1575,6 @@
   open_access_url={https://www.sciencedirect.com/science/article/am/pii/S0010218020304156},
 }
 
-@article{bando2020comparison,
-  title={Comparison of algorithms for simulating multi-component reacting flows using high-order discontinuous Galerkin methods},
-  author={Bando, K. and Sekachev, M. and Ihme, M.},
-  journal={AIAA Scitech 2020 Forum},
-  year={2020},
-  doi={10.2514/6.2020-1751},
-  abstract={This work compares two approaches for simulating reacting flows using high-order discontinuous Galerkin methods. On the one hand, the double flux method was developed in order to overcome the well-known issue of pressure oscillations at contact interfaces when variable thermodynamic properties are used. This quasi-conservative scheme was previously applied to high-speed inviscid reacting flows but potential issues with lower-Mach flows and viscous effects were not discussed. On the other hand, the fully conservative formulation, although inconsistent with pressure equilibrium at contact interfaces, allows a conservative scheme consistent with the sub-cell resolution of high-order schemes. These two approaches are compared on several test cases and their strength and weaknesses are analyzed.},
-}
-
-@article{brill2020enriched,
-  title={An Enriched Basis Discontinuous Galerkin Method for Shocks and High-Gradient Features in Fluid Mechanics},
-  author={Brill, S. and Ihme, M.},
-  journal={AIAA Scitech 2020 Forum},
-  year={2020},
-  doi={10.2514/6.2020-1752},
-  abstract={Discontinuous Galerkin methods struggle to efficiently represent high-gradient features without spurious oscillations due to their polynomial basis. This paper discusses the development of an enriched basis discontinuous Galerkin method to better resolve high-gradient features in compressible flows. The standard polynomial basis is augmented with problem-specific non-polynomial enrichment functions to represent underresolved features. The enrichment functions are incorporated into the basis using a partition of unity to keep the methodology consistent. The method was tailored for shock capturing and wall-modeling of turbulent flows. The performance is evaluated with shock tube problems and Reynolds-averaged Navier-Stokes turbulent channel simulations. The results show this methodology allows for sharp representation of shocks within elements and for larger elements and fewer degrees of freedom to be used in the near wall region of turbulent channel flows.},
-}
-
-@article{ching2020smooth,
-  title={Smooth projection kernels for Euler-Lagrange simulations on arbitrary elements computed with discontinuous Galerkin schemes},
-  author={Ching, E. J. and Ihme, M.},
-  journal={AIAA Scitech 2020 Forum},
-  year={2020},
-  doi={10.2514/6.2020-1796},
-  abstract={In this work, we develop smooth kernels for Euler-Lagrange simulations on arbitrary elements under a high-order discontinuous Galerkin framework. These kernels are employed for projecting the action of the particles to the Eulerian mesh. Instead of commonly used isotropic kernels (such as a Gaussian kernel), we construct an anisotropic polynomial-based smoothing function that preserves the compactness of the discontinuous Galerkin method on high-aspect-ratio elements and reduces computational cost. At the same time, it circumvents Gibbs-type noise/instabilities associated with the Dirac delta function and low-order kernels. Specifically, the shape of the kernel is elliptical, which can be constructed from a grid-implied metric that encodes information about mesh size and orientation. We also discuss a strategy for dealing with walls compatible with arbitrary curved elements. We apply the proposed methodology to different types of meshes and supersonic dusty flow over a flat plate.},
-}
-
 @article{huot2020deep,
   title={Deep Learning Models for Predicting Wildfires from Historical Remote-Sensing Data},
   author={Huot, F. and Hu, R. and Ihme, M. and Wang, Q. and Burge, J. and Lu, T. and Hickey, J. and Chen, Y. and Anderson, J. R.},
@@ -1883,40 +1657,10 @@
   year={2020},
 }
 
-@article{ly2020reacting,
-  title={Reacting Simulations of Multi-mode Combustion in a Rapid Compression Machine under HCCI and SICI Modes},
-  author={Ly, N. and Ihme, M.},
-  journal={APS Division of Fluid Dynamics Meeting Abstracts},
-  year={2020},
-}
-
-@article{guo2020improvements,
-  title={Improvements upon Characterizing the Thermal Boundary Layer in Turbulent, Transcritical Channel Flows},
-  author={Guo, J. and Xiang, Y. and Ihme, M.},
-  journal={APS Division of Fluid Dynamics Meeting Abstracts},
-  year={2020},
-}
-
 @article{chung2020deep,
   title={Deep learning-based assignment of combustion submodels for large-eddy simulation},
   author={Chung, W. T. and Mishra, A. and Perakis, N. and Ihme, M.},
   journal={mediaTUM – the media and publications repository of the Technical University Munich (Technical University Munich)},
-  year={2020},
-}
-
-@article{muhunthan2020examining,
-  title={Examining the Structure of Supercritical CO 2 using X-ray Raman Spectroscopy and Atomistic Scale Modeling},
-  author={Muhunthan, P. and Sainio, S. and Σωκαράς, Δ. and Ihme, M.},
-  journal={AGU Fall Meeting Abstracts},
-  volume={2020},
-  year={2020},
-}
-
-@article{lehmann2020phase,
-  title={Phase Transitions and Condensation in Tight Porous Materials},
-  author={Lehmann, T. and Covington, K. and Smith, E. and Goroncy, A. K. and Alvarado, V. and Simeski, F. and Boelens, A. and Ihme, M. and Hu, S. and Jessen, K. and Tsotsis, T. T.},
-  journal={AGU Fall Meeting Abstracts},
-  volume={2020},
   year={2020},
 }
 
@@ -2049,16 +1793,6 @@
   abstract={Abstract We propose an on-the-fly statistical learning method to take a qualitative reduced-order model of the dynamics of a premixed flame and make it quantitatively accurate. This physics-informed data-driven method is based on the statistically optimal combination of (i) a reduced-order model of the dynamics of a premixed flame with a level-set method, (ii) high-quality data, which can be provided by experiments and/or high-fidelity simulations, and (iii) assimilation of the data into the reduced-order model to improve the prediction of the dynamics of the premixed flame. The reduced-order model learns the state and the parameters of the premixed flame on the fly with the ensemble Kalman filter, which is a Bayesian filter used, for example, in weather forecasting. The proposed method and algorithm are applied to two test cases with relevance to reacting flows and instabilities. First, the capabilities of the framework are demonstrated in a twin experiment, where the assimilated data are produced from the same model as that used in prediction. Second, the assimilated data are extracted from a high-fidelity reacting-flow direct numerical simulation (DNS), which provides the reference solution. The results are analyzed by using Bayesian statistics, which robustly provide the level of confidence in the calculations from the reduced-order model. The versatile method we propose enables the optimal calibration of computationally inexpensive reduced-order models in real-time when experimental data become available, for example, from gas-turbine sensors.},
 }
 
-@article{yu2019datab,
-  title={Data Assimilation and Optimal Calibration in Nonlinear Models of Flame Dynamics},
-  author={Yu, H. and Jaravel, T. and Ihme, M. and Juniper, M. P. and Magri, L.},
-  journal={Volume 4B: Combustion, Fuels, and Emissions},
-  year={2019},
-  doi={10.1115/gt2019-92052},
-  open_access_url={https://www.repository.cam.ac.uk/bitstreams/7be02eca-c112-42fb-9273-40cf67fa124f/download},
-  abstract={Abstract We propose an on-the-fly statistical learning method to take a qualitative reduced-order model of the dynamics of a premixed flame and make it quantitatively accurate. This physics-informed data-driven method is based on the statistically optimal combination of (i) a reduced-order model of the dynamics of a pre-mixed flame with a level-set method, (ii) high-quality data, which can be provided by experiments and/or high-fidelity simulations, and (iii) assimilation of the data into the reduced-order model to improve the prediction of the dynamics of the premixed flame. The reduced-order model learns the state and the parameters of the premixed flame on the fly with the ensemble Kalman filter, which is a Bayesian filter used, for example, in weather forecasting. The proposed method and algorithm are applied to two test cases with relevance to reacting flows and instabilities. First, the capabilities of the framework are demonstrated in a twin experiment, where the assimilated data is produced from the same model as that used in prediction. Second, the assimilated data is extracted from a high-fidelity reacting-flow direct numerical simulation (DNS), which provides the reference solution. The results are analyzed by using Bayesian statistics, which robustly provide the level of confidence in the calculations from the reduced-order model. The versatile method we propose enables the optimal calibration of computationally inexpensive reduced-order models in real time when experimental data becomes available, for example, from gas-turbine sensors.},
-}
-
 @article{cheng2019numerical,
   title={Numerical Analysis of Heat and Mass Transfer Coupled With Gaseous Fuel Injection in Reactive Porous Media},
   author={Cheng, Z. and Yang, J. and Guo, Z. and Fu, P. and Ihme, M. and Wang, Q.},
@@ -2070,45 +1804,11 @@
   abstract={Abstract Iron ore sintering is a typical application of reactive porous media combustion (RPMC) which has been widely reported. In this work, a computational model of RPMC is developed, in which heat and mass transfer, as well as main chemical subprocesses in reactive porous media are incorporated. A gaseous-fuel injection method is examined to enable better heat pattern. However, the imbalance of heat distribution in the flow direction caused by internally recirculating heat released via a solid matrix is still problematic on energy efficiency. Through computations, it is observed that the heat pattern and melting quantity index (MQI) are sensitive on gaseous-fuel concentration, providing a possibility of improving the heat distribution imbalance. Numerical results are presented to demonstrate the benefits of fuel segregation. Finally, more reasonable heat pattern is observed by combinations of gaseous-fuel segregation with hot air and oxygen enrichment. The dynamics of gaseous/solid-fuel combustion zones caused by the hot air and oxygen enrichment would contribute to an expansion of melting zone near the inlet, producing a more reasonable and uniform heat distribution in a sintering bed.},
 }
 
-@article{ching2019sensitivity,
-  title={Sensitivity study of high-speed dusty flows over blunt bodies simulated using a discontinuous Galerkin method},
-  author={Ching, E. J. and Ihme, M.},
-  journal={AIAA Scitech 2019 Forum},
-  year={2019},
-  doi={10.2514/6.2019-0895},
-}
-
-@article{ihme2019requirements,
-  title={Requirements Towards Predictive Simulations of Turbulent Combustion},
-  author={Ihme, M.},
-  journal={AIAA Scitech 2019 Forum},
-  year={2019},
-  doi={10.2514/6.2019-0996},
-}
-
-@article{thakur2019compressible,
-  title={Compressible Flamelet Model with Thickened Flame Closure in an All-Speed Combustion Solver},
-  author={Thakur, S. and Wright, J. and Ihme, M.},
-  journal={AIAA Scitech 2019 Forum},
-  year={2019},
-  doi={10.2514/6.2019-2143},
-}
-
 @article{muhunthan2019experimental,
   title={Experimental Investigation of Combustion in Porous Media Burners with Tailored Matrix-Structure Using Additive Manufacturing},
   author={Muhunthan, P. and Sobhani, S. and Boign{\'e}, {\'E}. and Mohaddes, D. and Ihme, M.},
   journal={Bulletin of the American Physical Society},
   year={2019},
-}
-
-@article{labahn2019determining,
-  title={Determining dynamic content of turbulent flow LES using the Lyapunov exponent},
-  author={Labahn, J. W. and Nastac, G. and Magri, L. and Ihme, M.},
-  journal={Cambridge University Engineering Department Publications Database},
-  year={2019},
-  doi={10.17863/cam.35418},
-  open_access_url={https://www.repository.cam.ac.uk/handle/1810/288103},
-  abstract={Direct Numerical Simulation (DNS) and Large-Eddy Simulation (LES) have been em- ployed for computing turbulent flows . While DNS resolves all turbulent scales involved in the dynamics with no physical modeling, LES represents the energy contained in the large scales, and effects of the smaller scales are taken into account either explicitly through a subgrid scale model or implicitly through the numerical dissipation of the nu- merical method. Besides numerical algorithms, two factors determine the quality of LES: the physical model or dissipation of the subgrid scales (SGS), which are filtered out in the governing equations, and the filter width, which describes the numerical resolution of the resolved scales.},
 }
 
 @article{boign2019experimental,
@@ -2129,43 +1829,6 @@
   title={Analysis of Thermal Boundary-Layer Structure and Scale-Dependence in Transcritical Flows at Turbulent Conditions},
   author={Guo, J. and Xiang, Y. and Ihme, M.},
   journal={Bulletin of the American Physical Society},
-  year={2019},
-}
-
-@article{palmer2019modeling,
-  title={Modeling Heatshield Erosion Due to Dust Particle Impacts for a Martian Entry Vehicle},
-  author={Palmer, G. and Ching, E. J. and Ihme, M. and Kerkhoff, D. and G{\"u}lhan, A.},
-  journal={NASA STI Repository (National Aeronautics and Space Administration)},
-  year={2019},
-  open_access_url={http://hdl.handle.net/2060/20190004910},
-  abstract={Because planetary missions to Mars take years from initial design to arrival at Mars, and because of the unpredictability of major global dust storms, the de-sign of the thermal protection system (TPS) of a Mars entry vehicle requires an estimation for the potential damage caused by dust particle impacts on the heat-shield. This paper will review previous analytical and experimental approaches to modeling dust particle ero-sion and will compare the legacy models against more modern computational techniques and new dust ero-sion models that will be based on upcoming experi-ments in the German Aerospace Center (DLR) GBK facility. The various models will be compared by incorporating them into the Icarus material response code applied to a representative vehicle entering the Martian atmosphere.},
-}
-
-@article{ihme2019high,
-  title={High-order discontinuous Galerkin methods for multi-physics flow simulations on exascale computing systems},
-  author={Ihme, M. and Bando, K. and Ching, E. J. and Aiken, A.},
-  journal={APS Division of Fluid Dynamics Meeting Abstracts},
-  year={2019},
-}
-
-@article{ching2019development,
-  title={Development of a Four-Way-Coupled Lagrangian Particle Method for Discontinuous Galerkin Schemes},
-  author={Ching, E. J. and Ihme, M.},
-  journal={APS Division of Fluid Dynamics Meeting Abstracts},
-  year={2019},
-}
-
-@article{brill2019enriched,
-  title={An Enriched-Basis Discontinuous Galerkin Method for Wall-Modeled Large-Eddy Simulations},
-  author={Brill, S. and Ihme, M.},
-  journal={APS Division of Fluid Dynamics Meeting Abstracts},
-  year={2019},
-}
-
-@article{bando2019reacting,
-  title={Reacting flow simulations using high-order discontinuous Galerkin methods},
-  author={Bando, K. and Ihme, M. and Sekachev, M.},
-  journal={APS Division of Fluid Dynamics Meeting Abstracts},
   year={2019},
 }
 
@@ -2211,17 +1874,6 @@
   abstract={Direct numerical simulations of channel flow at transcritical conditions with density change in the flow field are conducted. We find a regime with useful semi-local scaling as well as streamwise velocity and energy spectrum scaling which support the attached eddy model at transcritical conditions.},
 }
 
-@article{ma2018large,
-  title={Large-eddy simulations of transcritical injection and auto-ignition using diffuse-interface method and finite-rate chemistry},
-  author={Ma, P. and Wu, H. and Jaravel, T. and Bravo, L. and Ihme, M.},
-  journal={Proceedings of the Combustion Institute},
-  volume={37},
-  number={3},
-  pages={3303--3310},
-  year={2018},
-  doi={10.1016/j.proci.2018.05.063},
-}
-
 @article{sobhani2018modulation,
   title={Modulation of heat transfer for extended flame stabilization in porous media burners via topology gradation},
   author={Sobhani, S. and Mohaddes, D. and Boign{\'e}, {\'E}. and Muhunthan, P. and Ihme, M.},
@@ -2231,6 +1883,17 @@
   pages={5697--5704},
   year={2018},
   doi={10.1016/j.proci.2018.05.155},
+}
+
+@article{ma2018large,
+  title={Large-eddy simulations of transcritical injection and auto-ignition using diffuse-interface method and finite-rate chemistry},
+  author={Ma, P. and Wu, H. and Jaravel, T. and Bravo, L. and Ihme, M.},
+  journal={Proceedings of the Combustion Institute},
+  volume={37},
+  number={3},
+  pages={3303--3310},
+  year={2018},
+  doi={10.1016/j.proci.2018.05.063},
 }
 
 @article{labahn2018data,
@@ -2368,23 +2031,6 @@
   doi={10.1016/j.proci.2018.07.055},
 }
 
-@article{wu2018efficient,
-  title={Efficient time stepping for reactive turbulent simulations with stiff chemistry},
-  author={Wu, H. and Ma, P. and Ihme, M.},
-  journal={2018  AIAA Aerospace Sciences Meeting},
-  year={2018},
-  doi={10.2514/6.2018-1672},
-  abstract={A combination of a steady-state preserving operator splitting method and a semi-implicit integration scheme is proposed for efficient time stepping in simulations of unsteady reacting flows, such as turbulent flames, using detailed chemical kinetic mechanisms. The operator splitting is based on the Simpler balanced splitting method, which is constructed with improved stability properties and reduced computational cost. The method is shown to be capable of stable and accurate prediction of ignition and extinction for reaction-diffusion systems near critical conditions. The ROK4E scheme is designed for semi-implicit integration of spatially independent chemically reacting systems. Being a Rosenbrock-Krylov method, ROK4E utilizes the low-rank approximation of the Jacobian to reduce the cost for integrating the system of ODEs that have relative few stiff components. The efficiency of the scheme is further improved via the careful choice of coefficients to require three right-hand-side evaluations over four stages. Combing these two methods, efficient calculation is achieved for large-scale parallel simulations of turbulent flames.},
-}
-
-@article{bravo2018transcritical,
-  title={Transcritical mixing and auto-ignition of n-dodecane fuel using a diffuse interface method},
-  author={Bravo, L. and Ma, P. and Ihme, M. and Kerner, K. A.},
-  journal={2018 Joint Propulsion Conference},
-  year={2018},
-  doi={10.2514/6.2018-4685},
-}
-
 @article{wu2018pareto,
   title={Pareto-efficient combustion modeling for improved CO-emission prediction in LES of a piloted turbulent dimethyl ether jet flame},
   author={Wu, H. and Ma, P. and Jaravel, T. and Ihme, M.},
@@ -2418,52 +2064,6 @@
   open_access_url={https://www.ncbi.nlm.nih.gov/pmc/articles/6278941},
 }
 
-@article{wu2018application,
-  title={Application of Pareto-efficient combustion modeling framework to large eddy simulations of turbulent reacting flows},
-  author={Wu, H. and Ma, P. and Jaravel, T. and Ihme, M.},
-  journal={2018  AIAA Aerospace Sciences Meeting},
-  year={2018},
-  doi={10.2514/6.2018-1676},
-  abstract={In the application of the combustion models based on low-dimensional manifolds (for instance flamelet models) to large-eddy simulation (LES) of reactive turbulent flows, the modeling simplifications of the combustion process is a critical source of uncertainty in addition to those due to the turbulent closure model and numerical discretization. The ability to quantitatively assess this uncertainty in absence of the reference result is vital to the reliable and predictive simulations of practical combustion this http URL the present study, the Pareto-efficient combustion (PEC) framework is extended to adaptive LES combustion simulations of turbulent flames. The key component of the PEC framework is the so-called manifold drift term. Its extension LES is proposed to make such assessment by examining the compliance of a particular combustion model in describing a quantity of interest with respect to the underlying flow field representation. With the focus on improving predictions of CO emissions of flamelet-based combustion models, this work employs PEC to augment the flamelet/progress variable (FPV) model through local sub-model assignment of the finite-rate chemistry (FRC) model. To this end, a series of LES-PEC calculations are performed on a piloted partially-premixed dimethyl ether flame (DME-D), using a combination of FPV and FRC models. The drift term is utilized in the PEC framework to the estimate the model related error for quantities of interest. The PEC approach is demonstrated to be capable of significantly improving the prediction of CO emissions compared with the monolithic FPV simulation. The improved accuracy is achieved by enriching the FPV model with FRC in regions where the lower-order model is determined insufficient through the evaluation of drift terms.},
-}
-
-@article{wu2018lyapunov,
-  title={Lyapunov exponent and Wasserstein metric as validation tools for assessing short-time dynamics and quantitative model evaluation of large-eddy simulation},
-  author={Wu, H. and Ma, P. and Lv, Y. and Ihme, M.},
-  journal={2018  AIAA Aerospace Sciences Meeting},
-  year={2018},
-  doi={10.2514/6.2018-0440},
-  abstract={In this work, methods for the evaluation of LES-quality and LES-accuracy are presented, which include the Lyapunov exponent for the analysis of short-time predictability of LES-calculation and the Wasserstein metric for the quantitative assessment of simulation results. Both methods are derived and evaluated in application to the Volvo test case. Both the non-reacting and reacting cases are calculated. For the non- reacting cases, good agreement with the experimental data is achieved by solvers at high numerical resolution. The reacting cases are more challenging due to the small length scale of the flame and the suppression of sinuous mode of absolute instability by the density ratio. The analysis of the turbulent simulation data using the concept of the Lyapunov exponent and the Wasserstein metric provides a more quantitative approach to assess the mesh dependency of the simulation results. The convergence of the Lyapunov exponent is shown to be a more sensitive and stronger indication of mesh-independence. Though grid convergence for the reacting cases cannot be reached with the chosen resolutions, the Lyapunov exponents and the Wasserstein metric are shown to be capable of identifying quantity-specific sensitivities with respect to the numerical resolution, while requiring significantly less computational resources than acquiring profiles of conventional turbulent statistics.},
-}
-
-@article{ma2018direct,
-  title={Direct numerical simulations of turbulent channel flow under transcritical conditions},
-  author={Ma, P. and Yang, X. I. A. and Ihme, M.},
-  journal={2018  AIAA Aerospace Sciences Meeting},
-  year={2018},
-  doi={10.2514/6.2018-0582},
-  open_access_url={http://export.arxiv.org/pdf/1712.02430},
-  abstract={Turbulent flows under transcritical conditions are present in regenerative cooling systems of rocker engines and extraction processes in chemical engineering. The turbulent flows and the corresponding heat transfer phenomena in these complex processes are still not well understood experimentally and numerically. The objective of this work is to investigate the turbulent flows under transcritical conditions using DNS of turbulent channel flows. A fully compressible solver is used in conjunction with a Peng-Robinson real-fluid equation of state to describe the transcritical flows. A channel flow with two isothermal walls is simulated with one heated and one cooled boundary layers. The grid resolution adopted in this study is slightly finer than that required for DNS of incompressible channel flows. The simulations are conducted using both fully (FC) and quasi-conservative (QC) schemes to assess their performance for transcritical wall-bounded flows. The instantaneous flows and the statistics are analyzed and compared with the canonical theories. It is found that results from both FC and QC schemes qualitatively agree well with noticeable difference near the top heated wall, where spurious oscillations in velocity can be observed. Using the DNS data, we then examine the usefulness of Townsend attached eddy hypothesis in the context of flows at transcritical conditions. It is shown that the streamwise energy spectrum exhibits the inverse wavenumber scaling and that the streamwise velocity structure function follows a logarithmic scaling, thus providing support to the attached eddy model at transcritical conditions.},
-}
-
-@article{ma2018numerical,
-  title={Numerical analysis on mixing processes for transcritical real-fluid simulations},
-  author={Ma, P. and Wu, H. and Banuti, D. T. and Ihme, M.},
-  journal={2018  AIAA Aerospace Sciences Meeting},
-  year={2018},
-  doi={10.2514/6.2018-1813},
-  open_access_url={http://export.arxiv.org/pdf/1712.02431},
-  abstract={The accurate and robust simulation of transcritical real-fluid flows is crucial for many engineering applications. Diffused interface methods are frequently employed and several numerical schemes have been developed for simulating transcritical flows. These schemes can be categorized into two types, namely fully conservative and quasi-conservative schemes. An adaptive scheme which is a hybrid of the two is developed in this study. By considering several numerical test cases, it is shown that different schemes predict distinctly different mixing behaviors. It is shown that the mixing processes follow the isobaric-adiabatic and isobaric-isochoric mixing models for fully and quasi-conservative schemes, respectively, and the adaptive scheme yields a mixing behavior that spans both models. The distinct mixing behaviors are a consequence of numerical diffusion instead of physical diffusion and can be attributed to insufficient numerical spatial resolution. This work provides a better understanding on the interpretation of numerical simulation results and the mixing models that are commonly used to study transcritical flows.},
-}
-
-@article{ching2018development,
-  title={Development of a Lagrangian Particle Tracking Method for High-Order Discontinuous Galerkin Schemes},
-  author={Ching, E. J. and Brill, S. and Lv, Y. and Ihme, M.},
-  journal={2018  AIAA Aerospace Sciences Meeting},
-  year={2018},
-  doi={10.2514/6.2018-0360},
-}
-
 @article{silva2018generalized,
   title={Generalized chaos expansion of state space models for uncertainty quanti cation in thermoacoustics},
   author={Silva, C. and Pettersson, P. and Gianluca, I. and Ihme, M.},
@@ -2480,15 +2080,6 @@
   abstract={The need for improved engine efficiencies has motivated the development of high-pressure combustion systems, in which operating conditions achieve and exceed critical conditions. Associated with these conditions are strong variations in thermo-transport properties as the fluid undergoes phase transition, and two-stage ignition with low-temperature combustion. Accurately simulating these physical phenomena at real-fluid environments remains a challenge. By addressing this issue, a high-fidelity LES-modeling framework is developed to conduct simulations of transcritical fuel spray mixing and auto-ignition at high-pressure conditions. The simulation is based on a recently developed diffused interface method that solves the compressible multi-species conservation equations along with a Peng-Robinson state equation and real-fluid transport properties. LES analysis is performed for non-reacting and reacting spray conditions targeting the ECN Spray A configuration at chamber conditions with a pressure of 60 bar and temperatures between 900 K and 1200 K to investigate effects of the real-fluid environment and low-temperature chemistry. Comparisons with measurements in terms of global spray parameters (i.e., liquid and vapor penetration lengths) are shown to be in good agreement. Analysis of the mixture fraction distributions in the dispersed spray region demonstrates the accuracy in modelling the turbulent mixing behavior. Good agreement of the ignition delay time and the lift-off length is obtained from simulation results at different ambient temperature conditions and the formation of intermediate species is captured by the simulations, indicating that the presented numerical framework adequately reproduces the corresponding low- and high-temperature ignition processes under high-pressure conditions, which are relevant to realistic diesel-fuel injection systems.},
 }
 
-@article{bando2018variational,
-  title={Variational multiscale SGS modeling for LES using a high-order discontinuous Galerkin method},
-  author={Bando, K. and Naddei, F. and Plata, M. D. L. L. and Ihme, M.},
-  journal={HAL (Le Centre pour la Communication Scientifique Directe)},
-  year={2018},
-  open_access_url={https://hal.science/hal-02491834},
-  abstract={International audience},
-}
-
 @article{ihme2018computationalb,
   title={Computational Modeling and Analysis of Diesel-fuel Injection and\n Autoignition at Transcritical Conditions},
   author={Ihme, M. and Ma, P. C. and Bravo, L.},
@@ -2499,23 +2090,17 @@
   abstract={The need for improved engine efficiencies has motivated the development of\nhigh-pressure combustion systems, in which operating conditions achieve and\nexceed critical conditions. Associated with these conditions are strong\nvariations in thermo-transport properties as the fluid undergoes phase\ntransition, and two-stage ignition with low-temperature combustion. Accurately\nsimulating these physical phenomena at real-fluid environments remains a\nchallenge. By addressing this issue, a high-fidelity LES-modeling framework is\ndeveloped to conduct simulations of transcritical fuel spray mixing and\nauto-ignition at high-pressure conditions. The simulation is based on a\nrecently developed diffused interface method that solves the compressible\nmulti-species conservation equations along with a Peng-Robinson state equation\nand real-fluid transport properties. LES analysis is performed for non-reacting\nand reacting spray conditions targeting the ECN Spray A configuration at\nchamber conditions with a pressure of 60 bar and temperatures between 900 K and\n1200 K to investigate effects of the real-fluid environment and low-temperature\nchemistry. Comparisons with measurements in terms of global spray parameters\n(i.e., liquid and vapor penetration lengths) are shown to be in good agreement.\nAnalysis of the mixture fraction distributions in the dispersed spray region\ndemonstrates the accuracy in modelling the turbulent mixing behavior. Good\nagreement of the ignition delay time and the lift-off length is obtained from\nsimulation results at different ambient temperature conditions and the\nformation of intermediate species is captured by the simulations, indicating\nthat the presented numerical framework adequately reproduces the corresponding\nlow- and high-temperature ignition processes under high-pressure conditions,\nwhich are relevant to realistic diesel-fuel injection systems.\n},
 }
 
-@article{wang2018modeling,
-  title={Modeling of sub-grid dispersion in large-eddy simulation using regularized deconvolution method},
-  author={Wang, Q. and Zhao, X. and Ihme, M.},
-  journal={2018  AIAA Aerospace Sciences Meeting},
+@article{wu2018lyapunov,
+  title={Lyapunov exponent and Wasserstein metric as validation tools for assessing short-time dynamics and quantitative model evaluation of large-eddy simulation},
+  author={Wu, H. and Ma, P. and Lv, Y. and Ihme, M.},
+  journal={arXiv (Cornell University)},
   year={2018},
-  doi={10.2514/6.2018-2082},
+  doi={10.48550/arxiv.1801.03046},
+  open_access_url={https://arxiv.org/pdf/1801.03046},
+  abstract={In this work, methods for the evaluation of LES-quality and LES-accuracy are presented, which include the Lyapunov exponent for the analysis of short-time predictability of LES-calculation and the Wasserstein metric for the quantitative assessment of simulation results. Both methods are derived and evaluated in application to the Volvo test case. Both the non-reacting and reacting cases are calculated. For the non- reacting cases, good agreement with the experimental data is achieved by solvers at high numerical resolution. The reacting cases are more challenging due to the small length scale of the flame and the suppression of sinuous mode of absolute instability by the density ratio. The analysis of the turbulent simulation data using the concept of the Lyapunov exponent and the Wasserstein metric provides a more quantitative approach to assess the mesh dependency of the simulation results. The convergence of the Lyapunov exponent is shown to be a more sensitive and stronger indication of mesh-independence. Though grid convergence for the reacting cases cannot be reached with the chosen resolutions, the Lyapunov exponents and the Wasserstein metric are shown to be capable of identifying quantity-specific sensitivities with respect to the numerical resolution, while requiring significantly less computational resources than acquiring profiles of conventional turbulent statistics.},
 }
 
-@article{wang2018correction,
-  title={Correction: Modeling of sub-grid dispersion in large-eddy simulation using regularized deconvolution method},
-  author={Wang, Q. and Zhao, X. and Ihme, M.},
-  journal={2018  AIAA Aerospace Sciences Meeting},
-  year={2018},
-  doi={10.2514/6.2018-2082.c1},
-}
-
-@article{bravo2018transcriticalb,
+@article{bravo2018transcritical,
   title={Transcritical Mixing and Auto-Ignition of n-dodecane Liquid Fuel using a Diffused Interface Method},
   author={Bravo, L. and Ma, P. and Ihme, M.},
   journal={arXiv (Cornell University)},
@@ -2523,14 +2108,6 @@
   doi={10.48550/arxiv.1809.09494},
   open_access_url={https://arxiv.org/pdf/1809.09494},
   abstract={High-fidelity simulations of transcritical spray mixing and auto ignition in a combustion chamber are performed at high pressure and temperature conditions using a recently developed finite rate LES solver. The simulation framework is based on a diffused-interface (DI) method that solves the compressible multi-species conservation equations along with the Peng Robinson state equation and real-fluid transport properties. A finite volume approach with entropy stable scheme is employed to accurate simulate the non-linear real fluid flow. LES analysis is performed for non-reacting and reacting spray conditions targeting the ECN Spray A configuration at chamber conditions with a pressure of 60 bar and temperatures between 800 K and 1200 K to investigate effects of the real-fluid environment and low-temperature chemistry. Comparisons with measurements in terms of global spray parameters and mixture fraction distributions demonstrates the accuracy in modeling the turbulent mixing behavior. Good overall agreement of the auto-ignition process is obtained from simulation results at different ambient temperature conditions and the formation of intermediate species is captured by the simulations, indicating that the presented numerical framework adequately reproduces the corresponding low-and-high-temperature ignition processes under high-pressure conditions that are relevant to realistic diesel fuel injection systems.},
-}
-
-@article{bravo2018correction,
-  title={Correction: Transcritical mixing and auto-ignition of n-dodecane fuel using a diffuse interface method},
-  author={Bravo, L. and Ma, P. and Ihme, M. and Kerner, K. A.},
-  journal={2018 Joint Propulsion Conference},
-  year={2018},
-  doi={10.2514/6.2018-4685.c1},
 }
 
 @article{ihme2018what,
@@ -2603,15 +2180,6 @@
   year={2018},
 }
 
-@article{naddei2018large,
-  title={Large-scale space definition for the DG-VMS method based on energy transfer analyses},
-  author={Naddei, F. and Plata, M. D. L. L. and Lamballais, {\'E}. and Couaillier, V. and Massot, M. and Ihme, M.},
-  journal={HAL (Le Centre pour la Communication Scientifique Directe)},
-  year={2018},
-  open_access_url={https://hal.science/hal-02491821},
-  abstract={International audience},
-}
-
 @article{esclapez2017fuel,
   title={Fuel effects on lean blow-out in a realistic gas turbine combustor},
   author={Esclapez, L. and Ma, P. and Mayhew, E. and Xu, R. and Stouffer, S. and Lee, T. and Wang, H. and Ihme, M.},
@@ -2655,14 +2223,6 @@
   year={2017},
   doi={10.1103/physreve.95.052120},
   abstract={The coexistence line of a fluid separates liquid and gaseous states at subcritical pressures, ending at the critical point. Only recently, it became clear that the supercritical state space can likewise be divided into regions with liquidlike and gaslike properties, separated by an extension to the coexistence line. This crossover line is commonly referred to as the Widom line, and is characterized by large changes in density or enthalpy, manifesting as maxima in the thermodynamic response functions. Thus, a reliable representation of the coexistence line and the Widom line is important for sub- and supercritical applications that depend on an accurate prediction of fluid properties. While it is known for subcritical pressures that nondimensionalization with the respective species critical pressures p_{cr} and temperatures T_{cr} only collapses coexistence line data for simple fluids, this approach is used for Widom lines of all fluids. However, we show here that the Widom line does not adhere to the corresponding states principle, but instead to the extended corresponding states principle. We resolve this problem in two steps. First, we propose a Widom line functional based on the Clapeyron equation and derive an analytical, species specific expression for the only parameter from the Soave-Redlich-Kwong equation of state. This parameter is a function of the acentric factor ω and compares well with experimental data. Second, we introduce the scaled reduced pressure p_{r}^{*} to replace the previously used reduced pressure p_{r}=p/p_{cr}. We show that p_{r}^{*} is a function of the acentric factor only and can thus be readily determined from fluid property tables. It collapses both subcritical coexistence line and supercritical Widom line data over a wide range of species with acentric factors ranging from -0.38 (helium) to 0.34 (water), including alkanes up to n-hexane. By using p_{r}^{*}, the extended corresponding states principle can be applied within corresponding states principle formalism. Furthermore, p_{r}^{*} provides a theoretical foundation to compare Widom lines of different fluids.},
-}
-
-@article{banuti2017seven,
-  title={Seven questions about supercritical fluids - towards a new fluid state diagram},
-  author={Banuti, D. T. and Raju, M. and Ma, P. and Ihme, M. and Hickey, J.-P.},
-  journal={55th AIAA Aerospace Sciences Meeting},
-  year={2017},
-  doi={10.2514/6.2017-1106},
 }
 
 @article{nastac2017lyapunov,
@@ -2711,49 +2271,6 @@
   doi={10.1007/s10409-017-0664-9},
 }
 
-@article{ma2017numerical,
-  title={Numerical framework for transcritical real-fluid reacting flow simulations using the flamelet progress variable approach},
-  author={Ma, P. and Banuti, D. T. and Hickey, J.-P. and Ihme, M.},
-  journal={55th AIAA Aerospace Sciences Meeting},
-  year={2017},
-  doi={10.2514/6.2017-0143},
-  open_access_url={https://arxiv.org/pdf/1704.02639},
-  abstract={An extension to the classical FPV model is developed for transcritical real-fluid combustion simulations in the context of finite volume, fully compressible, explicit solvers. A double-flux model is developed for transcritical flows to eliminate the spurious pressure oscillations. A hybrid scheme with entropy-stable flux correction is formulated to robustly represent large density ratios. The thermodynamics for ideal-gas values is modeled by a linearized specific heat ratio model. Parameters needed for the cubic EoS are pre-tabulated for the evaluation of departure functions and a quadratic expression is used to recover the attraction parameter. The novelty of the proposed approach lies in the ability to account for pressure and temperature variations from the baseline table. Cryogenic LOX/GH2 mixing and reacting cases are performed to demonstrate the capability of the proposed approach in multidimensional simulations. The proposed combustion model and numerical schemes are directly applicable for LES simulations of real applications under transcritical conditions.},
-}
-
-@article{wu2017mvp,
-  title={MVP-Workshop Contribution: Modeling of Volvo bluff body flame experiment},
-  author={Wu, H. and Ma, P. and Lv, Y. and Ihme, M.},
-  journal={55th AIAA Aerospace Sciences Meeting},
-  year={2017},
-  doi={10.2514/6.2017-1573},
-}
-
-@article{ma2017flamelet,
-  title={A Flamelet Model with Heat-Loss Effects for Predicting Wall-Heat Transfer in Rocket Engines},
-  author={Ma, P. and Wu, H. and Ihme, M. and Hickey, J.-P.},
-  journal={53rd AIAA/SAE/ASEE Joint Propulsion Conference},
-  year={2017},
-  doi={10.2514/6.2017-4856},
-}
-
-@article{sobhani2017investigation,
-  title={Investigation of Lean Combustion Stability, Pressure Drop, and Material Durability in Porous Media Burners},
-  author={Sobhani, S. and Haley, B. and Bartz, D. and Dunnmon, J. and Sullivan, J. D. and Ihme, M.},
-  journal={Volume 5C: Heat Transfer},
-  year={2017},
-  doi={10.1115/gt2017-63204},
-  abstract={The operational stability and thermal durability of combustion in two-zone porous media burners (PMBs) is examined experimentally and computationally. Long-term material durability tests at constant and cycled on-off conditions are performed, along with a characterization of combustion stability, pressure drop and pollutant emissions for a range of equivalence ratios, mass flow rates, and burner setups. Experimental thermocouple temperature measurements and pressure drop data are presented and compared to results obtained from one-dimensional volume-averaged simulations. Experimental and model results show good agreement for temperature profiles and pressure drop evaluated using the Darcy-Forchheimer equation with Ergun’s relations. Enhanced flame stability is observed for burners with Yttria-stabilized Zirconia Alumina (YZA) upstream and Silicon Carbide (SiC) in the downstream combustion zone. Measurements of product gas concentrations illustrate highest emissions of CO at conditions close to flash-back and, as expected, higher NOx emissions with increasing equivalence ratios.},
-}
-
-@article{banuti2017phase,
-  title={Phase separation analysis in supercritical injection using large-eddy-simulation and vapor-liquid-equilibrium},
-  author={Banuti, D. T. and Ma, P. and Ihme, M.},
-  journal={53rd AIAA/SAE/ASEE Joint Propulsion Conference},
-  year={2017},
-  doi={10.2514/6.2017-4764},
-}
-
 @article{govindaraju2017formulation,
   title={Formulation of optimal surrogate descriptions of fuels considering sensitivities to experimental uncertainties},
   author={Govindaraju, P. and Ihme, M.},
@@ -2762,14 +2279,6 @@
   pages={337--356},
   year={2017},
   doi={10.1016/j.combustflame.2017.09.044},
-}
-
-@article{esclapez2017large,
-  title={Large-Eddy Simulations of Fuel Effect on Gas Turbine Lean Blow-out},
-  author={Esclapez, L. and Ma, P. and Mayhew, E. and Xu, R. and Stouffer, S. and Lee, T. and Wang, H. and Ihme, M.},
-  journal={55th AIAA Aerospace Sciences Meeting},
-  year={2017},
-  doi={10.2514/6.2017-1955},
 }
 
 @article{chan2017flamelet,
@@ -2805,39 +2314,6 @@
   abstract={By modeling a multicomponent gas, a new source of indirect combustion noise is identified, which is named compositional indirect noise. The advection of mixture inhomogeneities exiting the gas-turbine combustion chamber through subsonic and supersonic nozzles is shown to be an acoustic dipole source of sound. The level of mixture inhomogeneity is described by a difference in composition with the mixture fraction. An n-dodecane mixture, which is a kerosene fuel relevant to aeronautics, is used to evaluate the level of compositional noise. By relaxing the compact-nozzle assumption, the indirect noise is numerically calculated for Helmholtz numbers up to 2 in nozzles with linear velocity profile. The compact-nozzle limit is discussed. Only in this limit, it is possible to derive analytical transfer functions for (i) the noise emitted by the nozzle and (ii) the acoustics traveling back to the combustion chamber generated by accelerated compositional inhomogeneities. The former contributes to noise pollution, whereas the latter has the potential to induce thermoacoustic oscillations. It is shown that the compositional indirect noise can be at least as large as the direct noise and entropy noise in choked nozzles and lean mixtures. As the frequency with which the compositional inhomogeneities enter the nozzle increases, or as the nozzle spatial length increases, the level of compositional noise decreases, with a similar, but not equal, trend to the entropy noise. The noisiest configuration is found to be a compact supersonic nozzle.},
 }
 
-@article{magri2017effectsb,
-  title={Effects of Nozzle Helmholtz Number on Indirect Combustion Noise by Compositional Perturbations},
-  author={Magri, L. and O’Brien, J. and Ihme, M.},
-  journal={Volume 2C: Turbomachinery},
-  year={2017},
-  doi={10.1115/gt2017-63382},
-  abstract={By modeling a multi-component gas, a new source of indirect combustion noise is identified, which is named compositional indirect noise. The advection of mixture inhomogeneities exiting the gas-turbine combustion chamber through subsonic and supersonic nozzles is shown to be an acoustic dipole source of sound. The level of mixture inhomogeneity is described by a difference in composition with the mixture fraction. An n-dodecane mixture, which is a kerosene fuel relevant to aeronautics, is used to evaluate the level of compositional noise. By relaxing the compact-nozzle assumption, the indirect noise is numerically calculated for Helmholtz numbers up to 2 in nozzles with linear velocity profile. The compact-nozzle limit is discussed. Only in this limit, it is possible to derive analytical transfer functions for (i) the noise emitted by the nozzle and (ii) the acoustics travelling back to the combustion chamber generated by accelerated compositional inhomogeneities. The former contributes to noise pollution, whereas the latter has the potential to induce thermoacoustic oscillations. It is shown that the compositional indirect noise can be at least as large as the direct noise and entropy noise in chocked nozzles and lean mixtures. As the frequency with which the compositional inhomogeneities enter the nozzle increases, or as the nozzle spatial length increases, the level of compositional noise decreases, with a similar, but not equal, trend to the entropy noise. The noisiest configuration is found to be a compact supersonic nozzle.},
-}
-
-@article{wu2017application,
-  title={Application of Pareto-efficient combustion modeling framework to large eddy simulations of turbulent reacting flows},
-  author={Wu, H. and Ihme, M.},
-  journal={Bulletin of the American Physical Society},
-  year={2017},
-}
-
-@article{ching2017development,
-  title={Development of Discontinuous Galerkin method for Hypersonic Heating Prediction},
-  author={Ching, E. J. and Lv, Y. and Ihme, M.},
-  journal={55th AIAA Aerospace Sciences Meeting},
-  year={2017},
-  doi={10.2514/6.2017-0311},
-}
-
-@article{obrien2017species,
-  title={Species Dependency of the Compositional Indirect Noise Mechanism},
-  author={O’Brien, J. and Ihme, M.},
-  journal={Volume 2C: Turbomachinery},
-  year={2017},
-  doi={10.1115/gt2017-63076},
-  abstract={Indirect combustion noise is a growing concern for aviation engine designers. It is typically associated with the distortion of “hot spots” (entropy structures) and vortical structures that generate excess noise as they are convected by an accelerating mean flow. Recently, it has been shown theoretically that fluctuations in a gas’s chemical composition can act as an additional source of indirect noise in aviation engines. This work examines this composition noise mechanism, focusing on the underlying chemical effects that drive this source of indirect noise. Since the mechanism has yet to be confirmed experimentally, this paper begins by applying the theory to inert mixtures of noble gases and air, in an attempt to guide experimentalists by identifying the set of operating conditions that will produce the strongest acoustic response. Turning from non-reacting to reacting flows, the paper next examines the sensitivity of the compositional noise mechanism to fuel type, testing several common fuels. It is found that, while there is a substantial difference between hydrogen and hydrocarbon fuels, overall noise levels vary only slightly between different hydrocarbon fuels. Additionally, there appears to be a common underlying structure to the response of a product-gas mixture generated by burning a fuel, which is explained through linearized theory and confirmed with numerical results. Lastly, the physics of composition noise is examined at the species-specific level, attempting to provide a link between individual combustion products and changes in a mixture’s propensity to generate indirect noise. The sensitivity of individual species can be explained by a combination of differences between the species and mixture’s Gibbs free energy and strong gradients in product gas concentration with mixture fraction. However, by analyzing the species dependency of combustion products at several different mean mixture fractions, it is found that no single species dominates the noise generation over the combustor’s entire range, but rather the most acoustically active species varies strongly with local stoichiometry.},
-}
-
 @article{mohaddes2017experimental,
   title={Experimental Investigation of Flame Stability in Porous Media Burners},
   author={Mohaddes, D. and Sobhani, S. and Boign{\'e}, {\'E}. and Muhunthan, P. and Ihme, M.},
@@ -2858,7 +2334,7 @@
   year={2017},
 }
 
-@article{wu2017mvpb,
+@article{wu2017mvp,
   title={MVP-Workshop Contribution: Modeling of Volvo Bluff Flame Experiment and Comparison of Finite-Volume and Discontinuous-Galerkin Schemes},
   author={Wu, H. and Ma, P. and Lv, Y. and Ihme, M.},
   journal={arXiv (Cornell University)},
@@ -2878,7 +2354,17 @@
   abstract={The need for improved engine efficiencies has motivated the development of high-pressure combustion systems, in which operating conditions achieve and exceed critical conditions. Associated with these conditions are large thermodynamic gradients and strong variations in transport properties as the fluid undergoes mixing and phase transition. Accurately simulating these real-fluid environments remains a main challenge. Different modeling approaches have been employed, which can be categorized as diffused and sharp interface methods. The objective of this study is to examine the diffused interface method for simulating diesel-fuel injection at conditions related to the supercritical regime. To this end, a recently developed compressible real-fluid solver for transcritical conditions is employed. Simulations of an ECN-relevant diesel-fuel injector are performed and predictions for instantaneous and statistical flow-field results are compared against available measurements. It is expected that results from this analysis will be useful in identifying limitations of current modeling techniques and in improving physical and numerical models for high-pressure injection systems.},
 }
 
-@article{ma2017numericalb,
+@article{wu2017efficient,
+  title={Efficient time stepping for reactive turbulent simulations with stiff chemistry},
+  author={Wu, H. and Ma, P. and Ihme, M.},
+  journal={arXiv (Cornell University)},
+  year={2017},
+  doi={10.48550/arxiv.1712.00953},
+  open_access_url={https://arxiv.org/pdf/1712.00953},
+  abstract={A combination of a steady-state preserving operator splitting method and a semi-implicit integration scheme is proposed for efficient time stepping in simulations of unsteady reacting flows, such as turbulent flames, using detailed chemical kinetic mechanisms. The operator splitting is based on the Simpler balanced splitting method, which is constructed with improved stability properties and reduced computational cost. The method is shown to be capable of stable and accurate prediction of ignition and extinction for reaction-diffusion systems near critical conditions. The ROK4E scheme is designed for semi-implicit integration of spatially independent chemically reacting systems. Being a Rosenbrock-Krylov method, ROK4E utilizes the low-rank approximation of the Jacobian to reduce the cost for integrating the system of ODEs that have relative few stiff components. The efficiency of the scheme is further improved via the careful choice of coefficients to require three right-hand-side evaluations over four stages. Combing these two methods, efficient calculation is achieved for large-scale parallel simulations of turbulent flames.},
+}
+
+@article{ma2017numerical,
   title={Numerical methods to prevent pressure oscillations in transcritical flows},
   author={Ma, P. C. and Lv, Y. and Ihme, M.},
   journal={arXiv (Cornell University)},
@@ -2888,12 +2374,21 @@
   abstract={The accurate and robust simulation of transcritical real-fluid effects is crucial for many engineering applications, such as fuel injection in internal combustion engines, rocket engines and gas turbines. For example, in diesel engines, the liquid fuel is injected into the ambient gas at a pressure that exceeds its critical value, and the fuel jet will be heated to a supercritical temperature before combustion takes place. This process is often referred to as transcritical injection. The largest thermodynamic gradient in the transcritical regime occurs as the fluid undergoes a liquid-like to a gas-like transition when crossing the pseudo-boiling line (Yang 2000, Oschwald et al. 2006, Banuti 2015). The complex processes during transcritical injection are still not well understood. Therefore, to provide insights into high-pressure combustion systems, accurate and robust numerical simulation tools are required for the characterization of supercritical and transcritical flows.},
 }
 
-@article{grogan2017instability,
-  title={Instability Analysis of the Separated Boundary Layer in Shock Tubes},
-  author={Grogan, K. and Ihme, M.},
-  journal={55th AIAA Aerospace Sciences Meeting},
+@article{wu2017application,
+  title={Application of Pareto-efficient combustion modeling framework to large eddy simulations of turbulent reacting flows},
+  author={Wu, H. and Ihme, M.},
+  journal={Bulletin of the American Physical Society},
   year={2017},
-  doi={10.2514/6.2017-1799},
+}
+
+@article{ma2017numericalb,
+  title={Numerical analysis on mixing processes for transcritical real-fluid simulations},
+  author={Ma, P. C. and Wu, H. and Banuti, D. T. and Ihme, M.},
+  journal={arXiv (Cornell University)},
+  year={2017},
+  doi={10.48550/arxiv.1712.02431},
+  open_access_url={https://arxiv.org/pdf/1712.02431},
+  abstract={The accurate and robust simulation of transcritical real-fluid flows is crucial for many engineering applications. Diffused interface methods are frequently employed and several numerical schemes have been developed for simulating transcritical flows. These schemes can be categorized into two types, namely fully conservative and quasi-conservative schemes. An adaptive scheme which is a hybrid of the two is developed in this study. By considering several numerical test cases, it is shown that different schemes predict distinctly different mixing behaviors. It is shown that the mixing processes follow the isobaric-adiabatic and isobaric-isochoric mixing models for fully and quasi-conservative schemes, respectively, and the adaptive scheme yields a mixing behavior that spans both models. The distinct mixing behaviors are a consequence of numerical diffusion instead of physical diffusion and can be attributed to insufficient numerical spatial resolution. This work provides a better understanding on the interpretation of numerical simulation results and the mixing models that are commonly used to study transcritical flows.},
 }
 
 @article{muhunthan2017calibration,
@@ -2924,7 +2419,7 @@
   year={2017},
 }
 
-@article{sobhani2017investigationb,
+@article{sobhani2017investigation,
   title={Investigation of pore-scale flow physics in porous media burners},
   author={Sobhani, S. and Muhunthan, P. and Boign{\'e}, {\'E}. and Mohaddes, D. and Ihme, M.},
   journal={Bulletin of the American Physical Society},
@@ -2958,14 +2453,6 @@
   year={2017},
 }
 
-@article{obrian2017modal,
-  title={Modal Analysis of Direct Core Noise in a Model Combustor},
-  author={O'Brian, J. and Bake, F. and Ihme, M.},
-  journal={elib (German Aerospace Center)},
-  year={2017},
-  abstract={Combustion noise is a growing concern for gas turbine designers, especially the presence of prominent tonal structures or thermoacoustic instabilities. High fidelity simulations such as compressible large eddy simulation (LES) have demonstrated great potential in predicting the behavior of these reacting flows, but these methods generate massive amounts of data and efficient techniques are required to isolate the behavior and underlying physics of acoustic structures. Multiple modaldecomposition techniques have gained prominence across a variety of fields for identifying the underlying dynamics of complex systems, including the fast Fourier Transform (FFT), proper orthogonal decomposition (POD), and dynamic mode decomposition (DMD). Here, these three techniques are applied to the pressure field taken from a compressible LES of a gas turbine model combustor (GTMC). Comparisons are made between the structures identified by each algorithm as well as the capacity of each technique to identify mode amplitude and assign cardinality to the modes. Lastly, comments are offered about the advantages and disadvantages, including robustness, of the methods studied.},
-}
-
 @article{harris2017coupling,
   title={The coupling of high-speed high resolution experimental data and LES through data assimilation techniques},
   author={Harris, S. and Labahn, J. W. and Frank, J. H. and Ihme, M.},
@@ -2984,6 +2471,16 @@
   title={Investigation of Initial Droplet Distribution and Importance of Secondary Breakup Model on Lean Blowout Predictions of a Model Gas Turbine Combustor},
   author={Labahn, J. W. and Ma, P. and Esclapez, L. and Ihme, M.},
   year={2017},
+}
+
+@article{ma2017direct,
+  title={Direct numerical simulations of turbulent channel flow under transcritical conditions},
+  author={Ma, P. C. and Yang, X. I. A. and Ihme, M.},
+  journal={arXiv (Cornell University)},
+  year={2017},
+  doi={10.48550/arxiv.1712.02430},
+  open_access_url={https://arxiv.org/pdf/1712.02430},
+  abstract={Turbulent flows under transcritical conditions are present in regenerative cooling systems of rocker engines and extraction processes in chemical engineering. The turbulent flows and the corresponding heat transfer phenomena in these complex processes are still not well understood experimentally and numerically. The objective of this work is to investigate the turbulent flows under transcritical conditions using DNS of turbulent channel flows. A fully compressible solver is used in conjunction with a Peng-Robinson real-fluid equation of state to describe the transcritical flows. A channel flow with two isothermal walls is simulated with one heated and one cooled boundary layers. The grid resolution adopted in this study is slightly finer than that required for DNS of incompressible channel flows. The simulations are conducted using both fully (FC) and quasi-conservative (QC) schemes to assess their performance for transcritical wall-bounded flows. The instantaneous flows and the statistics are analyzed and compared with the canonical theories. It is found that results from both FC and QC schemes qualitatively agree well with noticeable difference near the top heated wall, where spurious oscillations in velocity can be observed. Using the DNS data, we then examine the usefulness of Townsend attached eddy hypothesis in the context of flows at transcritical conditions. It is shown that the streamwise energy spectrum exhibits the inverse wavenumber scaling and that the streamwise velocity structure function follows a logarithmic scaling, thus providing support to the attached eddy model at transcritical conditions.},
 }
 
 @article{ihme2016combustion,
@@ -3130,22 +2627,6 @@
   doi={10.1016/j.ijheatmasstransfer.2016.06.079},
 }
 
-@article{banuti2016sub,
-  title={Sub- or Supercritical? A flamelet analysis of high pressure rocket propellant injection},
-  author={Banuti, D. T. and Ma, P. and Hickey, J.-P. and Ihme, M.},
-  journal={52nd AIAA/SAE/ASEE Joint Propulsion Conference},
-  year={2016},
-  doi={10.2514/6.2016-4789},
-}
-
-@article{ma2016high,
-  title={High-Fidelity Simulations of Fuel Injection and Atomization of a Hybrid Air-Blast Atomizer},
-  author={Ma, P. and Esclape, L. and Carbajal, S. and Ihme, M. and Buschhagen, T. and Naik, S. and Gore, J. P. and Lucht, R. P.},
-  journal={54th AIAA Aerospace Sciences Meeting},
-  year={2016},
-  doi={10.2514/6.2016-1393},
-}
-
 @article{franzelli2016numerical,
   title={Numerical investigation of soot-flame-vortex interaction},
   author={Franzelli, B. and Cuoci, A. and Stagni, A. and Ihme, M. and Faravelli, T. and Candel, S.},
@@ -3169,41 +2650,6 @@
   open_access_url={https://www.sciencedirect.com/science/article/pii/S1540748916300670},
 }
 
-@article{obrien2016investigation,
-  title={Investigation of the mechanisms of jet-engine core noise using large-eddy simulation},
-  author={O’Brien, J. and Kim, J. and Ihme, M.},
-  journal={54th AIAA Aerospace Sciences Meeting},
-  year={2016},
-  doi={10.2514/6.2016-0761},
-}
-
-@article{ihme2016large,
-  title={Large-Eddy Simulation of a Turbulent Lifted Flame in a Vitiated Co-Flow},
-  author={Ihme, M. and See, Y. C.},
-  journal={Deep Blue (University of Michigan)},
-  year={2016},
-  open_access_url={http://deepblue.lib.umich.edu/bitstream/2027.42/76420/1/AIAA-2009-239-170.pdf},
-  abstract={Large-eddy simulation (LES) of a lifted flame in a vitiated co-flow has been performed using an unsteady flamelet/progress variable (UFPV) model. This model is an extension to the steady flamelet/progress variable approach, and describes the transient autoignition process of the lifted flame through the unsteady flamelet model. The particular advan-tage of this model is that it eliminates the flamelet time scale, and all thermochemical quantities are parameterized by mixture fraction, reaction progress parameter, and stoi-chiometric scalar dissipation rate. For application to LES, a presumed probability density function closure is employed, in which a beta-distribution is used for the mixture fraction, a statistically most-likely distribution is employed for the reaction progress parameter, and the distribution of the stoichiometric scalar dissipation rate is modeled by a Dirac delta function. Compared to the steady flamelet/progress variable model, predictions from the UFPV model show significant improvements, and the spatial evolution of the flame igni-tion process and lift-off height is in good agreement with experimental data. Flow field structure, statistical results, and scatter data are compared with experimental data, and potential improvements of the model are discussed. I.},
-}
-
-@article{ching2016entropy,
-  title={Entropy Residual as a Feature-Based Adaptation Indicator for Simulations of Unsteady Flow\&lt;br /\&gt;},
-  author={Ching, E. J. and Lv, Y. and Ihme, M.},
-  journal={54th AIAA Aerospace Sciences Meeting},
-  year={2016},
-  doi={10.2514/6.2016-0837},
-}
-
-@article{chan2016analysis,
-  title={Analysis of Combustion Closure Assumptions in a Dual-Mode Scramjet Combustor},
-  author={Chan, W. L. and Ihme, M.},
-  journal={54th AIAA Aerospace Sciences Meeting},
-  year={2016},
-  doi={10.2514/6.2016-1900},
-  open_access_url={http://deepblue.lib.umich.edu/bitstream/2027.42/140600/1/6.2016-1900.pdf},
-  abstract={Peer Reviewed},
-}
-
 @article{wu2016efficient,
   title={Efficient partially implicit integration method for stiff chemistry in high-fidelity simulations of turbulent reacting flows},
   author={Wu, H. and Ihme, M.},
@@ -3211,45 +2657,11 @@
   year={2016},
 }
 
-@article{thakur2016compressible,
-  title={Compressible Flamelet Model in a Rule-Based Turbulent Combustion Solver},
-  author={Thakur, S. and Wright, J. and Ihme, M.},
-  journal={54th AIAA Aerospace Sciences Meeting},
-  year={2016},
-  doi={10.2514/6.2016-1838},
-  abstract={A robust unsteady turbulent compressible combustion modeling capability developed in a CFD solver called Loci-STREAM is presented in this paper. It utilizes the flamelet methodology extended to account for compressibility. This solver integrates proven numerical methods for generalized grids and state-of-the-art physical models in a rule-based programming framework called Loci which allows: (a) seamless integration of multidisciplinary physics in a unified manner, and (b) automatic handling of parallel computing. The objective is to be able to routinely simulate unsteady combustion in complex geometries such as liquid rocket engines requiring large unstructured grids and complex multidisciplinary physics.},
-}
-
 @article{qadri2016optimal,
   title={Optimal ignition placement using nonlinear adjoint looping},
   author={Qadri, U. A. and Schmid, P. J. and Magri, L. and Ihme, M.},
   journal={Bulletin of the American Physical Society},
   year={2016},
-}
-
-@article{hillewaert2016assessement,
-  title={Assessement of high order DG methods for LES of free stream transonic turbulence},
-  author={Hillewaert, K. and Cagnone, J. and Murman, S. and Garai, A. and Yu, L. and Ihme, M.},
-  journal={Open Repository and Bibliography (University of Li{\`e}ge)},
-  year={2016},
-  open_access_url={https://orbi.uliege.be/handle/2268/262497},
-  abstract={This paper describes validation work for high-order discontinuous Galerkin Methods on Large Eddy Simulation (LES) of canonical test cases including shocks, namely compressible homogeneous isotropic turbulence and homogeneous turbulence passing a shock.Three different DG methods are considered, and the impact of their shock-stabilization mechanisms is evaluated, as a preliminary step towards defining an optimized strategy.},
-}
-
-@article{lv2016les,
-  title={LES modeling of scalar transport based on high-order discontinuous finite-element method: Assessment of implicit LES and scalar variance modeling},
-  author={Lv, Y. and Ihme, M.},
-  journal={46th AIAA Fluid Dynamics Conference},
-  year={2016},
-  doi={10.2514/6.2016-3799},
-}
-
-@article{ching2016reduction,
-  title={Reduction of Shock Capturing Error in Discontinuous Galerkin Schemes for Hypersonic Flow Simulations},
-  author={Ching, E. J. and Lv, Y. and Ihme, M.},
-  journal={The 7th International Conference on Computational Methods (ICCM2016)},
-  year={2016},
-  abstract={Motivated by recent interest in simulations of hypersonic flows under re-entry conditions, a robust and accurate shock capturing approach for high-order discontinuous Galerkin methods is developed. Artificial viscosity is localized via a shock detector based on the entropy residual, which converges to zero in smooth regions and assumes nonzero values in non-smooth regions. The piecewise-constant artificial viscosity field is then diffused in order to generate a smooth profile to avoid spurious oscillations of the solution near the shock (Barter and Darmofal, 2010). To improve accuracy, this method is combined with mesh adaptation and a procedure for optimizing the artificial viscosity field. The performance of this approach is investigated in numerical tests of hypersonic flow over 2D and 3D cylinders. Results concerning heat transfer predictions demonstrate that this shock capturing scheme is relatively insensitive to errors caused by misalignment between unstructured meshes and the shock.},
 }
 
 @article{magri2016generation,
@@ -3266,20 +2678,11 @@
   year={2016},
 }
 
-@article{lv2016lesb,
+@article{lv2016les,
   title={LES of a bluff-body stabilized premixed flame using discontinuous Galerkin scheme},
   author={Lv, Y. and Ihme, M.},
   journal={Bulletin of the American Physical Society},
   year={2016},
-}
-
-@article{obrien2016les,
-  title={LES Investigation of Core Noise Mechanisms inside a Combustor-Nozzle System},
-  author={O’Brien, J. and Bake, F. and Kim, J. and Ihme, M.},
-  journal={elib (German Aerospace Center)},
-  year={2016},
-  open_access_url={http://meetings.aps.org/Meeting/DFD16/Session/G4.3},
-  abstract={The aim of this work is to expand knowledge of core noise physics through the study of a representative aviation-type combustor with a converging-diverging nozzle attached to the exhaust. First, a fully compressible LES of the entire flowpath is performed and validated against experimental measurements. From this calculation, the time history of the flow is sampled in a plane near the nozzle entrance in order to construct a library of representative fluctuations that are potential precursors to the direct and indirect noise observed at the nozzle outlet. This data is then used as an inflow for a series of separate nozzle simulations in which fluctuations in pressure, temperature ("hot spots"), and mixture composition are imposed separately to isolate their effect on the emitted noise. This methodology allows quantitative investigation of core-noise physics that lower-order models do not, including: the effect of non-linearity of high-amplitude perturbations, superposition of forcing types, the impact of the spatial structure of the perturbations, and the restriction to low-frequency perturbations and calorically perfect gas assumption. The calculations also represent the first time that variations in mixture composition have been shown to induce downstream noise in a high-fidelity, 3D simulation.},
 }
 
 @article{sobhani2016investigation,
@@ -3341,6 +2744,15 @@
   abstract={Engine-core noise in aeronautical gas-turbines is commonly divided into direct and indirect noise (Strahle 1978; Dowling \&amp; Mahmoudi 2015; Ihme 2017). Direct combustion noise is a source of self-noise, and describes the generation of acoustic pressure uctuations by unsteady heat release in the combustion chamber (Figure 1). In contrast, indirect combustion noise represents an induced noise-source mechanism that arises from the interaction between non-acoustic perturbations exiting the combustion chamber and downstream engine components. The indirect noise generation by temperature inhomogeneities arising from hot and cold spots is referred to as entropy noise (Marble \&amp; Candel 1977a), and indirect noise from vorticity uctuations is referred to as vorticity noise (Cumpsty 1979). Once sound has been generated, its propagation through the engine core depends on mean ow gradients and the geometry, which distort, di ract and re ect the acoustic propagation. Contributions of indirect noise to the overall core-noise emission have been examined theoretically and experimentally. These studies focused on separating out the contributions to noise from the (i) direct transmission and (ii) entropy noise. Di erent techniques have been employed to determine the transfer functions, including compact nozzle theories (Marble \&amp; Candel 1977a) and expansion methods (Stow et al. 2002; Goh \&amp; Morgans 2011; Moase et al. 2007; Giauque et al. 2012; Dur an \&amp; Moreau 2013). These theoretical investigations were supported by experimental studies (Bake et al. 2009; Kings \&amp; Bake 2010). These studies showed that indirect combustion noise requires consideration in the analysis of engine-core noise and can exceed the contribution from direct noise under some circumstances (see, e.g., Dowling \&amp; Mahmoudi 2015).},
 }
 
+@article{ihme2016large,
+  title={Large-Eddy Simulation of a Turbulent Lifted Flame in a Vitiated Co-Flow},
+  author={Ihme, M. and See, Y. C.},
+  journal={Deep Blue (University of Michigan)},
+  year={2016},
+  open_access_url={http://deepblue.lib.umich.edu/bitstream/2027.42/76420/1/AIAA-2009-239-170.pdf},
+  abstract={Large-eddy simulation (LES) of a lifted flame in a vitiated co-flow has been performed using an unsteady flamelet/progress variable (UFPV) model. This model is an extension to the steady flamelet/progress variable approach, and describes the transient autoignition process of the lifted flame through the unsteady flamelet model. The particular advan-tage of this model is that it eliminates the flamelet time scale, and all thermochemical quantities are parameterized by mixture fraction, reaction progress parameter, and stoi-chiometric scalar dissipation rate. For application to LES, a presumed probability density function closure is employed, in which a beta-distribution is used for the mixture fraction, a statistically most-likely distribution is employed for the reaction progress parameter, and the distribution of the stoichiometric scalar dissipation rate is modeled by a Dirac delta function. Compared to the steady flamelet/progress variable model, predictions from the UFPV model show significant improvements, and the spatial evolution of the flame igni-tion process and lift-off height is in good agreement with experimental data. Flow field structure, statistical results, and scatter data are compared with experimental data, and potential improvements of the model are discussed. I.},
+}
+
 @article{grogan2015ignition,
   title={Ignition regimes in rapid compression machines},
   author={Grogan, K. and Goldsborough, S. S. and Ihme, M.},
@@ -3374,15 +2786,6 @@
   year={2015},
   doi={10.1016/j.jcp.2015.04.026},
   open_access_url={https://arxiv.org/pdf/1411.5044},
-}
-
-@article{franzelli2015numerical,
-  title={Numerical Modeling of Soot Production in Aero-Engine Combustors Using Large Eddy Simulations},
-  author={Franzelli, B. and Riber, {\'E}. and Cuenot, B. and Ihme, M.},
-  journal={Volume 4B: Combustion, Fuels and Emissions},
-  year={2015},
-  doi={10.1115/gt2015-43630},
-  abstract={Numerical simulations are regarded as an essential tool for improving the design of combustion systems since they can provide information that is complementary to experiments. However, although numerical simulations have already been successfully applied to the prediction of temperature and species concentration in turbulent flames, the production of soot is far from being conclusive due to the complexity of the processes involved in soot production. In this context, first Large Eddy Simulations (LES) of soot production in turbulent flames are reported in the literature in laboratory-scale configurations, thereby confirming the feasibility of the approach. However numerous modeling and numerical issues have not been completely solved. Moreover, validation of the models through comparisons with measurements in realistic complex flows typical of aero-engines is still rare. This work therefore proposes to evaluate the LES approach for the prediction of soot production in an experimental swirl-stabilized non-premixed ethylene/air aero-engine combustor, for which soot and flame data are available. Two simulations are carried out using a two-equation soot model to compare the performance of a hybrid chemical description (reduced chemistry for the flame structure/tabulated chemistry for soot precursor chemistry) to a classical full tabulation method. Discrepancies of soot concentration between the two LES calculations will be analyzed and the sensitivity to the chemical models will be investigated.},
 }
 
 @article{franzelli2015generalisation,
@@ -3428,15 +2831,6 @@
   open_access_url={https://hal.science/hal-01272955},
 }
 
-@incollection{ihme2015detailed,
-  title={Detailed Simulations of Weak-to-Strong Ignition of a H2/O2/Ar Mixture in Shock-Tubes},
-  author={Ihme, M. and Sun, Y. and Deiterding, R.},
-  booktitle={29th International Symposium on Shock Waves 1},
-  pages={209--214},
-  year={2015},
-  doi={10.1007/978-3-319-16835-7_31},
-}
-
 @article{dunnmon2015characterization,
   title={Characterization of scalar mixing in dense gaseous jets using X-ray computed tomography},
   author={Dunnmon, J. and Sobhani, S. and Kim, T. W. and Kovscek, A. R. and Ihme, M.},
@@ -3445,40 +2839,6 @@
   number={10},
   year={2015},
   doi={10.1007/s00348-015-2057-9},
-}
-
-@article{lv2015general,
-  title={A general and robust high-order numerical framework for shock-capturing: entropy-bounding, shock detection and artificial viscosity},
-  author={Lv, Y. and See, Y. C. and Ihme, M.},
-  journal={53rd AIAA Aerospace Sciences Meeting},
-  year={2015},
-  doi={10.2514/6.2015-0572},
-  abstract={A high-order shock-capturing framework is presented, that includes three key components, namely entropybounding, shock detection and artificial viscosity. The discontinuous Galerkin scheme is used to provide the discretization foundation, although the entire methodology is applicable to any discontinuous scheme. In this framework, entropy-bounding guarantees the numerical robustness by completely avoiding the appearance of non-physical quantities. An entropy-residual based shock detector is developed, which is able to accurately locate discontinuities. Building on the first two components, artificial viscosity is introduced locally to reduce spurious oscillations. By conducting Fourier analysis, a algebraic relation for the artificial viscosity is derived, which is linked to the eigen-spetrum of the numerical discretization. The resulting numerical framework offers a good balance between shock-capturing and computational efficiency for explicit time integration. Several test cases are conducted to confirm the benefits of using this method.},
-}
-
-@article{obrien2015linear,
-  title={Linear Analysis of Jet-Engine Core Noise Based upon High-Fidelity Combustor and Turbine Simulations},
-  author={O’Brien, J. and Kim, J. and Ihme, M.},
-  journal={53rd AIAA Aerospace Sciences Meeting},
-  year={2015},
-  doi={10.2514/6.2015-1004},
-}
-
-@article{wu2015fidelity,
-  title={A Fidelity Adaptive Modeling Framework for Combustion Systems Based on Model Trust-Region},
-  author={Wu, H. and See, Y. C. and Wang, Q. and Ihme, M.},
-  journal={53rd AIAA Aerospace Sciences Meeting},
-  year={2015},
-  doi={10.2514/6.2015-1381},
-  abstract={In numerical predictions of turbulent reacting flows, the selection of a particular combustion model remains an area where there is no well-established systematic procedures. Often, expert knowledge and even experimental measurements are required to make an informed decision on the particular choice of a combustion model. Furthermore, the computational cost that is associated with a combustion model is another constraint in the selection process. To date, there has yet to be a general high fidelity combustion model that is computationally tractable for a large class of realistic combustion devices. In this work, a fidelity adaptive modeling (FAM) framework for combustion problems is developed to alleviate some of these issues. With minimal user input, this modeling framework is designed to automatically utilize the most appropriate combustion model locally in reacting flow simulations. This framework is demonstrated in an application to steady tribrachial flame, representing a challenging test case to single-regime reaction-diffusion manifold models. By utilizing reaction-diffusion manifold models in regions where they are accurate for a user-defined threshold, simulations with the FAM approach are able to reproduce results comparable to the detailed chemistry simulation. ∗Research Assistant, Center for Turbulence Research, Stanford University, AIAA Member. †Research Assistant, Flow Physics and Computational Engineering, Stanford University, AIAA Member. ‡Professor, Center for Turbulence Research, Stanford University, AIAA Member.},
-}
-
-@article{obrien2015linearb,
-  title={Linear Analysis of Engine Core Noise Using a Hybrid Modeling Approach},
-  author={O’Brien, J. and Kim, J. and Ihme, M.},
-  journal={21st AIAA/CEAS Aeroacoustics Conference},
-  year={2015},
-  doi={10.2514/6.2015-2821},
 }
 
 @article{obrien2015hybrid,
@@ -3556,14 +2916,6 @@
   author={Nastac, G. and Ihme, M.},
   journal={Bulletin of the American Physical Society},
   year={2015},
-}
-
-@article{grogan2015modeling,
-  title={Modeling Gas Dynamic Effects in Shock-Tubes for Reaction Kinetics Measurements},
-  author={Grogan, K. and Wang, M. and Ihme, M.},
-  journal={53rd AIAA Aerospace Sciences Meeting},
-  year={2015},
-  doi={10.2514/6.2015-0414},
 }
 
 @article{govindaraju2015multicomponent,
@@ -3729,16 +3081,6 @@
   doi={10.1016/j.combustflame.2014.02.007},
 }
 
-@article{chan2014large,
-  title={Large-Eddy Simulations of a Dual-Mode Scramjet Combustor: Operating Point "A" of University of Virginia's Scramjet Experiments},
-  author={Chan, W. L. and Ihme, M.},
-  journal={52nd Aerospace Sciences Meeting},
-  year={2014},
-  doi={10.2514/6.2014-1161},
-  open_access_url={http://deepblue.lib.umich.edu/bitstream/2027.42/140425/1/6.2014-1161.pdf},
-  abstract={Peer Reviewed},
-}
-
 @article{see2014effects,
   title={Effects of finite-rate chemistry and detailed transport on the instability of jet diffusion flames},
   author={See, Y. C. and Ihme, M.},
@@ -3748,25 +3090,6 @@
   year={2014},
   doi={10.1017/jfm.2014.95},
   abstract={Abstract Local linear stability analysis has been shown to provide valuable information about the response of jet diffusion flames to flow-field perturbations. However, this analysis commonly relies on several modelling assumptions about the mean flow prescription, the thermo-viscous-diffusive transport properties, and the complexity and representation of the chemical reaction mechanisms. In this work, the effects of these modelling assumptions on the stability behaviour of a jet diffusion flame are systematically investigated. A flamelet formulation is combined with linear stability theory to fully account for the effects of complex transport properties and the detailed reaction chemistry on the perturbation dynamics. The model is applied to a methane–air jet diffusion flame that was experimentally investigated by F{\"u}ri et al. ( Proc. Combust. Inst. , vol. 29, 2002, pp. 1653–1661). Detailed simulations are performed to obtain mean flow quantities, about which the stability analysis is performed. Simulation results show that the growth rate of the inviscid instability mode is insensitive to the representation of the transport properties at low frequencies, and exhibits a stronger dependence on the mean flow representation. The effects of the complexity of the reaction chemistry on the stability behaviour are investigated in the context of an adiabatic jet flame configuration. Comparisons with a detailed chemical-kinetics model show that the use of a one-step chemistry representation in combination with a simplified viscous-diffusive transport model can affect the mean flow representation and heat release location, thereby modifying the instability behaviour. This is attributed to the shift in the flame structure predicted by the one-step chemistry model, and is further exacerbated by the representation of the transport properties. A pinch-point analysis is performed to investigate the stability behaviour; it is shown that the shear-layer instability is convectively unstable, while the outer buoyancy-driven instability mode transitions from absolutely to convectively unstable in the nozzle near field, and this transition point is dependent on the Froude number.},
-}
-
-@article{hickey2014large,
-  title={Large Eddy Simulation of Supercritical Mixing and Combustion for Rocket Applications},
-  author={Hickey, J.-P. and Ihme, M.},
-  journal={52nd Aerospace Sciences Meeting},
-  year={2014},
-  doi={10.2514/6.2014-0138},
-  abstract={We report on the implementation of the real fluid capabilities to CharlesX, the in-house, unstructured, large eddy simulation code used at the Center for Turbulence Research at Stanford University. A conceptually distinct implementation was needed for the puremixing and the flamelet/progress-variable (FPV) model combustion case. For the nonreacting simulations, a Newton-Raphson based iterative algorithm is used to determine the temperature from the transported density and energy. For the reacting simulations, an extended flamelet table is used that tabulates the departure functions as well as the compressibility factor. These tabulated parameters are used to correct the transported thermodynamic properties. The real fluid extension to CharlesX was used to investigate a non-reacting and a reacting case. In both of these cases, a second-order essentially nonoscillatory (ENO) schemes is locally applied to the flux computation on the faces identified with a dual-threshold relative density sensor. This avoids spurious oscillations of the numerical solution with limited numerical dissipation. This preliminary work illustrates the capability CharlesX to capture the important physics in a typical rocket engine configuration.},
-}
-
-@article{see2014les,
-  title={LES Investigation of Flow Field Sensitivity in a Gas Turbine Model Combustor},
-  author={See, Y. C. and Ihme, M.},
-  journal={52nd Aerospace Sciences Meeting},
-  year={2014},
-  doi={10.2514/6.2014-0621},
-  open_access_url={https://hdl.handle.net/2027.42/140411},
-  abstract={Peer Reviewed},
 }
 
 @article{dunnmon2014characterization,
@@ -3825,14 +3148,6 @@
   year={2014},
 }
 
-@article{lv2014numerical,
-  title={Numerical Investigation of Detonation Transmission Mechanism based on High-order Discontinuous Galerkin Scheme},
-  author={Lv, Y. and Ihme, M.},
-  journal={52nd Aerospace Sciences Meeting},
-  year={2014},
-  doi={10.2514/6.2014-1505},
-}
-
 @article{grogan2014modeling,
   title={Modeling Gas-Dynamic Effects in Shock-Tubes for Reaction-Kinetic Measurements},
   author={Grogan, K. and Wang, Q. and Ihme, M.},
@@ -3853,15 +3168,6 @@
   author={O’Brien, J. and Kim, J. and Ihme, M.},
   journal={Bulletin of the American Physical Society},
   year={2014},
-}
-
-@article{hickey2013large,
-  title={Large Eddy Simulation of Shear Coaxial Rocket Injector: Real Fluid Effects},
-  author={Hickey, J.-P. and Ma, P. and Ihme, M. and Thakur, S.},
-  journal={49th AIAA/ASME/SAE/ASEE Joint Propulsion Conference},
-  year={2013},
-  doi={10.2514/6.2013-4071},
-  abstract={The implementation and verification of real-fluid effects towards the high-fidelity large eddy simulation of rocket combustors is reported. The non-ideal fluid behavior is modeled using a cubic Peng-Robinson equation of state; a thermodynamically consistent approach is used to convert conserved into primitive variables. The viscosity is estimated by Chung et al.’s method in the supercritical gas phase. In the transcritical liquid phase, a simple, accurate and efficient method to estimate the viscosity as a function of temperature and pressure is proposed. The highly non-linear coupling of the primitive thermodynamic variables requires special consideration in regions of high-density gradients to avoid spurious numerical oscillations. The characterization of the non-linearity of the equation of state identifies the regions of high sensitivity. In these regions, small relative changes in the pressure lead to significant changes in density and/or temperature, therefore, numerical instabilities tend to be amplified in these regions. To avoid non-physical oscillations, a first-order and second-order essentially non-oscillatory (ENO) schemes are locally applied to the flux computation on the faces identified with a dual-threshold relative density sensor. The evaluation of the sensor and capabilities of the non-oscillatory schemes on canonical test cases are presented. Finally, these schemes are used to model two canonical cases.},
 }
 
 @article{chen2013large,
@@ -3887,68 +3193,11 @@
   abstract={The effect of gravity on the onset and growth rate of capillary instabilities in viscous liquid jets is studied. To this end, a spatial linear stability analysis of Cosserat's equations is performed using a multiscale expansion technique. A dispersion relation and expressions for the perturbation amplitude are derived to evaluate the growth rate of the most unstable axisymmetric disturbance mode. Modeling results are compared with classical results in the limit of zero Bond number, confirming the validity of this approach. Expressions for the critical Weber number, demarcating the transition between convective and absolute instability are derived as functions of capillary and Bond numbers. Parametric investigations for a range of relevant operating conditions (characterized by capillary, Weber, and Bond numbers) are performed to examine the jet breakup and the perturbation growth rate. In addition to the physical insight that is obtained from this investigation, the results that are presented in this work could also be of relevance as test cases for the algorithmic development and the verification of high-fidelity multiphase simulation codes.},
 }
 
-@article{ihme2013detailed,
-  title={Detailed Simulations of Shock-Bifurcation and Ignition of an Argon-diluted Hydrogen/Oxygen Mixture in a Shock Tube},
-  author={Ihme, M. and Sun, Y. and Deiterding, R.},
-  journal={51st AIAA Aerospace Sciences Meeting including the New Horizons Forum and Aerospace Exposition},
-  year={2013},
-  doi={10.2514/6.2013-538},
-  open_access_url={https://hdl.handle.net/2027.42/106508},
-  abstract={Detailed simulations of the bifurcation and ignition of an Argon-diluted Hydrogen/Oxy-gen mixture in the two-stage weak ignition regime are performed. An adaptive mesh-refinement (AMR) technique is employed to resolve all relevant physical scales that are associated with the viscous boundary-layer, the reaction front, and the shock-wave. A high-order hybrid WENO/central-differencing method is used as spatial discretization scheme, and a detailed chemical mechanism is employed to describe the combustion of the H2/O2 mixture. The operating conditions considered in this study are p5 = 5 bar and T5 = 1100 K, and fall in the third explosion limit. The computations show that the mixing of the thermally stratified fluid, carrying different momentum and enthalpy, introduces inhomogeneities in the core-region behind the reflected shock. These inhomogeneities act as localized ignition kernels. During the induction period, these kernels slowly expand and eventually transition to a detonation wave that rapidly consumes the unburned mixture. In competition with this detonation wave are the presence of secondary ignition kernels that appear in the unreacted core-region between reflected shock and detonation wave. I.},
-}
-
 @article{urzay2013backscatter,
   title={Backscatter of turbulent kinetic energy in chemically-reacting compressible flows},
   author={Urzay, J. and Ihme, M. and Moin, P. and Saghafian, A.},
   year={2013},
   abstract={This study addresses the dynamics of kinetic-energy backscatter in the context of large-eddy simulations (LES) of turbulent chemically-reacting compressible flows. As a case study, a-priori analyses of direct numerical simulations (DNS) of reacting and inert supersonic, time-developing, hydrogen-air turbulent mixing layers with complex chemistry and multi-component diffusion are conducted herein to examine the effects of compressibility and combustion on subgrid-scale (SGS) backscatter of kinetic energy. General formulations of SGS backscatter with dilatation are provided, including an LESbased energy-transfer diagram that illustrates the conversion dynamics. Lastly, influences of SGS backscatter on the Boussinesq eddy viscosity are analyzed. 2. Background The energy-cascade hypothesis predicts that turbulent kinetic energy is generated at the largest scales in a flow and then transferred to progressively smaller and smaller scales until it is dissipated by molecular viscosity. This energy cascade typically holds in a statistically-averaged sense, but it does not always describe the local behavior of a turbulent flow. The turbulent dissipation associated with the smallest, viscous scales, is actually the difference between two energy fluxes, namely, the forwardscatter, corresponding to the classical energy cascade, and the backscatter, a reversal of this process in which energy is transferred from the small scales back to the large scales (Lesieur \& �},
-}
-
-@article{amini2013liquid,
-  title={Liquid Jet Instability Under Gravity Effects},
-  author={Amini, G. and Ihme, M.},
-  journal={51st AIAA Aerospace Sciences Meeting including the New Horizons Forum and Aerospace Exposition},
-  year={2013},
-  doi={10.2514/6.2013-92},
-  open_access_url={http://deepblue.lib.umich.edu/bitstream/2027.42/106513/1/AIAA2013-92.pdf},
-  abstract={Peer Reviewed},
-}
-
-@article{lv2013discontinuous,
-  title={Discontinuous Galerkin Method for Compressible Viscous Reacting Flow},
-  author={Lv, Y. and Ihme, M.},
-  journal={21st AIAA Computational Fluid Dynamics Conference},
-  year={2013},
-  doi={10.2514/6.2013-3067},
-  abstract={In the present study, a discontinuous Galerkin (DG) framework is developed to simulate chemically reacting ows. The algorithm combines a double-ux method to account for variable thermodynamic properties, a Strang-splitting scheme for the sti reaction chemistry, a robust WENO-based shock limiter, and the non-linear viscous-diusive transport is discretized using the BR2 method. The algorithm is veried and validated by considering a series of one- and two-dimensional test cases, and results are compared with self-similarity solutions and experiments to examine critical algorithmic components. These cases include low-Mach deagration systems and supersonic inviscid and viscous problems. Multi-dimensional congurations consider the shock-ame interaction and detonation initiation process. It is shown that the reactive DG-method provides an accurate description of key-physical mechanisms that control the ignition onset in conned detonation systems.},
-}
-
-@article{lv2013development,
-  title={Development of Discontinuous Galerkin Method for Detonation and Supersonic Combustion},
-  author={Lv, Y. and Ihme, M.},
-  journal={51st AIAA Aerospace Sciences Meeting including the New Horizons Forum and Aerospace Exposition},
-  year={2013},
-  doi={10.2514/6.2013-688},
-  open_access_url={https://hdl.handle.net/2027.42/106511},
-  abstract={Peer Reviewed},
-}
-
-@article{thakur2013parallel,
-  title={Parallel Compressible Solver for Unsteady Turbulent Combustion in Rocket Injectors Using Flamelet Models},
-  author={Thakur, S. and Wright, J. and Ihme, M.},
-  journal={21st AIAA Computational Fluid Dynamics Conference},
-  year={2013},
-  doi={10.2514/6.2013-2835},
-}
-
-@article{see2013large,
-  title={Large-Eddy Simulation of a Gas Turbine Model Combustor},
-  author={See, Y. C. and Ihme, M.},
-  journal={51st AIAA Aerospace Sciences Meeting including the New Horizons Forum and Aerospace Exposition},
-  year={2013},
-  doi={10.2514/6.2013-172},
-  open_access_url={https://hdl.handle.net/2027.42/106433},
-  abstract={Peer Reviewed},
 }
 
 @article{ma2013large,
@@ -3998,10 +3247,10 @@
   open_access_url={https://www.sciencedirect.com/science/article/pii/S0082078404001158},
 }
 
-@article{ihme2012large,
+@incollection{ihme2012large,
   title={Large-Eddy Simulation of a Jet-in-Hot-Coflow Burner Operating in the Oxygen-Diluted Combustion Regime},
   author={Ihme, M. and Zhang, J. and He, G. and Dally, B. B.},
-  journal={Flow Turbulence and Combustion},
+  booktitle={Flow Turbulence and Combustion},
   volume={89},
   number={3},
   pages={449--464},
@@ -4041,56 +3290,6 @@
   year={2012},
   doi={10.1260/1475-472x.11.1.25},
   abstract={Generation of combustion noise in an unconfined turbulent non-premixed flame is investigated. For this, a model is developed, combining Lighthill's acoustic analogy with a flamelet-based combustion model to consistently express all thermochemical quantities by a set of reduced scalars. The model is applied in a large-eddy simulation, and the acoustic pressure in the far field is obtained from an integral solution. Three relevant acoustic source terms with different source characteristics and Mach number scaling are identified. The spatial distribution and spectral characteristics of the acoustic sources are analyzed, and it is shown that the acoustic source due to chemical reaction is the main noise contributor, and is located in the upper part of the flame. Contributions from the acoustic sources due to Reynolds stresses and fluctuating mass flux are found to be virtually insignificant at low frequencies. Discrepancies in the prediction of high-frequency sound pressure level in the jet forward direction were analyzed and are attributed to high-frequency acoustic refraction effects due to variations in sound speed. The directivity exhibits a weak directionality in the 30° forward direction, and some phase cancellation between individual acoustic sources is evident.},
-}
-
-@article{allison2012acousticb,
-  title={Acoustic Behavior of a Partially-Premixed Gas Turbine Model Combustor},
-  author={Allison, P. M. and Driscoll, J. F. and Ihme, M.},
-  journal={50th AIAA Aerospace Sciences Meeting including the New Horizons Forum and Aerospace Exposition},
-  year={2012},
-  doi={10.2514/6.2012-504},
-  open_access_url={https://hdl.handle.net/2027.42/97116},
-  abstract={Combustion instabilities in gas turbine engines often give rise to acoustic resonances. These resonances occur as manifestations of different acoustic modes, of which a single or multiple modes may be present. In this work, the acoustic behavior of a model gas turbine combustor, developed at DLR Stuttgart by Meier, was investigated using both syn(thetic) gas and standard hydrocarbon fuels. Syngas displayed significantly different behavior than hydrocarbon fuels, even when the laminar flame speeds of the fuels were matched. The following operating parameters were systematically varied: equivalence ratio, air mass flow rate, burner temperature, flame speed, and fuel type. The results did not correspond to any one known instability mechanism. It is concluded that, in the current burner configuration, integrated-acoustics occur that involve a combination of mechanisms. These include organ tone resonances, Helmholtz-type instability, and convective-acoustic effects. Another possible factor is the fluid mechanical switching observed between the two swirler air passages, due to blockage caused by flame position and shape. Flame characteristics such as anchoring and liftoff height appear to play a major role in the determination of instability strength. As hydrogen content in syngas is increased, a lifted flame eventually anchors, resulting in a drastic decrease in the acoustic amplitude associated with non-resonating flames. Thus, increasing the flame speed causes two competing effects to occur. Propane acoustic data are collapsed using scaling parameters that indicate that the burner temperature and the air mass flow effects behave independently. Copyright © 2012 by Patton M. Allison.},
-}
-
-@article{see2012jet,
-  title={Jet Noise Receptivity to Nozzle-upstream Perturbations in Compressible Heated Jets},
-  author={See, Y. C. and Amini, G. and Koh, C. and Ihme, M.},
-  journal={18th AIAA/CEAS Aeroacoustics Conference (33rd AIAA Aeroacoustics Conference)},
-  year={2012},
-  doi={10.2514/6.2012-2259},
-  open_access_url={https://hdl.handle.net/2027.42/97078},
-  abstract={Peer Reviewed},
-}
-
-@article{thakur2012simulation,
-  title={Simulation of a Shear Coaxial GO2/GH2 Rocket Injector with DES and LES Using Flamelet Models},
-  author={Thakur, S. and Wright, J. and Ihme, M. and Tucker, K. R.},
-  journal={48th AIAA/ASME/SAE/ASEE Joint Propulsion Conference \&amp;amp; Exhibit},
-  year={2012},
-  doi={10.2514/6.2012-3744},
-  open_access_url={https://hdl.handle.net/2027.42/97098},
-  abstract={HE analysis and design of rocket propulsion systems largely relies on full-scale prototype development and testing. Computational simulation techniques have the potential to assist in the design process if accurate physical models are available. The objective of this study is to address this issues by assessing the predictive capability of three different modeling approaches to simulate the reactive flow field structure of a shear-coaxial},
-}
-
-@article{weiher2012characterization,
-  title={Characterization of Mixing and Ignition Effects in Flow-Reactor Facilities Using a Particle Method},
-  author={Weiher, S. and Ihme, M.},
-  journal={50th AIAA Aerospace Sciences Meeting including the New Horizons Forum and Aerospace Exposition},
-  year={2012},
-  doi={10.2514/6.2012-499},
-  open_access_url={https://hdl.handle.net/2027.42/97115},
-  abstract={Stationary power plants utilizing integrated gasification combined cycle (IGCC) technologies are considered to be a viable option for clean electricity generation. Considerable design challenges still exist that are attributed to the IGCC-operating conditions and requirements for the stable combustion of syngas and high hydro-gen content (HHC) fuels. Recent investigations have indicated discrepancies be-tween measurements and simulations of the ignition delay for syngas-mixtures at high-pressure and low-temperature conditions. The objective of this study is to characterize effects of turbulence and flow-field inhomogeneities on the mixing and ignition-dynamics in flow-reactors. To this end, an idealized flow-reactor is consid-ered and a particle method is used to describe the mixing, induction, and subsequent ignition of the reactants. Utilizing this model, parametric studies are performed to quantify effects of flow-field and scalar inhomogeneities on the ignition-process for practically relevant temperature and pressure conditions. Results suggest that the unsteady velocity field affects the ignition location and residence time in the flow-reactor. Stochastic events, such as the formation of localized ignition spots upstream of the main ignition front could be observed in the simulation. Their impact on the global ignition dynamics needs to be evaluated in further research activities. I.},
-}
-
-@article{see2012linear,
-  title={Linear Stability Analysis of a Non-premixed Buoyant Jet Flame},
-  author={See, Y. C. and Ihme, M.},
-  journal={50th AIAA Aerospace Sciences Meeting including the New Horizons Forum and Aerospace Exposition},
-  year={2012},
-  doi={10.2514/6.2012-342},
-  open_access_url={https://hdl.handle.net/2027.42/97093},
-  abstract={Peer Reviewed},
 }
 
 @article{lv2012discontinuous,
@@ -4167,24 +3366,6 @@
   doi={10.1007/978-94-007-2482-2_54},
 }
 
-@article{ihme2011reconcile,
-  title={Reconcile Discrepancies of Current Syngas Kinetics Models by Considering Turbulence Effects on Ignition Delay at Gas-Turbine Relevant Operating Conditions},
-  author={Ihme, M.},
-  journal={49th AIAA Aerospace Sciences Meeting including the New Horizons Forum and Aerospace Exposition},
-  year={2011},
-  doi={10.2514/6.2011-511},
-  abstract={With the increasing interest in utilizing syngas in gas turbine applications, the characterization of H2/CO reaction chemistry under high-pressure and moderate-temperature operating conditions has been the focus of recent investigations. Different chemical-kinetics and hydrodynamic processes have been identified as being responsible for the discrepancies between experimental measurements and kinetic predictions of syngas ignition delay times. This paper complements previous studies, and provides insight on the role of turbulence fluctuations and small-scale mixture inhomogeneities on the syngas combustion process. To this end, an analytic model has been developed that describes the turbulence amplification and combustion in the so-called adiabatic core region of a rapid compression machine (RCM). In this formulation, enhancement of turbulence and small-scale mixture fluctuations during the RCM compression phase are modeled using rapid distortion theory. The subsequent ignition and combustion processes are described using a Lagrangian Fokker-Planck model which considers turbulence/chemistry interaction and detailed reaction chemistry. The model was applied to different syngas mixtures and operating conditions, including pressures up to 20 atm and temperatures between 600 and 1300 K. Parametric studies showed that the model captures experimentally observed trends of reduced},
-}
-
-@article{ihme2011reconcileb,
-  title={Reconcile Discrepancies of Current Syngas Kinetics Models by Considering Turbulence Effects on Ignition Delay at Gas-Turbine Relevant Operating Conditions},
-  author={Ihme, M.},
-  journal={Deep Blue (University of Michigan)},
-  year={2011},
-  open_access_url={https://hdl.handle.net/2027.42/90709},
-  abstract={Peer Reviewed},
-}
-
 @article{zhang2011large,
   title={Large-eddy simulation of a three-stream MILD combustion system},
   author={Zhang, J. and Ihme, M. and He, G.},
@@ -4216,12 +3397,13 @@
   year={2011},
 }
 
-@article{sun2011detailed,
-  title={Detailed Simulations of Incident Shock Wave Development and Boundary Layer Growth in Shock Tube Facilities},
-  author={Sun, Y. and Ihme, M. and Deiterding, R.},
-  journal={APS Division of Fluid Dynamics Meeting Abstracts},
-  volume={64},
+@article{ihme2011reconcile,
+  title={Reconcile Discrepancies of Current Syngas Kinetics Models by Considering Turbulence Effects on Ignition Delay at Gas-Turbine Relevant Operating Conditions},
+  author={Ihme, M.},
+  journal={Deep Blue (University of Michigan)},
   year={2011},
+  open_access_url={https://hdl.handle.net/2027.42/90709},
+  abstract={Peer Reviewed},
 }
 
 @article{ihme2010prediction,
@@ -4246,24 +3428,6 @@
   doi={10.1016/j.proci.2010.05.019},
 }
 
-@article{sozer2010turbulence,
-  title={Turbulence-Chemistry Interaction and Heat Transfer Modeling of H2/O2 Gaseous Injector Flows},
-  author={Sozer, E. and Hassan, E. A. and Yun, S. and Thakur, S. and Wright, J. and Ihme, M. and Shyy, W.},
-  journal={48th AIAA Aerospace Sciences Meeting Including the New Horizons Forum and Aerospace Exposition},
-  year={2010},
-  doi={10.2514/6.2010-1525},
-  abstract={Reliable prediction of rocket injector flows introduces significant challenges associated with the complex physics involving recirculation, turbulence, scalar mixing, chemical reactions and wall heat transfer. This work is aimed at assessing the importance of turbulence-chemistry interaction and non-equilibrium effects in experimentally characterized single and multi-element injector flows. By examining the different chemistry models (laminar finite rate, assumed PDF with either flamelet or equilibrium assumption), it was found that for both cases investigated, chemical non- equilibrium is insignificant while substantial turbulence-chemistry interaction is observed. A zonal wall treatment was developed based on a blend of SST low-Re turbulence wall treatment and law- of-the-wall, showing improved predictive capability. A heat flux extraction method was also proposed to estimate heat flux results from adiabatic flamelet model under the consideration that wall heat loss is small compared to the overall energy generated by chemical reactions.},
-}
-
-@article{sozer2010turbulenceb,
-  title={Turbulence-Chemistry Interaction and Heat Transfer Modeling of H 2/O 2 Gaseous Injector Flows},
-  author={Sozer, E. and Hassan, E. A. and Yun, S. and Thakur, S. and Wright, J. A. and Ihme, M. and Shyy, W.},
-  journal={Deep Blue (University of Michigan)},
-  year={2010},
-  open_access_url={https://hdl.handle.net/2027.42/83652},
-  abstract={Reliable prediction of rocket injector flows introduces significant challenges associated with the complex physics involving recirculation, turbulence, scalar mixing, chemical reactions and wall heat transfer. This work is aimed at assessing the importance of turbulence-chemistry interaction and non-equilibrium effects in experimentally characterized single and multi-element injector flows. By examining the different chemistry models (laminar finite rate, assumed PDF with either flamelet or equilibrium assumption), it was found that for both cases investigated, chemical non-equilibrium is insignificant while substantial turbulence-chemistry interaction is observed. A zonal wall treatment was developed based on a blend of SST low-Re turbulence wall treatment and law-of-the-wall, showing improved predictive capability. A heat flux extraction method was also proposed to estimate heat flux results from adiabatic flamelet model under the consideration that wall heat loss is small compared to the overall energy generated by chemical reactions. Copyright © 2010 by Wei Shyy.},
-}
-
 @article{ihme2010effects,
   title={Effects of turbulence on syngas ignition in rapid compression machines},
   author={Ihme, M. and Soimakallio, A.},
@@ -4275,34 +3439,19 @@
 @article{see2010characterization,
   title={Characterization and Sensitivity Analysis of a Turbulent Diffusion Flame in Diluted Hot Coflow},
   author={See, Y. C. and Ihme, M.},
-  journal={48th AIAA Aerospace Sciences Meeting Including the New Horizons Forum and Aerospace Exposition},
-  year={2010},
-  doi={10.2514/6.2010-222},
-}
-
-@article{see2010characterizationb,
-  title={Characterization and Sensitivity Analysis of a Turbulent Diffusion Flame in Diluted Hot Coflow},
-  author={See, Y. C. and Ihme, M.},
   journal={Deep Blue (University of Michigan)},
   year={2010},
   open_access_url={https://hdl.handle.net/2027.42/83569},
   abstract={Peer Reviewed},
 }
 
-@article{see2010linear,
-  title={Linear stability analysis of planar reacting shear layers},
-  author={See, Y. C. and Ihme, M.},
-  journal={APS Division of Fluid Dynamics Meeting Abstracts},
-  volume={63},
+@article{sozer2010turbulence,
+  title={Turbulence-Chemistry Interaction and Heat Transfer Modeling of H 2/O 2 Gaseous Injector Flows},
+  author={Sozer, E. and Hassan, E. A. and Yun, S. and Thakur, S. and Wright, J. A. and Ihme, M. and Shyy, W.},
+  journal={Deep Blue (University of Michigan)},
   year={2010},
-}
-
-@article{ihme2009large,
-  title={Large-Eddy Simulation of a Turbulent Lifted Flame in a Vitiated Co-Flow},
-  author={Ihme, M. and See, Y. C.},
-  journal={47th AIAA Aerospace Sciences Meeting including The New Horizons Forum and Aerospace Exposition},
-  year={2009},
-  doi={10.2514/6.2009-239},
+  open_access_url={https://hdl.handle.net/2027.42/83652},
+  abstract={Reliable prediction of rocket injector flows introduces significant challenges associated with the complex physics involving recirculation, turbulence, scalar mixing, chemical reactions and wall heat transfer. This work is aimed at assessing the importance of turbulence-chemistry interaction and non-equilibrium effects in experimentally characterized single and multi-element injector flows. By examining the different chemistry models (laminar finite rate, assumed PDF with either flamelet or equilibrium assumption), it was found that for both cases investigated, chemical non-equilibrium is insignificant while substantial turbulence-chemistry interaction is observed. A zonal wall treatment was developed based on a blend of SST low-Re turbulence wall treatment and law-of-the-wall, showing improved predictive capability. A heat flux extraction method was also proposed to estimate heat flux results from adiabatic flamelet model under the consideration that wall heat loss is small compared to the overall energy generated by chemical reactions. Copyright © 2010 by Wei Shyy.},
 }
 
 @article{ihme2008modeling,
@@ -4372,15 +3521,6 @@
 }
 
 @article{pitsch2008largeb,
-  title={Large-Eddy Simulation of Turbulent Reacting Flows},
-  author={Pitsch, H. and Desjardins, O. and Balarac, G. and Ihme, M.},
-  journal={46th AIAA Aerospace Sciences Meeting and Exhibit},
-  year={2008},
-  doi={10.2514/6.2008-604},
-  abstract={In this paper, a few advances and challenges towards predictive large-eddy simulations of turbulent reacting flow are discussed in the context of numerical simulations of aircraft engines, which require an adequate description of liquid fuel injection, liquid fuel atomization, drop breakup, drop dynamics, and evaporation, large-scale turbulent fuel air mixing, small scale molecular fuel air mixing, chemical reactions, and turbulence/chemistry interactions. We have identified three of the most important and most challenging modeling problems in this process, namely primary atomization, sub-filter scalar mixing, and pollutant formation. Some recent progress on all three topics is presented.},
-}
-
-@article{pitsch2008largec,
   title={Large-eddy simulation of turbulent reacting flows},
   author={Pitsch, H. and Desjardins, O. and Balarac, G. and Ihme, M.},
   journal={Deep Blue (University of Michigan)},
@@ -4399,24 +3539,6 @@
   year={2008},
   doi={10.1260/147547209786235028},
   abstract={Combustion noise and sound source mechanisms of the DLR-A flame are investigated. A hybrid large-eddy simulation/computational aeracoustics (LES/CAA) approach is employed. In the first step of the hybrid analysis the flamelet/progress variable (FPV) model is employed as combustion model followed by the acoustic simulation in the second step using the acoustic perturbation equations for reacting flows (APE-RF). The flamelet/progress variable database has been extended in terms of acoustic source terms. The analysis of the acoustic field of low MACH number reacting flows induced by the thermoacoustic sources such as the unsteady heat release leads to a very stiff problem formulation, since the related sources require highly resolved regions in the source area, which restricts the possible time step. To simulate combustion generated noise using such a hybrid approach, a suitable source description has to be used, which preferably satisfies two requirements, i.e, to efficiently and accurately predict the generated sound field, while the source term can be easily evaluated from the LES. Using the source term, which is expressed via the scaled partial time derivative of the density, the acoustic field can be reproduced best up to a maximum Strouhal number of St D = 2. However, this source formulation requires a rigorous constraint at the interface of the hybrid approach to avoid spurious noise due to artificial acceleration caused by interpolation. To be more precise, the convection speed of density inhomogeneities has to be preserved during interpolation. A compromise between efficiency and accuracy can be achieved using the source formulation expressed via the scaled material derivative of the density, since by definition this formulation does not describe the convection of density inhomogeneities.},
-}
-
-@article{bui2008numerical,
-  title={Numerical Applicability of Different Sound Source Formulations to Compute Combustion Noise Using Acoustic Perturbation Equations for Reacting Flows},
-  author={Bui, T. P. and Ihme, M. and Meinke, M. and Schr{\"o}eder, W. and Pitsch, H.},
-  journal={14th AIAA/CEAS Aeroacoustics Conference (29th AIAA Aeroacoustics Conference)},
-  year={2008},
-  doi={10.2514/6.2008-2948},
-  abstract={Combustion noise analyses in a hybrid computational aeroacoustics (CAA) context are presented. Acoustic perturbation equations for reacting flows (APE-RF) describe the wave propagation, while unsteady results from a variable density incompressible reactive large-eddy simulation (LES) are used to evaluate the acoustic source terms. To simulate combustion generated noise via such a hybrid approach, an appropriate source description has to be taken, which preferably matches two requirements, i.e., on the one hand, to efficiently and accurately predict the generated acoustic field, and on the other hand, to easily determine the source term from the LES. In this study, three source formulations for the APE-RF system are examined on two acoustic meshes with different resolutions in the source region to predict the acoustic field of an open turbulent nonpremixed flame. Using the source term, which is expressed via the scaled partial time derivative of the density, the acoustic field can be reproduced best up to a maximum Strouhal number of StD = 2 on the fine mesh. However, for this source formulation spurious noise can be observed depending on the CAA resolution. It will be shown in this study that this observation can be related to the “artificial interpolation induced acceleration” effect. A compromise between efficiency and accuracy represents the source formulation expressed via the scaled material derivative of the density.},
-}
-
-@article{bui2008numericalb,
-  title={Numerical Applicability of Different Sound Source Formulations to Compute Combustion Noise Using Acoustic Perturbation Equations for Reacting Flows},
-  author={Bui, T. and Ihme, M. and Meinke, M. and Schr{\"o}der, W. and Pitsch, H.},
-  journal={Deep Blue (University of Michigan)},
-  year={2008},
-  open_access_url={http://deepblue.lib.umich.edu/bitstream/2027.42/76947/1/AIAA-2008-2948-818.pdf},
-  abstract={Peer Reviewed},
 }
 
 @article{reusser2008high,
@@ -4464,6 +3586,15 @@ physical
 phenomena are discussed in great detail.},
 }
 
+@article{bui2008numerical,
+  title={Numerical Applicability of Different Sound Source Formulations to Compute Combustion Noise Using Acoustic Perturbation Equations for Reacting Flows},
+  author={Bui, T. and Ihme, M. and Meinke, M. and Schroeder, W. and Pitsch, H.},
+  journal={Deep Blue (University of Michigan)},
+  year={2008},
+  open_access_url={http://deepblue.lib.umich.edu/bitstream/2027.42/76947/1/AIAA-2008-2948-818.pdf},
+  abstract={Peer Reviewed},
+}
+
 @article{ihme2007generation,
   title={Generation of Optimal Artificial Neural Networks Using a Pattern Search Algorithm: Application to Approximation of Chemical Systems},
   author={Ihme, M. and Marsden, A. L. and Pitsch, H.},
@@ -4474,33 +3605,6 @@ phenomena are discussed in great detail.},
   year={2007},
   doi={10.1162/neco.2007.08-06-316},
   abstract={A pattern search optimization method is applied to the generation of optimal artificial neural networks (ANNs). Optimization is performed using a mixed variable extension to the generalized pattern search method. This method offers the advantage that categorical variables, such as neural transfer functions and nodal connectivities, can be used as parameters in optimization. When used together with a surrogate, the resulting algorithm is highly efficient for expensive objective functions. Results demonstrate the effectiveness of this method in optimizing an ANN for the number of neurons, the type of transfer function, and the connectivity among neurons. The optimization method is applied to a chemistry approximation of practical relevance. In this application, temperature and a chemical source term are approximated as functions of two independent parameters using optimal ANNs. Comparison of the performance of optimal ANNs with conventional tabulation methods demonstrates equivalent accuracy by considerable savings in memory storage. The architecture of the optimal ANN for the approximation of the chemical source term consists of a fully connected feedforward network having four nonlinear hidden layers and 117 synaptic weights. An equivalent representation of the chemical source term using tabulation techniques would require a 500 x 500 grid point discretization of the parameter space.},
-}
-
-@article{bui2007numerical,
-  title={Numerical Investigation of Combustion Noise and Sound Source Mechanisms in a Non-Premixed Flame Using LES and APE-RF},
-  author={Bui, T. P. and Ihme, M. and Meinke, M. and Schr{\"o}eder, W. and Pitsch, H.},
-  journal={13th AIAA/CEAS Aeroacoustics Conference  (28th AIAA Aeroacoustics Conference)},
-  year={2007},
-  doi={10.2514/6.2007-3406},
-  abstract={In this study, combustion noise and sound source mechanisms of an unconfined turbulent non-premixed flame, i.e., the DLR-A flame is investigated. A hybrid LES/CAA approach is thereby employed in which a low Mach number variable density large-eddy simulation (LES) is combined with the acoustic perturbation equations for reacting flows (APE-RF). In the first step of the hybrid analysis the flamelet/progress variable (FPV) model is employed as combustion model followed by the acoustic simulation in the second step using the acoustic perturbation equations for reacting flows (APE-RF). In the acoustic analysis, special emphasis is placed on the impact of the thermoacoustic source contributions within the pressure-density relation of the APE-RF system on the radiated acoustic field and the applicability of these source formulations in terms of a hybrid CFD/CAA approach. The flamelet/progress variable database has been extended in terms of acoustic source terms. The unsteady heat release rate, the source describing the effect of non-isomolar combustion, and the species diffusion term are described by two independent parameters, i.e., the mixture fraction and the progress variable. From the findings in the present study, the analysis of the acoustic field of low Mach number reacting flows induced by the thermoacoustic sources such as the unsteady heat release leads to a very stiff problem formulation, since the related sources require highly resolved regions in the source area, which restricts the possible time step during temporal integration of the equations. The numerical bottleneck is not so restrictive when a source term formulation based on the density distribution is used. Spectra obtained from the simulated acoustic field, using two different source term formulations involving derivatives of the density are in good agreement with the experimental data even in the higher frequency range.},
-}
-
-@article{kaltenbacher2007enhanced,
-  title={Enhanced Hybrid LES/CAA Approach for Combustion-Induced Noise in Complex Geometries},
-  author={Kaltenbacher, M. and Ihme, M. and Pitsch, H.},
-  journal={13th AIAA/CEAS Aeroacoustics Conference  (28th AIAA Aeroacoustics Conference)},
-  year={2007},
-  doi={10.2514/6.2007-3403},
-}
-
-@article{ihme2007effects,
-  title={EFFECTS OF HEAT RELEASE ON TURBULENT JET FLOWS},
-  author={Ihme, M. and Pitsch, H.},
-  journal={Proceeding of Fifth International Symposium on Turbulence and Shear Flow Phenomena},
-  pages={991--996},
-  year={2007},
-  doi={10.1615/tsfp5.1540},
-  abstract={Large-eddy simulations of isothermal and reactive turbulent round jets at a jet Reynolds number of 14,720 have been performed to study the effects of heat release on jet dynamics and entrainment. Results for flow field statistics from the simulations are in good agreement with available experimental data. Effects of buoyancy and temperature-dependent molecular properties on the instantaneous flow field and statistical flow field quantities are investigated in separate numerical simulations. Mass flux and jet entrainment rates have been computed from the simulations. It is shown that the fluctuating mass flux, which is difficult to determine experimentally, amounts to as much as 15% of the total mass flux.},
 }
 
 @article{ihme2007artificial,
@@ -4529,30 +3633,6 @@ phenomena are discussed in great detail.},
   year={2006},
 }
 
-@article{ihme2006prediction,
-  title={Prediction of combustion-generated noise in non-premixed turbulent jet flames using large-eddy simulation},
-  author={Ihme, M. and Bodony, D. J. and Pitsch, H.},
-  journal={AIAA/CEAS Aeroacoustics Conference},
-  pages={2753--2768},
-  year={2006},
-}
-
-@article{ihme2006predictionb,
-  title={Prediction of Combustion-Generated Noise in Non-Premixed Turbulent Jet Flames Using LES},
-  author={Ihme, M. and Bodony, D. J. and Pitsch, H.},
-  journal={12th AIAA/CEAS Aeroacoustics Conference (27th AIAA Aeroacoustics Conference)},
-  year={2006},
-  doi={10.2514/6.2006-2614},
-}
-
-@article{ihme2006numerical,
-  title={Numerical Prediction of Combustion-induced Noise using a hybrid LES/CAA approach},
-  author={Ihme, M. and Pitsch, H. and Kaltenbacher, M.},
-  journal={APS Division of Fluid Dynamics Meeting Abstracts},
-  volume={59},
-  year={2006},
-}
-
 @article{ihme2005prediction,
   title={Prediction of local extinction and re-ignition effects in non-premixed turbulent combustion using a flamelet/progress variable approach},
   author={Ihme, M. and Cha, C. M. and Pitsch, H.},
@@ -4562,24 +3642,6 @@ phenomena are discussed in great detail.},
   pages={793--800},
   year={2005},
   doi={10.1016/j.proci.2004.08.260},
-}
-
-@article{pitsch2005unsteady,
-  title={An Unsteady/Flamelet Progress Variable Method for LES of Nonpremixed Turbulent Combustion},
-  author={Pitsch, H. and Ihme, M.},
-  journal={43rd AIAA Aerospace Sciences Meeting and Exhibit},
-  year={2005},
-  doi={10.2514/6.2005-557},
-  abstract={An unsteady flamelet/progress variable model has been developed and formulated as an extension of the steady flamelet/progress variable model. For this model, a large number of unsteady laminar flamelet simulations is performed for various conditions, and solutions are recorded as function of time. From this, a flamelet library is generated, which provides the filtered quantities of all scalar values as function of the filtered mixture fraction, the mixture fraction sub-filter variance, the filtered reaction progress variable, and the filtered scalar dissipation rate. The model has been implemented in an LES code. Simulations have been performed for a confined swirl burner using the unsteady flamelet/progress variable model. The results are compared with experimental data for velocities and velocity fluctuations, temperature, CO2, and CO mole fractions. The results agree reasonably well with the experiments for all quantities. In particular, CO is predicted with good accuracy.},
-}
-
-@article{ihme2005les,
-  title={LES of a Non-Premixed Flame Using an Extended Flamelet/Progress Variable Model},
-  author={Ihme, M. and Pitsch, H.},
-  journal={43rd AIAA Aerospace Sciences Meeting and Exhibit},
-  year={2005},
-  doi={10.2514/6.2005-558},
-  abstract={In previous a priori studies we have examined the flamelet/progress variable model proposed by Pierce and Moin and identified the most important areas for model improvements. The flamelet/progress variable approach is a conserved scalar based model for non-premixed combustion and uses a reactive scalar as an additional parameter in a table lookup. One of the main assumptions in this model is the use of a delta function as a presumed probability density function (PDF) for this reactive scalar. We have previously shown that the use of the beta function provides some improvement. Here, the statistically most-likely distribution is proposed as a presumed PDF for the flamelet parameter. This provides two advantages. First of all, the function depends on a chemical time-scale, and in addition, an arbitrary number of moments can be enforced. The model is applied to flames D and E of the Sandia piloted turbulent jet flame series and results are compared with experimental data.},
 }
 
 @article{fedotov2005stochastic,
@@ -4603,26 +3665,10 @@ phenomena are discussed in great detail.},
   year={2005},
 }
 
-@article{ihme2004extended,
-  title={An Extended Flamelet/Progress Variable Method for LES of Nonpremixed Turbulent Combustion},
-  author={Ihme, M. and Pitsch, H.},
-  journal={APS Division of Fluid Dynamics Meeting Abstracts},
-  volume={57},
-  year={2004},
-}
-
 @article{fedotov2003stochastic,
   title={Stochastic Mixing Model with Power Law Decay of Variance},
   author={Fedotov, S. and Ihme, M. and Pitsch, H.},
   journal={Defense Technical Information Center (DTIC)},
   year={2003},
   abstract={The mixing of a conserved scalar c = c(t, x), advected by a turbulent flow, remains a problem of both fundamental and practical interest. One of the basic characteristics of the mixing process is the rate at which the scalar variance sigma(exp 2)(sub c)(t) = ((c - mu)(exp 2) decays with time. Here mu is the mean value, and the angular brackets (.) denote an averaging procedure. One of the simplest and widely used mixing models is the interaction by exchange with the mean (IEM) (Villermaux \&amp; Devillon 1972) or linear mean square estimate model (LMSE) (Dopazo \&amp; O'Brien 1974, Sabel'nikov \&amp; Gorokhovski 2001). In this model, the scalar relaxes toward its mean mu according to the equation.},
-}
-
-@article{ihme2003priory,
-  title={A Priory Analysis of a Flamelet/Progress-Variable Approach},
-  author={Ihme, M. and Pitsch, H.},
-  journal={APS Division of Fluid Dynamics Meeting Abstracts},
-  volume={56},
-  year={2003},
 }
