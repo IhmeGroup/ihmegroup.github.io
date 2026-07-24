@@ -108,12 +108,12 @@ collections:
       layout: post
     output: false
   projects:
-    output: true
+    output: false # superseded by the tiled Research page; do not generate /projects/* URLs
     permalink: /:collection/:title/
   research:
     output: false
   capabilities:
-    output: true
+    output: false # superseded by the tiled Research page; do not generate /capabilities/* URLs
     permalink: /:collection/:title/
   teaching:
     output: false
