@@ -5,4 +5,4 @@ B.S. Istanbul Technical University, 2023
 
 Mehmet's primary research interests include combustion and computational fluid dynamics. Outside of lab, he enjoys inline skating and calisthenics.
 
-[email](mailto:madigzel@stanford.edu)
+[email](mailto:madigzel@stanford.edu) \| [linkedin](https://www.linkedin.com/in/mehmet-kagan-adiguzel-87a802200)

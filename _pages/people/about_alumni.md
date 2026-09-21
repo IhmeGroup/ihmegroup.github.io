@@ -1,6 +1,7 @@
 Latest known position is indicated.
 
 ##### Postdoctoral Scholars
+- Jen Zen Ho (2026)
 - Jingcun Fan (2025)
 - Haoyuan Li (2025), Associate Scientist at SLAC National Accelerator Laboratory
 - Davy Brouzet (2024), Founding Researcher at Spinoza Labs
@@ -27,6 +28,7 @@ Latest known position is indicated.
 
 ##### Ph.D. Students
 - Khaled Younes (2026)
+    - [*Characterizing the picosecond dynamics of liquid water subject to hard X-ray irradiation*](https://stacks.stanford.edu/file/rw199cg3491/KYounes_PhD_Thesis-augmented.pdf)
 - David Wu (2026)
     - *Modeling multi-jet plume physics for supersonic retropropulsion*
 - Arijit Majumdar (2026)

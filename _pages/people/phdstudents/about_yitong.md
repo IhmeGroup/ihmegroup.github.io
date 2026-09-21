@@ -4,4 +4,4 @@ B.Sc. Technion - Israel Institute of Technology, 2023
 
 Yitong advances data-driven predictive modeling for environmental and energy systems. She's a HAI graduate fellow with a love for live music.
 
-[email](mailto:yitongli@stanford.edu) \| [google scholar](https://scholar.google.com/citations?user=SufajHwAAAAJ&hl=en)
+[email](mailto:yitongli@stanford.edu) \| [google scholar](https://scholar.google.com/citations?user=SufajHwAAAAJ&hl=en) \| [linkedin](https://www.linkedin.com/in/yitong-l-2b3882299)

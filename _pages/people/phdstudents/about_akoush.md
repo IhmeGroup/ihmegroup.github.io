@@ -5,4 +5,4 @@ B.Sc. Cairo University, 2018
 
 Bassem specializes in high-fidelity numerical modeling, physics-informed machine learning, and data-driven modeling for fluid mechanics and combustion.
 
-[email](mailto:bakoush@stanford.edu) \| [google scholar](https://scholar.google.com/citations?user=iv8JoRQAAAAJ)
+[email](mailto:bakoush@stanford.edu) \| [google scholar](https://scholar.google.com/citations?user=iv8JoRQAAAAJ) \| [linkedin](https://www.linkedin.com/in/bassem-akoush)
