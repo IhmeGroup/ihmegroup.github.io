@@ -80,9 +80,12 @@ profiles:
 
   - align: left
     content: people/header_otherstudents.md
-  - align: left #PRAGUN BADHAN
+  - align: left #PRAGUN
     image: people/badhan.png
     content: people/visitors/about_badhan.md
+  - align: left #DHRUTHI
+    image: people/boddapati.png
+    content: people/visitors/about_boddapati.md
 
   - align: left
     content: people/header_alumni.md

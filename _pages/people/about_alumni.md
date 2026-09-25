@@ -49,7 +49,7 @@ Latest known position is indicated.
     - [*Study of wildfire and biomass combustion physics using X-ray computed tomography*](https://stacks.stanford.edu/file/druid:tz501vf4608/EmericThesisFinal%20Submitted-augmented.pdf)
 - Steven Brill (2022), Computational Physicist at Lawrence Livermore National Laboratory
     - [*An enriched-basis high-order method for wall-modeled large eddy simulation*](https://stacks.stanford.edu/file/druid:vg777rr1477/Steven_Thesis_final_no_copy-augmented.pdf)
-- Danyal Mohaddes (2022), Senior Research Scientist at FM Global
+- Danyal Mohaddes (2022), Senior Propulsion Software Engineer at SpaceX
     - [*Numerical simulation of hot surface ignition and combustion of fuel sprays*](https://stacks.stanford.edu/file/druid:qd297kf9064/Thesis_MohaddesKhorassani-augmented.pdf)
 - Eric Ching (2021), Research Scientist at Naval Research Laboratory
     - [*Development of high-order discontinuous Galerkin methods for simulations of high-speed particle-laden fluid flows*](https://stacks.stanford.edu/file/druid:ph076kk9546/Thesis_final-augmented.pdf)
