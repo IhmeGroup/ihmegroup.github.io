@@ -15,8 +15,11 @@ Run from the repo root:
     python scripts/update_publications.py
 
 Requirements: pip install requests
+              OPENALEX_API_KEY environment variable (free key; required
+              to page past the first 100 results)
 """
 
+import os
 import re
 import sys
 import time
@@ -171,29 +174,71 @@ _WORK_FIELDS = ('id,title,authorships,publication_year,primary_location,'
                 'biblio,doi,abstract_inverted_index,type,open_access')
 
 
+# OpenAlex requires a free API key to follow next_cursor past the first page.
+# Keyless requests get the first page and then 401. A key also raises the daily
+# request budget tenfold. Create one at https://openalex.org/signup (Settings,
+# then API key) and expose it to this script as OPENALEX_API_KEY. In CI it comes
+# from the repository secret of the same name.
+PER_PAGE = 100   # valid range is 1 to 100; per_page=200 is deprecated upstream
+
+
+def _api_key() -> str:
+    return (os.environ.get('OPENALEX_API_KEY') or '').strip()
+
+
+_KEY_HELP = (
+    'Create a free key at https://openalex.org/signup (Settings, then API key), '
+    'then set OPENALEX_API_KEY in the environment. For GitHub Actions, add it as '
+    'the repository secret OPENALEX_API_KEY.'
+)
+
+
 def _fetch_works_by_filter(filter_str: str, label: str = '') -> list:
     """Paginate through OpenAlex works matching filter_str and return all results."""
     results = []
     cursor = '*'
+    api_key = _api_key()
+
     headers = {'User-Agent': f'ihmegroup-website/1.0 (mailto:{CONTACT_EMAIL})'}
+    if api_key:
+        # Passed as a header rather than a query parameter so the key never
+        # appears in request URLs, tracebacks or CI logs.
+        headers['Authorization'] = f'Bearer {api_key}'
 
     while cursor:
         params = {
             'filter': filter_str,
-            'per_page': 200,
+            'per_page': PER_PAGE,
             'cursor': cursor,
             'select': _WORK_FIELDS,
         }
         resp = requests.get(f'{API_BASE}/works', params=params,
                             headers=headers, timeout=30)
+
+        if resp.status_code == 401:
+            if not api_key:
+                raise SystemExit(
+                    '\nOpenAlex returned 401 Unauthorized after the first page.\n'
+                    'Paging past the first page now requires an API key.\n'
+                    + _KEY_HELP
+                )
+            raise SystemExit(
+                '\nOpenAlex returned 401 Unauthorized and OPENALEX_API_KEY is set.\n'
+                'The key may be unactivated (check the activation email), revoked, '
+                'or mistyped.'
+            )
         resp.raise_for_status()
+
         data = resp.json()
         batch = data.get('results', [])
         results.extend(batch)
         if label:
             print(f'  [{label}] {len(results)} works...', end='\r', flush=True)
-        meta = data.get('meta', {})
-        cursor = meta.get('next_cursor') if len(batch) == 200 else None
+
+        # Follow next_cursor until OpenAlex stops returning one. The end of the
+        # run is never inferred from batch size, which silently breaks whenever
+        # PER_PAGE changes.
+        cursor = (data.get('meta') or {}).get('next_cursor') if batch else None
         time.sleep(0.05)
 
     return results

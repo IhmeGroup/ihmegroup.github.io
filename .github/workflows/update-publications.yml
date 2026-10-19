@@ -24,6 +24,8 @@ jobs:
         run: pip install requests
 
       - name: Fetch publications from OpenAlex
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         run: python scripts/update_publications.py
 
       - name: Commit updated bibliography
