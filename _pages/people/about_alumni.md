@@ -29,8 +29,10 @@ Latest known position is indicated.
 ##### Ph.D. Students
 - Khaled Younes (2026)
     - [*Characterizing the picosecond dynamics of liquid water subject to hard X-ray irradiation*](https://stacks.stanford.edu/file/rw199cg3491/KYounes_PhD_Thesis-augmented.pdf)
+{% comment %} Hidden by request 2026-10-22. Remove the surrounding comment tags to restore.
 - David Wu (2026)
     - *Modeling multi-jet plume physics for supersonic retropropulsion*
+{% endcomment %}
 - Arijit Majumdar (2026)
     - [*Study of ultrafast dynamics in supercritical fluids using coherent X-ray scattering and atomistic simulations*](https://stacks.stanford.edu/file/vd945rq6537/Thesis_Arijit_v3-augmented.pdf)
 - Matthew Bonanni (2025), Machine Learning Engineer at Red Hat
