@@ -1,5 +1,5 @@
 **Mehmet Kagan Adiguzel**  
-*Doctoral Student, Mechanical Engineering*    
+*Doctoral Candidate, Mechanical Engineering*    
 M.S. Istanbul Technical University, 2025<br>
 B.S. Istanbul Technical University, 2023
 

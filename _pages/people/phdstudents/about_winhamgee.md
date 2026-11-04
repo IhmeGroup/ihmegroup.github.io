@@ -1,5 +1,5 @@
 **Michelle Winham-Gee**  
-*Doctoral Student, Mechanical Engineering*  
+*Doctoral Candidate, Mechanical Engineering*  
 M.S. Oregon State University, 2024  
 B.S. Oregon State University-Cascades, 2022
 
