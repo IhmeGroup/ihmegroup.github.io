@@ -38,6 +38,15 @@ search_enabled: false
 socials_in_search: true
 bib_search: true
 
+# Temporary site-wide announcement banner. Set `enabled: false` to take it down
+# without removing anything; see _includes/announcement.liquid to remove it for
+# good. Added 2026-11-09 for the 2027 Stanford Flame AI Workshop.
+announcement:
+  enabled: true
+  text: Registration for the 2027 Stanford Flame AI Workshop is now LIVE!
+  url: https://flame-ai-workshop.github.io/
+  new_tab: true
+
 # Dimensions
 #max_width: 930px
 max_width: 1200px

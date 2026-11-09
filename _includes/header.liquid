@@ -140,6 +140,10 @@
       </div>
     </div>
   </nav>
+
+  <!-- Temporary announcement banner; controlled by `announcement` in _config.yml -->
+  {% include announcement.liquid %}
+
   {% if site.enable_progressbar %}
   {% if page.permalink != '/' %}
     <!-- Scrolling Progress Bar -->

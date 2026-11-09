@@ -50,9 +50,11 @@
 
     function initializeProgressElement() {
       let navbarHeight = $('#navbar').outerHeight(true);
-      $('body').css({ 'padding-top': navbarHeight });
-      $('progress-container').css({ 'padding-top': navbarHeight });
-      progressBar.css({ top: navbarHeight });
+      /* Offset everything below the temporary announcement banner, if present. */
+      let bannerHeight = window.announcementBannerHeight ? window.announcementBannerHeight() : 0;
+      $('body').css({ 'padding-top': navbarHeight + bannerHeight });
+      $('progress-container').css({ 'padding-top': navbarHeight + bannerHeight });
+      progressBar.css({ top: navbarHeight + bannerHeight });
       progressBar.attr({
         max: getDistanceToScroll(),
         value: getCurrentScrollPosition(),

@@ -1,0 +1,70 @@
+{% if site.announcement.enabled %}
+  {%- comment -%}
+    Temporary site-wide announcement banner.
+    To take it down: set `announcement.enabled: false` in _config.yml.
+    To remove it entirely: delete this file, the announcement block in
+    _config.yml, the include in _includes/header.liquid, the `has-announcement`
+    class in _layouts/default.liquid and _layouts/distill.liquid, the banner
+    block at the end of _sass/_base.scss, and the bannerHeight lines in
+    _includes/scripts/progressBar.liquid.
+  {%- endcomment -%}
+  <div id="announcement-banner" class="announcement-banner" role="region" aria-label="Site announcement">
+    {% if site.announcement.url %}
+      <a
+        href="{{ site.announcement.url }}"
+        {% if site.announcement.new_tab %}target="_blank" rel="noopener noreferrer"{% endif %}
+      >
+        {{ site.announcement.text }}
+      </a>
+    {% else %}
+      {{ site.announcement.text }}
+    {% endif %}
+  </div>
+  <script>
+    /*
+     * The navbar on this site is taller than the theme default and its height
+     * varies with the viewport, so the banner is positioned from measured
+     * heights rather than fixed offsets. Vanilla JS on purpose: jQuery is not
+     * loaded yet at this point in the document.
+     */
+    (function () {
+      function outerHeight(el) {
+        if (!el) return 0;
+        var s = window.getComputedStyle(el);
+        return el.offsetHeight + parseFloat(s.marginTop || 0) + parseFloat(s.marginBottom || 0);
+      }
+
+      function bannerEl() {
+        return document.getElementById('announcement-banner');
+      }
+
+      // Read by _includes/scripts/progressBar.liquid so the scroll-progress
+      // bar is offset below the banner instead of sitting underneath it.
+      window.announcementBannerHeight = function () {
+        return outerHeight(bannerEl());
+      };
+
+      function layout() {
+        var banner = bannerEl();
+        if (!banner) return;
+        var brandBarHeight = outerHeight(document.querySelector('.su-brand-bar'));
+        var navbarHeight = outerHeight(document.getElementById('navbar'));
+        var bannerHeight = outerHeight(banner);
+
+        banner.style.top = brandBarHeight + navbarHeight + 'px';
+        document.body.style.setProperty('--announcement-banner-height', bannerHeight + 'px');
+        if (document.body.classList.contains('fixed-top-nav')) {
+          document.body.style.paddingTop = navbarHeight + bannerHeight + 'px';
+        }
+      }
+
+      // addEventListener, not window.onload: progressBar.liquid assigns
+      // window.onload directly and would otherwise clobber this.
+      window.addEventListener('DOMContentLoaded', layout);
+      window.addEventListener('load', function () {
+        setTimeout(layout, 60);
+      });
+      window.addEventListener('resize', layout);
+    })();
+  </script>
+{% endif %}

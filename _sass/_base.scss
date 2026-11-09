@@ -1895,3 +1895,65 @@ display: flex;
   color: #fff;
 }
 
+
+/* -----------------------------------------------------------------------------
+   Temporary announcement banner
+   Added 2026-11-09 for the 2027 Stanford Flame AI Workshop.
+   Controlled by the `announcement` block in _config.yml. Safe to delete this
+   whole block when the banner is retired.
+   -------------------------------------------------------------------------- */
+
+body.has-announcement {
+  /* Fallback height for the first paint, before the inline script measures the
+     rendered banner and overwrites this with the real value. */
+  --announcement-banner-height: 2.75rem;
+}
+
+.announcement-banner {
+  position: fixed;
+  /* Brand bar + navbar. Refined by the inline script, since the navbar on this
+     site is taller than the 56px the theme assumes. */
+  top: 86px;
+  left: 0;
+  width: 100%;
+  /* Above Bootstrap's .sticky-top (1020), below its .fixed-top navbar (1030). */
+  z-index: 1025;
+  padding: 0.6rem 1rem;
+  background-color: #d81212; /* 5.2:1 against white text, meets WCAG AA */
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.35;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.announcement-banner,
+.announcement-banner a,
+.announcement-banner a:hover,
+.announcement-banner a:focus {
+  color: #fff;
+}
+
+.announcement-banner a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+/* Push the scroll-progress bar down so the banner does not cover it. */
+body.has-announcement progress {
+  top: calc(56px + var(--announcement-banner-height));
+}
+
+body.has-announcement .progress-container {
+  top: calc(86px + var(--announcement-banner-height));
+}
+
+/* Keep page content clear of the banner before the script runs. */
+body.has-announcement.fixed-top-nav {
+  padding-top: calc(56px + var(--announcement-banner-height));
+}
