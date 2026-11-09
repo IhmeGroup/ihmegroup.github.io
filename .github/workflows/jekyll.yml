@@ -29,7 +29,13 @@ concurrency:
 jobs:
   # Build job
   build:
-    runs-on: ubuntu-latest
+    # Pinned to 24.04 rather than ubuntu-latest: ubuntu-latest migrated to
+    # Ubuntu 26.04 in Oct 2026, and setup-ruby ships no CRuby builds older
+    # than 3.2 for that image, because they do not compile on it. This job
+    # needs Ruby 3.1 (see ruby-version below), so it has no Ruby to install
+    # there. Before moving back to ubuntu-latest, upgrade ruby-version to
+    # '3.2' or newer, refresh Gemfile.lock, and bump setup-ruby below.
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4
